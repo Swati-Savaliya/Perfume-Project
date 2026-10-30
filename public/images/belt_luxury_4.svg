@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#221c17"/>
+      <stop offset="100%" stop-color="#0c0a08"/>
+    </radialGradient>
+    <linearGradient id="saddle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#452312"/>
+      <stop offset="50%" stop-color="#6e391b"/>
+      <stop offset="100%" stop-color="#3d1e0e"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ebd59b"/>
+      <stop offset="50%" stop-color="#c99c47"/>
+      <stop offset="100%" stop-color="#805b19"/>
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg2)"/>
+  <circle cx="400" cy="460" r="280" fill="none" stroke="#362920" stroke-width="1" stroke-dasharray="4 6"/>
+  <g filter="url(#shadow2)">
+    <circle cx="400" cy="480" r="200" fill="none" stroke="url(#saddle)" stroke-width="52"/>
+    <circle cx="400" cy="480" r="220" fill="none" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+    <circle cx="400" cy="480" r="180" fill="none" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+    <g transform="translate(325, 200)">
+      <circle cx="75" cy="55" r="50" fill="none" stroke="url(#brass)" stroke-width="12"/>
+      <text x="75" y="65" font-family="'Times New Roman', serif" font-size="34" font-weight="bold" fill="url(#brass)" text-anchor="middle">C</text>
+      <rect x="135" y="48" width="40" height="14" rx="3" fill="url(#brass)"/>
+    </g>
+  </g>
+  <text x="400" y="820" font-family="'Times New Roman', serif" font-size="28" letter-spacing="0.3em" fill="#f4f4f5" text-anchor="middle" font-weight="bold">COAG MAISON</text>
+  <text x="400" y="855" font-family="'Segoe UI', sans-serif" font-size="13" letter-spacing="0.4em" fill="#d4af37" text-anchor="middle">MONOGRAM SADDLE LEATHER BELT</text>
+  <text x="400" y="885" font-family="'Segoe UI', sans-serif" font-size="11" letter-spacing="0.25em" fill="#8d7260" text-anchor="middle">HAND-BURNISHED COGNAC • SOLID BRASS</text>
+</svg>

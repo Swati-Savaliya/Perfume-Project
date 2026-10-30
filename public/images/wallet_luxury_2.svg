@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="wbg2" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#241e17"/>
+      <stop offset="100%" stop-color="#0b0907"/>
+    </radialGradient>
+    <linearGradient id="wleather2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d2212"/>
+      <stop offset="50%" stop-color="#5a3118"/>
+      <stop offset="100%" stop-color="#29150b"/>
+    </linearGradient>
+    <linearGradient id="wgold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d77f"/>
+      <stop offset="60%" stop-color="#c99c47"/>
+      <stop offset="100%" stop-color="#805b19"/>
+    </linearGradient>
+    <filter id="wshadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#wbg2)"/>
+  <g filter="url(#wshadow2)" transform="translate(250, 260)">
+    <rect x="0" y="0" width="300" height="420" rx="16" fill="url(#wleather2)" stroke="#5a3822" stroke-width="2"/>
+    <rect x="10" y="10" width="280" height="400" rx="12" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-dasharray="4 5" opacity="0.7"/>
+    <!-- Card Slots Arc -->
+    <path d="M 20 110 Q 150 140 280 110" fill="none" stroke="#29150b" stroke-width="3"/>
+    <path d="M 20 170 Q 150 200 280 170" fill="none" stroke="#29150b" stroke-width="3"/>
+    <path d="M 20 230 Q 150 260 280 230" fill="none" stroke="#29150b" stroke-width="3"/>
+    <!-- Emblem -->
+    <circle cx="150" cy="330" r="30" fill="#1f1008" stroke="url(#wgold2)" stroke-width="2"/>
+    <text x="150" y="338" font-family="'Times New Roman', serif" font-size="22" font-weight="bold" fill="url(#wgold2)" text-anchor="middle">COAG</text>
+  </g>
+  <text x="400" y="780" font-family="'Times New Roman', serif" font-size="28" letter-spacing="0.3em" fill="#f4f4f5" text-anchor="middle" font-weight="bold">SLIM CARDHOLDER WALLET</text>
+  <text x="400" y="815" font-family="'Segoe UI', sans-serif" font-size="13" letter-spacing="0.4em" fill="#d4af37" text-anchor="middle">SAFFIANO LEATHER • 6 SLOTS</text>
+  <text x="400" y="845" font-family="'Segoe UI', sans-serif" font-size="11" letter-spacing="0.25em" fill="#8d7260" text-anchor="middle">CENTRAL CASH SLOT • MINIMALIST 4MM</text>
+</svg>

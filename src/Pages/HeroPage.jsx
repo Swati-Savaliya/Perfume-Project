@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useShop } from '../context/ShopContext';
 
 const perfumes = [
     {
@@ -11,6 +12,7 @@ const perfumes = [
         desc: 'An architectural study in contrasts. Crystalline obsidian micro-mist exploding upon mirror-wet basalt.',
         notes: ['Black Pepper', 'Smoky Vetiver', 'White Ambergris'],
         price: '₹310',
+        numericPrice: 310,
         image: '/images/perfume_noir_splash.jpg',
         glow: 'rgba(255, 255, 255, 0.14)',
     },
@@ -23,6 +25,7 @@ const perfumes = [
         desc: 'A nocturnal rush of cold mountain bergamot and molten amber resin splashing upon ancient volcanic cedar.',
         notes: ['Calabrian Bergamot', 'Tuscan Cedar', 'Liquid Amber'],
         price: '₹285',
+        numericPrice: 285,
         image: '/images/perfume_emerald_splash.jpg',
         glow: 'rgba(16, 185, 129, 0.18)',
     },
@@ -35,6 +38,7 @@ const perfumes = [
         desc: 'A regal eruption of smoked cardamom, scorched wild tonka, and sacred myrrh steeped in molten gold.',
         notes: ['Smoked Cardamom', 'Charred Wild Tonka', 'Sacred Myrrh'],
         price: '₹295',
+        numericPrice: 295,
         image: '/images/perfume_amber_splash.jpg',
         glow: 'rgba(245, 158, 11, 0.18)',
     },
@@ -47,17 +51,27 @@ const perfumes = [
         desc: 'Dawn-harvested Centifolia roses draped in crisp pink peppercorn and velvety cashmere woods.',
         notes: ['Damask Rose', 'Pink Peppercorn', 'Cashmere Woods'],
         price: '₹320',
+        numericPrice: 320,
         image: '/images/perfume_rose_splash.jpg',
         glow: 'rgba(225, 29, 72, 0.18)',
     },
 ];
 
-const HeroPage = () => {
+const HeroPage = ({ onExploreCollection }) => {
+    const { formatPrice } = useShop();
     const [current, setCurrent] = useState(0);
     const touchStart = useRef(0);
     const touchEnd = useRef(0);
 
     const active = perfumes[current];
+
+    const handleExplore = () => {
+        if (onExploreCollection) {
+            onExploreCollection();
+        } else {
+            window.location.hash = '#collection';
+        }
+    };
 
     // Auto-play interval: changes image and text every 5 seconds
     useEffect(() => {
@@ -82,7 +96,8 @@ const HeroPage = () => {
 
     return (
         <section
-            className="relative w-full bg-[#0a0a0c] text-white overflow-hidden py-10 lg:py-12 min-h-[500px] lg:h-[550px] flex items-center border-b border-white/[0.08]"
+            id="home"
+            className="relative w-full bg-[#0a0a0c] text-white overflow-hidden py-8 sm:py-10 lg:py-12 min-h-auto lg:h-[550px] flex items-center border-b border-white/[0.08]"
             onTouchStart={(e) => (touchStart.current = e.touches[0].clientX)}
             onTouchMove={(e) => (touchEnd.current = e.touches[0].clientX)}
             onTouchEnd={() => {
@@ -102,37 +117,37 @@ const HeroPage = () => {
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0a0a0c] via-transparent to-[#0a0a0c] opacity-60" />
 
             {/* Main Container — Aligned with Header Width */}
-            <div className="relative max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 w-full">
+            <div className="relative max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-14 xl:px-16 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
 
                     {/* Left Column: High-End Magazine Editorial Presentation (Smooth 5s luxury fade) */}
-                    <div key={active.id} className="lg:col-span-6 flex flex-col justify-center space-y-5 z-10 animate-luxury-fade">
+                    <div key={active.id} className="lg:col-span-6 flex flex-col justify-center space-y-4 sm:space-y-5 z-10 animate-luxury-fade">
 
                         {/* Edition Eyebrow */}
-                        <div className="flex items-center space-x-3 text-[11px] tracking-[0.28em] uppercase">
+                        <div className="flex items-center space-x-3 text-[10.5px] sm:text-[11px] tracking-[0.28em] uppercase">
                             <span className="font-mono text-amber-400 font-semibold">{active.num}</span>
                             <span className="w-1 h-1 rounded-full bg-neutral-600" />
                             <span className="text-neutral-400 font-medium tracking-[0.22em]">{active.edition}</span>
                         </div>
 
                         {/* Perfume Grand Title & Subtitle */}
-                        <div className="space-y-1.5">
-                            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-serif font-light tracking-[0.03em] text-white leading-[1.08]">
+                        <div className="space-y-1 sm:space-y-1.5">
+                            <h1 className="text-3xl sm:text-5xl lg:text-[56px] font-serif font-light tracking-[0.03em] text-white leading-[1.08]">
                                 {active.title}
                             </h1>
-                            <p className="text-[11px] sm:text-xs tracking-[0.28em] uppercase text-amber-300/80 font-medium pt-0.5">
+                            <p className="text-[10.5px] sm:text-xs tracking-[0.28em] uppercase text-amber-300/80 font-medium pt-0.5">
                                 {active.subtitle}
                             </p>
                         </div>
 
                         {/* Editorial Narrative Description (Clean, Readable, No Quotes) */}
-                        <p className="text-sm sm:text-[15px] font-sans font-light text-neutral-300 leading-relaxed max-w-lg tracking-wide">
+                        <p className="text-xs sm:text-sm lg:text-[15px] font-sans font-light text-neutral-300 leading-relaxed max-w-lg tracking-wide">
                             {active.desc}
                         </p>
 
                         {/* Structured Olfactory Notes Block */}
-                        <div className="pt-3.5 pb-1 border-t border-white/10 max-w-lg space-y-1.5">
-                            <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-400 font-medium">
+                        <div className="pt-3 pb-1 border-t border-white/10 max-w-lg space-y-1">
+                            <p className="text-[9.5px] sm:text-[10px] uppercase tracking-[0.25em] text-neutral-400 font-medium">
                                 Key Olfactory Notes
                             </p>
                             <p className="text-xs sm:text-[13px] text-neutral-200 font-light tracking-wide">
@@ -141,20 +156,22 @@ const HeroPage = () => {
                         </div>
 
                         {/* Haute Actions */}
-                        <div className="pt-2 flex items-center gap-4 flex-wrap">
+                        <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                             <button
-                                className="px-8 py-3.5 bg-white text-black hover:bg-neutral-200 transition-all duration-300 rounded-full text-xs uppercase tracking-[0.22em] font-medium flex items-center space-x-2.5 shadow-[0_4px_25px_rgba(255,255,255,0.15)] active:scale-95"
+                                onClick={handleExplore}
+                                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 bg-white text-black hover:bg-neutral-200 transition-all duration-300 rounded-full text-xs uppercase tracking-[0.22em] font-medium flex items-center justify-center space-x-2.5 shadow-[0_4px_25px_rgba(255,255,255,0.15)] active:scale-95 cursor-pointer"
                             >
                                 <span>Acquire Flacon</span>
                                 <span className="opacity-30">•</span>
-                                <span>{active.price}</span>
+                                <span>{formatPrice(active.numericPrice || active.price)}</span>
                                 <ArrowRight size={13} className="ml-1" />
                             </button>
 
                             <button
-                                className="px-7 py-3.5 border border-white/20 hover:border-white/50 text-neutral-300 hover:text-white bg-white/[0.02] backdrop-blur-sm transition-all duration-300 rounded-full text-xs uppercase tracking-[0.22em] font-medium active:scale-95"
+                                onClick={handleExplore}
+                                className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 border border-white/20 hover:border-white/50 text-neutral-300 hover:text-white bg-white/[0.02] backdrop-blur-sm transition-all duration-300 rounded-full text-xs uppercase tracking-[0.22em] font-medium flex items-center justify-center active:scale-95 cursor-pointer"
                             >
-                                Discover Accord
+                                Explore Collection
                             </button>
                         </div>
 

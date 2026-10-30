@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="wbg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1e1e24"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </radialGradient>
+    <linearGradient id="wleather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1e"/>
+      <stop offset="50%" stop-color="#2a2a32"/>
+      <stop offset="100%" stop-color="#141417"/>
+    </linearGradient>
+    <linearGradient id="wgold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d77f"/>
+      <stop offset="60%" stop-color="#c99c47"/>
+      <stop offset="100%" stop-color="#805b19"/>
+    </linearGradient>
+    <filter id="wshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#wbg)"/>
+  <!-- Wallet Body Bifold -->
+  <g filter="url(#wshadow)" transform="translate(160, 240)">
+    <!-- Back Leaf -->
+    <rect x="0" y="0" width="480" height="340" rx="20" fill="url(#wleather)" stroke="#3f3f46" stroke-width="2"/>
+    <!-- Stitching -->
+    <rect x="12" y="12" width="456" height="316" rx="14" fill="none" stroke="#71717a" stroke-width="1.8" stroke-dasharray="5 5"/>
+    <!-- Center Spine Fold -->
+    <line x1="240" y1="0" x2="240" y2="340" stroke="#09090b" stroke-width="5"/>
+    <line x1="242" y1="0" x2="242" y2="340" stroke="#3f3f46" stroke-width="1.5"/>
+    <!-- Card Pockets Left -->
+    <path d="M 20 120 L 220 120" stroke="#3f3f46" stroke-width="2"/>
+    <path d="M 20 180 L 220 180" stroke="#3f3f46" stroke-width="2"/>
+    <path d="M 20 240 L 220 240" stroke="#3f3f46" stroke-width="2"/>
+    <!-- Card Pockets Right -->
+    <path d="M 260 120 L 460 120" stroke="#3f3f46" stroke-width="2"/>
+    <path d="M 260 180 L 460 180" stroke="#3f3f46" stroke-width="2"/>
+    <path d="M 260 240 L 460 240" stroke="#3f3f46" stroke-width="2"/>
+    <!-- Gold Embossed Logo -->
+    <text x="360" y="295" font-family="'Times New Roman', serif" font-size="18" letter-spacing="0.25em" fill="url(#wgold)" text-anchor="middle" font-weight="bold">COAG PARIS</text>
+  </g>
+  <text x="400" y="740" font-family="'Times New Roman', serif" font-size="28" letter-spacing="0.3em" fill="#f4f4f5" text-anchor="middle" font-weight="bold">PORTEFEUILLE BIFOLD</text>
+  <text x="400" y="775" font-family="'Segoe UI', sans-serif" font-size="13" letter-spacing="0.4em" fill="#d4af37" text-anchor="middle">FRENCH CALFSKIN LEATHER WALLET</text>
+  <text x="400" y="805" font-family="'Segoe UI', sans-serif" font-size="11" letter-spacing="0.25em" fill="#71717a" text-anchor="middle">8 CARD SLOTS • RFID SHIELDED • DUAL CASH SLEEVE</text>
+</svg>

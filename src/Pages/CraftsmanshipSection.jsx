@@ -105,6 +105,7 @@ const CraftsmanshipSection = () => {
 
   return (
     <section
+      id="craftsmanship"
       className="relative w-full bg-gradient-to-r from-black via-[#060609] to-[#0e0e14] text-white overflow-hidden border-b border-white/10 select-none"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -209,17 +210,17 @@ const CraftsmanshipSection = () => {
             </div>
 
             {/* Interactive Toggle with Integrated Progress Bar */}
-            <div className="flex items-center space-x-2 bg-black/80 backdrop-blur-md p-1.5 rounded-full border border-white/15 shadow-2xl">
+            <div className="flex items-center space-x-1.5 sm:space-x-2 bg-black/80 backdrop-blur-md p-1 sm:p-1.5 rounded-full border border-white/15 shadow-2xl max-w-full overflow-hidden">
 
               {/* Tab 01: Gold Mist */}
               <button
                 onClick={() => handleSelectTab(0)}
-                className={`relative overflow-hidden px-4 py-1.5 rounded-full text-[10px] sm:text-[11px] font-mono tracking-widest uppercase font-bold transition-all duration-300 ${activeSpray === 0
+                className={`relative overflow-hidden px-2.5 sm:px-4 py-1.5 rounded-full text-[9px] sm:text-[11px] font-mono tracking-wider sm:tracking-widest uppercase font-bold transition-all duration-300 ${activeSpray === 0
                   ? 'bg-amber-400 text-black shadow-[0_0_25px_rgba(251,191,36,0.5)] scale-102'
                   : 'text-neutral-400 hover:text-white hover:bg-white/5'
                   }`}
               >
-                <span className="relative z-10 flex items-center space-x-1.5">
+                <span className="relative z-10 flex items-center space-x-1 sm:space-x-1.5">
                   <Sparkles size={11} className={activeSpray === 0 ? 'text-black' : 'text-neutral-400'} />
                   <span>01 • GOLD MIST</span>
                 </span>
@@ -234,12 +235,12 @@ const CraftsmanshipSection = () => {
               {/* Tab 02: Obsidian Splash */}
               <button
                 onClick={() => handleSelectTab(1)}
-                className={`relative overflow-hidden px-4 py-1.5 rounded-full text-[10px] sm:text-[11px] font-mono tracking-widest uppercase font-bold transition-all duration-300 ${activeSpray === 1
+                className={`relative overflow-hidden px-2.5 sm:px-4 py-1.5 rounded-full text-[9px] sm:text-[11px] font-mono tracking-wider sm:tracking-widest uppercase font-bold transition-all duration-300 ${activeSpray === 1
                   ? 'bg-sky-400 text-black shadow-[0_0_25px_rgba(56,189,248,0.5)] scale-102'
                   : 'text-neutral-400 hover:text-white hover:bg-white/5'
                   }`}
               >
-                <span className="relative z-10 flex items-center space-x-1.5">
+                <span className="relative z-10 flex items-center space-x-1 sm:space-x-1.5">
                   <Wind size={11} className={activeSpray === 1 ? 'text-black' : 'text-neutral-400'} />
                   <span>02 • OBSIDIAN SPLASH</span>
                 </span>

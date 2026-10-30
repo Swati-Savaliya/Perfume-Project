@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        sans: ['"Montserrat"', 'sans-serif'],
+        calibri: ['"Calibri"', '"Carlito"', '"Candara"', '"Segoe UI"', 'sans-serif'],
+        cinzel: ['"Calibri"', '"Carlito"', '"Candara"', '"Segoe UI"', 'sans-serif'],
+        playfair: ['"Calibri"', '"Carlito"', '"Candara"', '"Segoe UI"', 'sans-serif'],
+        cormorant: ['"Calibri"', '"Carlito"', '"Candara"', '"Segoe UI"', 'sans-serif'],
+        serif: ['"Calibri"', '"Carlito"', '"Candara"', '"Segoe UI"', 'sans-serif'],
+        sans: ['"Calibri"', '"Carlito"', '"Candara"', '"Segoe UI"', 'sans-serif'],
+        mono: ['"Calibri"', '"Carlito"', '"Candara"', '"Segoe UI"', 'sans-serif'],
       },
       letterSpacing: {
         widest: '0.22em',
