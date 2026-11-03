@@ -80,7 +80,7 @@ const CurrencyDropdown = ({ variant = 'light' }) => {
                     </span>
                     <div className="flex flex-col">
                       <span className="text-xs font-semibold leading-tight text-neutral-900">
-                        {c.code === 'INR' ? 'INR' : c.fullName}
+                        {c.fullName || c.name}
                       </span>
                       <span className="text-[10px] text-neutral-400 font-mono mt-0.5">
                         {c.symbol} • {c.name}

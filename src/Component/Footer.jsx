@@ -55,7 +55,7 @@ const socialChannels = [
     { name: 'Facebook', href: 'https://facebook.com', icon: <FacebookIcon className="w-4 h-4" /> },
     { name: 'YouTube', href: 'https://youtube.com', icon: <YoutubeIcon className="w-4 h-4" /> },
     { name: 'X (Twitter)', href: 'https://twitter.com', icon: <XTwitterIcon className="w-3.5 h-3.5" /> },
-    { name: 'WhatsApp', href: 'https://wa.me/916356539666?text=Hello%20COAG%20Perfumes%2C%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20perfumes.', icon: <WhatsAppIcon className="w-4 h-4 text-emerald-400" /> },
+    { name: 'WhatsApp', href: 'https://wa.me/919664506049?text=Hello%20COAG%20Perfumes%2C%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20perfumes.', icon: <WhatsAppIcon className="w-4 h-4 text-emerald-400" /> },
 ];
 
 const quickNavLinks = [

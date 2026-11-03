@@ -2,24 +2,27 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ShopContext = createContext();
 
-const WHATSAPP_NUMBER = '7203060213';
+const WHATSAPP_NUMBER = '9664506049';
 
 export const CURRENCIES = [
-  { code: 'INR', name: 'Indian Rupee', label: 'INR', fullName: 'INR', countryCode: 'IN', flag: '🇮🇳', symbol: '₹', rate: 1 },
-  { code: 'USD', name: 'US Dollar', label: 'USD', fullName: 'US Dollar (USD)', countryCode: 'US', flag: '🇺🇸', symbol: '$', rate: 0.012 },
   { code: 'EUR', name: 'Euro', label: 'EUR', fullName: 'Euro (EUR)', countryCode: 'EU', flag: '🇪🇺', symbol: '€', rate: 0.011 },
+  { code: 'USD', name: 'US Dollar', label: 'USD', fullName: 'US Dollar (USD)', countryCode: 'US', flag: '🇺🇸', symbol: '$', rate: 0.012 },
   { code: 'GBP', name: 'British Pound', label: 'GBP', fullName: 'British Pound (GBP)', countryCode: 'GB', flag: '🇬🇧', symbol: '£', rate: 0.0094 },
+  { code: 'INR', name: 'Indian Rupee', label: 'INR', fullName: 'Indian Rupee (INR)', countryCode: 'IN', flag: '🇮🇳', symbol: '₹', rate: 1 },
+  { code: 'AED', name: 'UAE Dirham', label: 'AED', fullName: 'UAE Dirham (AED)', countryCode: 'AE', flag: '🇦🇪', symbol: 'AED', rate: 0.044 },
   { code: 'JPY', name: 'Japanese Yen', label: 'JPY', fullName: 'Japanese Yen (JPY)', countryCode: 'JP', flag: '🇯🇵', symbol: '¥', rate: 1.82 },
   { code: 'CHF', name: 'Swiss Franc', label: 'CHF', fullName: 'Swiss Franc (CHF)', countryCode: 'CH', flag: '🇨🇭', symbol: 'CHF', rate: 0.0105 }
 ];
 
 export const ShopProvider = ({ children }) => {
-  // Currency state persisted in localStorage
+  // Currency state persisted in localStorage (Default EUR)
   const [currency, setCurrency] = useState(() => {
     try {
-      return localStorage.getItem('coag_currency') || 'INR';
+      const saved = localStorage.getItem('coag_currency_user_selected');
+      if (saved) return saved;
+      return 'EUR';
     } catch {
-      return 'INR';
+      return 'EUR';
     }
   });
 
@@ -62,6 +65,7 @@ export const ShopProvider = ({ children }) => {
   useEffect(() => {
     try {
       localStorage.setItem('coag_currency', currency);
+      localStorage.setItem('coag_currency_user_selected', currency);
     } catch (e) {
       console.error(e);
     }
@@ -100,11 +104,15 @@ export const ShopProvider = ({ children }) => {
     }
     if (current.code === 'EUR') {
       const converted = num * current.rate;
-      return `€${converted.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      return `€${converted.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     }
     if (current.code === 'GBP') {
       const converted = num * current.rate;
       return `£${converted.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    }
+    if (current.code === 'AED') {
+      const converted = num * current.rate;
+      return `AED ${converted.toLocaleString('en-AE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     }
     if (current.code === 'JPY') {
       const converted = Math.round(num * current.rate);
@@ -221,7 +229,7 @@ export const ShopProvider = ({ children }) => {
   // Computed values
   const wishlistCount = wishlist.length;
   const cartCount = cart.reduce((total, item) => total + (item.quantity || 1), 0);
-  
+
   const cartSubtotal = cart.reduce((total, item) => {
     const rawPrice = item.product.numericPrice ||
       parseInt(String(item.product.price).replace(/[^0-9]/g, ''), 10) || 0;

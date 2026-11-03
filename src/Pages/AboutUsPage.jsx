@@ -26,7 +26,7 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
   </svg>
 );
 
-const WHATSAPP_NUMBER = '7203060213';
+const WHATSAPP_NUMBER = '9664506049';
 
 const stats = [
   { value: '35%', label: 'Pure Extrait', desc: '24-Hour Sillage' },
@@ -143,7 +143,7 @@ const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
           ======================================================== */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left: Clean Visual Preview */}
           <div className="md:col-span-5 relative rounded-2xl overflow-hidden shadow-lg border border-black/10 aspect-[4/4] bg-neutral-900 group">
             <img
@@ -198,7 +198,7 @@ const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
           ======================================================== */}
       <section className="bg-white py-14 sm:py-16 border-y border-neutral-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          
+
           <div className="text-center max-w-xl mx-auto space-y-1.5">
             <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-amber-600 block">
               Standards
@@ -288,7 +288,7 @@ const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
               className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white transition-all text-xs uppercase tracking-[0.16em] font-bold shadow-md cursor-pointer flex items-center justify-center space-x-2 active:scale-95"
             >
               <WhatsAppIcon className="w-4 h-4 fill-white" />
-              <span>WhatsApp Concierge (7203060213)</span>
+              <span>WhatsApp Concierge (9664506049)</span>
             </button>
           </div>
         </div>

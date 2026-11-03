@@ -4,56 +4,56 @@ import { useShop } from '../context/ShopContext';
 
 const perfumes = [
     {
-        id: 'noir-absolu',
-        num: '01',
-        edition: 'ÉDITION NOIR & MINÉRAL',
-        title: 'NOIR ABSOLU',
-        subtitle: 'Extrait de Parfum • 100 ML / 3.4 FL. OZ.',
-        desc: 'An architectural study in contrasts. Crystalline obsidian micro-mist exploding upon mirror-wet basalt.',
-        notes: ['Black Pepper', 'Smoky Vetiver', 'White Ambergris'],
-        price: '₹310',
-        numericPrice: 310,
-        image: '/images/perfume_noir_splash.jpg',
-        glow: 'rgba(255, 255, 255, 0.14)',
-    },
-    {
         id: 'emeraude-noir',
-        num: '02',
-        edition: 'SIGNATURE FOREST ESSENCE',
-        title: 'ÉMERAUDE NOIR',
-        subtitle: 'Extrait de Parfum • 100 ML / 3.4 FL. OZ.',
-        desc: 'A nocturnal rush of cold mountain bergamot and molten amber resin splashing upon ancient volcanic cedar.',
-        notes: ['Calabrian Bergamot', 'Tuscan Cedar', 'Liquid Amber'],
-        price: '₹285',
-        numericPrice: 285,
-        image: '/images/perfume_emerald_splash.jpg',
-        glow: 'rgba(16, 185, 129, 0.18)',
+        num: '01',
+        edition: 'ÉDITION ROYALE SIGNATURE',
+        title: 'COAG THE KING',
+        subtitle: 'Eau de Parfum • 50 ML / 1.7 FL. OZ.',
+        desc: 'A nocturnal rush of cold mountain bergamot and molten amber resin splashing upon ancient volcanic cedar. Clean, crisp, and commanding for office meetings and champion distinction.',
+        notes: ['Calabrian Bergamot', 'Tuscan Cedar', 'Golden Amber'],
+        price: '₹999',
+        numericPrice: 999,
+        image: '/images/perfume_coag_king_floral_studio.jpg',
+        glow: 'rgba(255, 255, 255, 0.16)',
     },
     {
         id: 'ambre-imperial',
-        num: '03',
-        edition: 'COLLECTION ORIENTALE',
-        title: 'AMBRE IMPÉRIAL',
-        subtitle: 'Extrait de Parfum • 100 ML / 3.4 FL. OZ.',
-        desc: 'A regal eruption of smoked cardamom, scorched wild tonka, and sacred myrrh steeped in molten gold.',
-        notes: ['Smoked Cardamom', 'Charred Wild Tonka', 'Sacred Myrrh'],
-        price: '₹295',
-        numericPrice: 295,
-        image: '/images/perfume_amber_splash.jpg',
-        glow: 'rgba(245, 158, 11, 0.18)',
+        num: '02',
+        edition: 'MAJESTÉ ORIENTALE & FLORALE',
+        title: 'COAG THE QUEEN',
+        subtitle: 'Eau de Parfum • 50 ML / 1.7 FL. OZ.',
+        desc: 'A regal eruption of smoked cardamom, scorched wild tonka, and sacred myrrh steeped in molten gold. Rich oriental warmth tailored for intimate date nights and unforgettable clubbing.',
+        notes: ['Smoked Cardamom', 'Charred Tonka', 'Sacred Myrrh'],
+        price: '₹799',
+        numericPrice: 799,
+        image: '/images/perfume_coag_cylindrical_pink_white.jpg',
+        glow: 'rgba(244, 114, 182, 0.22)',
     },
     {
         id: 'rose-eternelle',
+        num: '03',
+        edition: 'TRAVERTINE & WHITE FLORAL',
+        title: 'COAG THE LAGACY',
+        subtitle: 'Eau de Parfum • 50 ML / 1.7 FL. OZ.',
+        desc: 'An iconic porcelain-white flacon crowned with polished gold and satin black. Dawn gardenias, crystalline amber, and velvety cashmere on a natural travertine plinth for timeless distinction.',
+        notes: ['White Gardenia', 'Golden Amber', 'Cashmere Woods'],
+        price: '₹1,199',
+        numericPrice: 1199,
+        image: '/images/perfume_coag_lagacy_creative.jpg',
+        glow: 'rgba(245, 158, 11, 0.20)',
+    },
+    {
+        id: 'coag-antique',
         num: '04',
-        edition: 'MAJESTÉ FLORALE',
-        title: 'ROSE ÉTERNELLE',
-        subtitle: 'Extrait de Parfum • 100 ML / 3.4 FL. OZ.',
-        desc: 'Dawn-harvested Centifolia roses draped in crisp pink peppercorn and velvety cashmere woods.',
-        notes: ['Damask Rose', 'Pink Peppercorn', 'Cashmere Woods'],
-        price: '₹320',
-        numericPrice: 320,
-        image: '/images/perfume_rose_splash.jpg',
-        glow: 'rgba(225, 29, 72, 0.18)',
+        edition: 'HERITAGE ENGLISH ROSES',
+        title: 'COAG THE ANTIQUE',
+        subtitle: 'Eau de Parfum • 50 ML / 1.7 FL. OZ.',
+        desc: 'An iconic antique porcelain-white flacon crowned with polished gold and satin black, poised gracefully on a classical pedestal surrounded by blooming antique English garden roses and blush peonies.',
+        notes: ['Antique English Rose', 'Blush Peony', 'Royal Amber'],
+        price: '₹1,249',
+        numericPrice: 1249,
+        image: '/images/perfume_coag_antique_roses.jpg',
+        glow: 'rgba(225, 29, 72, 0.22)',
     },
 ];
 
@@ -97,7 +97,7 @@ const HeroPage = ({ onExploreCollection }) => {
     return (
         <section
             id="home"
-            className="relative w-full bg-[#0a0a0c] text-white overflow-hidden py-8 sm:py-10 lg:py-12 min-h-auto lg:h-[550px] flex items-center border-b border-white/[0.08]"
+            className="relative w-full bg-[#0a0a0c] text-white overflow-hidden py-8 sm:py-10 lg:py-12 min-h-auto lg:min-h-[580px] flex items-center border-b border-white/[0.08]"
             onTouchStart={(e) => (touchStart.current = e.touches[0].clientX)}
             onTouchMove={(e) => (touchEnd.current = e.touches[0].clientX)}
             onTouchEnd={() => {
@@ -132,7 +132,7 @@ const HeroPage = ({ onExploreCollection }) => {
 
                         {/* Perfume Grand Title & Subtitle */}
                         <div className="space-y-1 sm:space-y-1.5">
-                            <h1 className="text-3xl sm:text-5xl lg:text-[56px] font-serif font-light tracking-[0.03em] text-white leading-[1.08]">
+                            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-serif font-light tracking-[0.03em] text-white leading-[1.08]">
                                 {active.title}
                             </h1>
                             <p className="text-[10.5px] sm:text-xs tracking-[0.28em] uppercase text-amber-300/80 font-medium pt-0.5">
@@ -177,7 +177,7 @@ const HeroPage = ({ onExploreCollection }) => {
 
                     </div>
 
-                    {/* Right Column: Pure Haute Flacon Hero Visual */}
+                    {/* Right Column: Pure Haute Flacon Hero Visual & Quick Switcher */}
                     <div className="lg:col-span-6 relative flex flex-col items-center justify-center">
 
                         {/* Ambient Backlight Spotlight */}
@@ -186,8 +186,8 @@ const HeroPage = ({ onExploreCollection }) => {
                             style={{ backgroundColor: active.glow }}
                         />
 
-                        {/* Clean Hero Artwork Canvas (Uncluttered, No Overlay Bars) */}
-                        <div className="relative w-full max-w-[600px] aspect-[16/11] rounded-2xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] border border-white/10 bg-black group">
+                        {/* Clean Hero Artwork Canvas */}
+                        <div className="relative w-full max-w-[460px] aspect-[4/5] rounded-2xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] border border-white/10 bg-black group">
                             <img
                                 key={active.id}
                                 src={active.image}
@@ -196,7 +196,41 @@ const HeroPage = ({ onExploreCollection }) => {
                             />
 
                             {/* Subtle Edge Vignette to blend with deep background */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/15 pointer-events-none" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/15 pointer-events-none" />
+
+                            {/* Active badge overlay at bottom right of image */}
+                            <div className="absolute bottom-3.5 right-3.5 px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-[10px] font-mono tracking-widest text-amber-300">
+                                {active.num} / 04
+                            </div>
+                        </div>
+
+                        {/* 4 Interactive Switcher Thumbnails below image */}
+                        <div className="flex items-center justify-center space-x-2 sm:space-x-2.5 pt-4 z-10 w-full max-w-[460px]">
+                            {perfumes.map((p, idx) => (
+                                <button
+                                    key={p.id}
+                                    onClick={() => setCurrent(idx)}
+                                    className={`group flex-1 flex items-center justify-center space-x-1.5 sm:space-x-2 py-1.5 px-2 rounded-xl border transition-all cursor-pointer ${
+                                        current === idx
+                                            ? 'border-amber-400 bg-amber-400/10 shadow-[0_0_15px_rgba(251,191,36,0.25)]'
+                                            : 'border-white/10 bg-black/40 hover:border-white/30 text-neutral-400 hover:text-white'
+                                    }`}
+                                    title={p.title}
+                                >
+                                    <img
+                                        src={p.image}
+                                        alt={p.title}
+                                        className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg object-cover border transition-all ${
+                                            current === idx ? 'border-amber-400' : 'border-white/10 group-hover:border-white/30'
+                                        }`}
+                                    />
+                                    <span className={`text-[9.5px] uppercase font-bold tracking-wider hidden sm:inline ${
+                                        current === idx ? 'text-amber-300' : 'text-neutral-400'
+                                    }`}>
+                                        {p.title.replace('COAG THE ', '').replace('COAG ', '')}
+                                    </span>
+                                </button>
+                            ))}
                         </div>
                     </div>
 

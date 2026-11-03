@@ -27,7 +27,7 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
   </svg>
 );
 
-const WHATSAPP_NUMBER = '7203060213';
+const WHATSAPP_NUMBER = '9664506049';
 
 const vipPerks = [
   {
@@ -205,7 +205,7 @@ const ContactPage = ({ onNavigateHome }) => {
                 <CheckCircle2 size={28} className="mx-auto text-emerald-600" />
                 <h3 className="text-sm font-bold text-emerald-900">Inquiry Sent via WhatsApp!</h3>
                 <p className="text-xs text-emerald-700">
-                  Our private client concierge will assist you shortly on +91 7203060213.
+                  Our private client concierge will assist you shortly on +91 9664506049.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
