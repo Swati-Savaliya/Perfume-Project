@@ -66,10 +66,10 @@ const quickNavLinks = [
 ];
 
 const collectionsList = [
-    { name: 'Emeraude Noir', badge: 'Cold Bergamot & Cedar', href: '#collection' },
-    { name: 'Amber Imperial', badge: 'Smoked Tonka & Myrrh', href: '#collection' },
-    { name: 'Eternal Rose', badge: 'Fresh French Centifolia', href: '#collection' },
-    { name: 'Absolute Black', badge: 'Volcanic Basalt Mineral', href: '#collection' },
+    { name: 'COAG The King', badge: 'Bergamot & Tuscan Cedar', href: '#collection' },
+    { name: 'COAG The Queen', badge: 'Smoked Tonka & Sacred Myrrh', href: '#collection' },
+    { name: 'COAG The Lagacy', badge: 'White Gardenia & Cashmere', href: '#collection' },
+    { name: 'COAG The Antique', badge: 'Antique Rose & Royal Amber', href: '#collection' },
 ];
 
 const Footer = ({ onNavigate }) => {
@@ -177,15 +177,12 @@ const Footer = ({ onNavigate }) => {
                         </ul>
                     </div>
 
-                    {/* Column 3: Boutiques & Concierge */}
+                    {/* Column 3: Connect & Social Channels */}
                     <div className="space-y-3.5">
                         <h4 className="text-sm sm:text-[15px] uppercase tracking-[0.2em] text-amber-300 font-bold">
-                            Locations & Concierge
+                            Connect With Us
                         </h4>
-                        <p className="text-sm sm:text-[15px] text-neutral-200 leading-relaxed font-normal">
-                            Flagship salons in <span className="text-white font-semibold">Paris</span>, <span className="text-white font-semibold">Grasse</span>, <span className="text-white font-semibold">Mumbai</span>, and <span className="text-white font-semibold">London</span>.
-                        </p>
-                        <div className="pt-2 flex items-center gap-3 flex-wrap">
+                        <div className="pt-1 flex items-center gap-3 flex-wrap">
                             {socialChannels.map((s) => (
                                 <a
                                     key={s.name}
@@ -230,22 +227,7 @@ const Footer = ({ onNavigate }) => {
                     </div>
                 </div>
 
-                {/* Center: Developed By Swati with Direct WhatsApp Inquiry (Hidden Mobile Number) */}
-                <div className="flex items-center justify-center">
-                    <a
-                        href="https://wa.me/916356539666?text=Hello%20Swati%2C%20I%20saw%20your%20perfume%20website%20and%20would%20like%20to%20inquire%20regarding%20website%20design%20and%20development."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-2.5 px-4.5 py-1.5 rounded-full bg-gradient-to-r from-amber-500/10 via-white/5 to-amber-500/10 hover:from-amber-500/20 hover:to-amber-500/20 border border-amber-400/30 hover:border-amber-400 text-neutral-200 hover:text-white transition-all duration-300 shadow-sm hover:shadow-amber-500/20 active:scale-95 cursor-pointer"
-                        title="Chat with Swati on WhatsApp for website inquiry"
-                    >
-                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-                        <span className="text-xs sm:text-sm tracking-wider">
-                            Developed By <span className="font-semibold text-amber-300 group-hover:underline underline-offset-4 decoration-amber-400">Swati</span>
-                        </span>
-                        <WhatsAppIcon className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform shrink-0 ml-0.5" />
-                    </a>
-                </div>
+
             </div>
         </footer>
     );

@@ -16,48 +16,50 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
     </svg>
 );
 
+const WHATSAPP_NUMBER = '9664506049';
+
 const territories = [
     {
         id: 'boise',
         num: '01',
-        title: 'Boisé Noir',
-        family: 'WOODS & BASALT',
-        notes: 'Cambodian Oud • Volcanic Cedar • Ambergris',
-        price: '₹8,499',
-        numericPrice: 8499,
+        title: 'COAG Noir Absolu',
+        family: 'DARK SMOKY BALSAM SPRAY',
+        notes: 'Smoldering Birch Tar • Black Pepper • Madagascar Vanilla',
+        price: '₹1,149',
+        numericPrice: 1149,
         image: '/images/perfume_noir_splash.jpg',
         glow: 'rgba(56, 189, 248, 0.25)'
     },
     {
         id: 'ambre',
         num: '02',
-        title: 'Ambre Royal',
-        family: 'MOLTEN GOLD',
-        notes: 'Sacred Myrrh • Wild Tonka • Spiced Cardamom',
-        price: '₹9,299',
-        numericPrice: 9299,
+        title: 'COAG The Queen',
+        family: 'WARM ORIENTAL AMBER SPRAY',
+        notes: 'Smoked Cardamom • Charred Tonka • Sacred Myrrh',
+        price: '₹799',
+        numericPrice: 799,
         image: '/images/perfume_amber_splash.jpg',
         glow: 'rgba(245, 158, 11, 0.3)'
     },
     {
         id: 'rose',
         num: '03',
-        title: 'Rose Majesté',
-        family: 'GRASSE CENTIFOLIA',
-        notes: 'Grasse Rose Petals • Pink Pepper • Cashmere Wood',
-        price: '₹7,899',
-        numericPrice: 7899,
+        title: 'COAG Rose Éternelle',
+        family: 'GRASSE ROSE & CASHMERE SPRAY',
+        notes: 'Dewy Grasse Rose Petals • Pink Pepper • Cashmere Wood',
+        price: '₹1,199',
+        numericPrice: 1199,
         image: '/images/perfume_rose_splash.jpg',
         glow: 'rgba(244, 63, 94, 0.25)'
     },
     {
         id: 'eclat',
         num: '04',
-        title: 'Éclat Solaire',
-        family: 'SOLAR JASMINE',
-        notes: 'Solar Jasmine • Liquid Honey • Mysore Sandalwood',
-        price: '₹8,199',
-        numericPrice: 8199,
+        title: "COAG L'Or Solaire",
+        family: 'GILDED AMBER OUD SPRAY',
+        notes: 'Solar Golden Amber • Kashmiri Saffron • Royal Oud',
+        price: '₹1,249',
+        numericPrice: 1249,
         image: '/images/perfume_gold_splash.jpg',
         glow: 'rgba(234, 179, 8, 0.3)'
     }
@@ -80,15 +82,15 @@ const OlfactoryTerritories = () => {
                 <div className="text-center max-w-xl mx-auto space-y-2 mb-8">
                     <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-[10px] font-sans uppercase tracking-[0.25em] font-semibold backdrop-blur-md">
                         <Sparkles className="w-3 h-3 text-amber-400" />
-                        <span>Four Fragrance Worlds</span>
+                        <span>COAG Four Fragrance Realms</span>
                     </div>
 
                     <h2 className="text-3xl sm:text-4xl font-cinzel tracking-wider text-white font-medium">
-                        Four Fragrance <span className="font-playfair italic font-normal bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 bg-clip-text text-transparent">Worlds</span>
+                        Four <span className="font-playfair italic font-normal bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 bg-clip-text text-transparent">COAG Fragrance</span> Worlds
                     </h2>
 
                     <p className="text-neutral-400 text-xs font-sans tracking-wide font-light">
-                        Select a world to explore its pure perfume essence.
+                        Select a COAG world to explore its 35% pure perfume spray essence.
                     </p>
                 </div>
 
@@ -97,8 +99,8 @@ const OlfactoryTerritories = () => {
                     {territories.map((t, idx) => {
                         const isActive = activeIndex === idx;
                         const formattedPrice = formatPrice(t.numericPrice || t.price);
-                        const whatsappUrl = `https://wa.me/919999999999?text=${encodeURIComponent(
-                            `Hello, I would like to order ${t.title} (${formattedPrice}, 50ml Extrait de Parfum).`
+                        const whatsappUrl = `https://wa.me/91${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                            `Hello COAG Parfums, I would like to order ${t.title} (${formattedPrice}, 35% Pure Extrait Spray • 50ml).`
                         )}`;
 
                         return (
@@ -137,7 +139,7 @@ const OlfactoryTerritories = () => {
                                         <span className="font-cinzel text-xs tracking-widest text-amber-400 font-bold bg-black/40 px-2 py-0.5 rounded-full border border-white/10">
                                             {t.num}
                                         </span>
-                                        <div className="font-cinzel text-sm lg:text-base text-white font-medium tracking-widest lg:[writing-mode:vertical-rl] lg:rotate-180 uppercase">
+                                        <div className="font-cinzel text-xs lg:text-sm text-white font-medium tracking-widest lg:[writing-mode:vertical-rl] lg:rotate-180 uppercase whitespace-nowrap">
                                             {t.title}
                                         </div>
                                         <span className="hidden lg:block text-xs text-white/40">✦</span>
@@ -153,7 +155,7 @@ const OlfactoryTerritories = () => {
                                                 REALM {t.num}
                                             </span>
                                             <span className="font-sans text-[10px] uppercase tracking-widest text-amber-300 font-semibold">
-                                                35% Pure Perfume
+                                                COAG 35% Extrait Spray
                                             </span>
                                         </div>
 

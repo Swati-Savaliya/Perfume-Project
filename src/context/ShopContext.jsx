@@ -15,16 +15,18 @@ export const CURRENCIES = [
 ];
 
 export const ShopProvider = ({ children }) => {
-  // Currency state persisted in localStorage (Default EUR)
-  const [currency, setCurrency] = useState(() => {
+  // Always default to EUR on initial load and page refresh
+  const [currency, setCurrency] = useState('EUR');
+
+  // Clear any old stored currency so refresh always defaults to EUR
+  useEffect(() => {
     try {
-      const saved = localStorage.getItem('coag_currency_user_selected');
-      if (saved) return saved;
-      return 'EUR';
+      localStorage.removeItem('coag_currency');
+      localStorage.removeItem('coag_currency_user_selected');
     } catch {
-      return 'EUR';
+      // ignore
     }
-  });
+  }, []);
 
   // Wishlist state persisted in localStorage
   const [wishlist, setWishlist] = useState(() => {
@@ -61,15 +63,7 @@ export const ShopProvider = ({ children }) => {
     setToast(null);
   };
 
-  // Sync to localStorage
-  useEffect(() => {
-    try {
-      localStorage.setItem('coag_currency', currency);
-      localStorage.setItem('coag_currency_user_selected', currency);
-    } catch (e) {
-      console.error(e);
-    }
-  }, [currency]);
+  // Sync wishlist & cart to localStorage (Currency deliberately not stored so refresh always defaults to EUR)
 
   useEffect(() => {
     try {
@@ -247,7 +241,7 @@ export const ShopProvider = ({ children }) => {
         `   Qty: ${item.quantity} × ${formattedItemPrice}%0A`;
     }).join('%0A');
 
-    const message = `*✨ New Order Request - Maison COAG*%0A%0A` +
+    const message = `*✨ New Order Request - COAG Luxury Parfums*%0A%0A` +
       `*Items in Shopping Bag:*%0A` +
       `${itemsSummary}%0A` +
       `*Total Estimated Value:* ${formatPrice(cartSubtotal)} (${currency})%0A` +

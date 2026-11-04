@@ -4,10 +4,8 @@ import {
   Clock,
   ArrowRight,
   ArrowLeft,
-  MapPin,
   Droplets,
-  Layers,
-  HeartHandshake,
+  Wind,
   CheckCircle2,
   ShieldCheck
 } from 'lucide-react';
@@ -31,45 +29,50 @@ const WHATSAPP_NUMBER = '9664506049';
 const stats = [
   { value: '35%', label: 'Pure Extrait', desc: '24-Hour Sillage' },
   { value: '90 Days', label: 'Slow Aging', desc: 'Cold Vault Maceration' },
-  { value: '100%', label: 'Tuscan Leather', desc: 'Handcrafted Calfskin' },
-  { value: '4 Salons', label: 'Global Suites', desc: 'Paris • Mumbai • London' },
+  { value: '650+', label: 'Micro-Sprays', desc: 'Precision Mist Atomizer' },
+  { value: 'Surat', label: 'Flagship Atelier', desc: 'Surat, Gujarat • Paris' },
 ];
 
 const pillars = [
   {
+    num: '01',
     icon: <Droplets size={22} className="text-amber-400" />,
-    title: '35% Pure Extrait',
+    badge: 'CONCENTRATION',
+    title: '35% Pure Extrait Formulation',
+    desc: 'Crafted at the pinnacle of French perfumery with 35% pure essential perfume oils. Unfolds with luxurious depth and texture, ensuring continuous 24-hour projection without flat chemical drydowns.',
     points: [
-      'Grasse botanical floral extracts',
-      'Authentic 24-hour long projection',
-      'Zero synthetic fillers or water'
-    ]
+      'Authentic 24-hour continuous projection on skin and natural fabrics',
+      'Grasse botanical floral extracts & Calabrian cold-pressed citrus',
+      'Zero synthetic filler oils or water dilution'
+    ],
+    metric: '24H+ Sillage • 35% Extrait Ratio'
   },
   {
+    num: '02',
     icon: <Clock size={22} className="text-amber-400" />,
-    title: '90-Day Maceration',
+    badge: 'MATURATION',
+    title: '90-Day Cold Vault Maceration',
+    desc: 'Patience is our primary craft. Each blend rests for 90 days in dark, temperature-controlled cold vaults at our Surat flagship atelier. Slow cold-infusion harmonizes raw resins and delicate florals for a velvety scent.',
     points: [
-      'Cold-vault aging in amber demijohns',
-      'Harmonizes raw florals & resins',
-      'Hand-inspected numbered batches'
-    ]
+      'Cold-vault aging in temperature-regulated amber glass demijohns',
+      'Harmonizes raw florals, resins & woods into velvety smooth sillage',
+      'Zero harsh alcohol sting or chemical burn from the first spray'
+    ],
+    metric: '90 Days Aged • Zero Alcohol Sting'
   },
   {
-    icon: <Layers size={22} className="text-amber-400" />,
-    title: 'Tuscan Leathercraft',
+    num: '03',
+    icon: <Wind size={22} className="text-amber-400" />,
+    badge: 'DISPERSION',
+    title: '0.08mm Micro-Mist Precision Atomizer',
+    desc: 'Engineered with high-pressure micro-orifice atomization that dispenses a featherweight, airy cloud. Delivers 650+ velvety sprays per 50ml flacon with uniform coverage and zero fabric staining.',
     points: [
-      'Full-grain Italian & French calfskin',
-      'Hand-burnished wax-stitched edges',
-      'Solid brass & ruthenium hardware'
-    ]
+      'Ultra-fine cloud mist dispersion for even pulse point coverage',
+      'Delivers 650+ luxurious sprays per 50ml flacon',
+      'Smooth, velvety touch engineered for skin & natural fabrics'
+    ],
+    metric: '650+ Fine Sprays • 0.08mm Nozzle'
   }
-];
-
-const salons = [
-  { city: 'Paris', title: 'Flagship Salon', address: '28 Place Vendôme, 75001' },
-  { city: 'Grasse', title: 'Perfumery Lab', address: '14 Rue des Parfums, 06130' },
-  { city: 'Mumbai', title: 'Private Suite', address: 'The Taj Mahal Palace, Colaba' },
-  { city: 'London', title: 'Mayfair Atelier', address: 'Old Bond Street, W1' }
 ];
 
 const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
@@ -79,17 +82,17 @@ const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
 
   const handleWhatsAppInquiry = () => {
     const phone = `91${WHATSAPP_NUMBER}`;
-    const message = `Hello Maison COAG, I would like to inquire about your heritage creations and private allocations.`;
+    const message = `Hello COAG Parfums, I would like to inquire about your signature extrait fragrance sprays and private allocations.`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
-    <div className="w-full bg-[#fafafa] text-black min-h-screen selection:bg-black selection:text-white pb-20">
+    <div className="w-full bg-[#070709] text-white min-h-screen selection:bg-amber-400 selection:text-black pb-0">
 
       {/* ========================================================
           1. HERO SECTION (Clean, Minimal, Stat Pills)
           ======================================================== */}
-      <section className="relative bg-[#070709] text-white pt-8 sm:pt-12 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-12 overflow-hidden border-b border-white/10">
+      <section className="relative bg-[#070709] text-white pt-8 sm:pt-12 pb-14 sm:pb-16 px-4 sm:px-6 lg:px-12 overflow-hidden border-b border-white/10">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[750px] h-[260px] bg-gradient-to-b from-amber-500/15 via-amber-900/5 to-transparent rounded-full blur-[130px] pointer-events-none" />
 
         <div className="relative max-w-5xl mx-auto space-y-6">
@@ -113,15 +116,15 @@ const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
           <div className="space-y-3">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-amber-300 text-[10px] uppercase tracking-[0.22em] font-bold">
               <Sparkles size={11} className="text-amber-400" />
-              <span>MAISON COAG • PARIS & GRASSE</span>
+              <span>COAG PARFUMS • HAUTE PARFUMERIE & ATELIER</span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-serif font-light tracking-wide text-white leading-tight">
-              Artisanal Perfumes & Tuscan Leather
+              Artisanal Perfumery & Haute Extrait Sprays
             </h1>
 
             <p className="text-neutral-300 text-xs sm:text-sm max-w-2xl font-normal leading-relaxed">
-              Born in Grasse, France. Formulated with 35% pure extrait concentration and paired with handcrafted Italian leather goods.
+              Formulated with 35% pure extrait concentration and slow cold-macerated for 90 days. Handcrafted with French perfumery heritage at our Surat, Gujarat flagship atelier for enduring 24-hour sillage.
             </p>
           </div>
 
@@ -139,92 +142,203 @@ const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
       </section>
 
       {/* ========================================================
-          2. STORY SECTION (Visual & Bullet Highlights)
+          2. COAG SIGNATURE SPRAY CRAFT (OUTSIDE IS WARM LIGHT BACKGROUND, LESS CONTENT)
           ======================================================== */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <section className="w-full bg-[#FAF8F5] py-14 sm:py-20 border-y border-neutral-200/90 relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-3xl bg-[#0c0c0e] text-white border border-amber-500/25 shadow-[0_20px_60px_rgba(0,0,0,0.18)] p-6 sm:p-8 lg:p-10 overflow-hidden">
+            {/* Subtle Warm Amber Atmospheric Glow */}
+            <div className="pointer-events-none absolute -top-24 -left-24 w-80 h-80 bg-amber-500/10 rounded-full blur-[100px]" />
+            <div className="pointer-events-none absolute -bottom-24 -right-24 w-80 h-80 bg-amber-600/10 rounded-full blur-[100px]" />
 
-          {/* Left: Clean Visual Preview */}
-          <div className="md:col-span-5 relative rounded-2xl overflow-hidden shadow-lg border border-black/10 aspect-[4/4] bg-neutral-900 group">
-            <img
-              src="/images/wide_perfume_splash.jpg"
-              alt="COAG Craftsmanship"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5">
-              <span className="text-xs uppercase tracking-widest text-amber-300 font-bold">
-                Handcrafted in Grasse & Tuscany
-              </span>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center relative">
+
+              {/* Left: Official COAG Spray Flacon & Box Visual with Floating Glass Badges */}
+              <div className="lg:col-span-5 relative flex flex-col items-center justify-center">
+                <div className="relative w-full max-w-[340px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-neutral-900 group">
+                  <img
+                    src="/images/perfume_coag_box_with_spray.jpg"
+                    alt="COAG Official Signature Spray Flacon & Gift Box"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+
+                  {/* Subtle Edge Vignette */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20 pointer-events-none" />
+
+                  {/* Floating Top Badge */}
+                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-black/80 backdrop-blur-md border border-amber-400/40 text-[9.5px] font-bold text-amber-300 shadow-sm flex items-center space-x-1">
+                    <Sparkles size={10} className="text-amber-400" />
+                    <span>COAG SIGNATURE EXTRAIT SPRAY</span>
+                  </div>
+
+                  {/* Floating Bottom Badge */}
+                  <div className="absolute bottom-2.5 left-2.5 right-2.5 px-3 py-1.5 rounded-xl bg-black/85 backdrop-blur-md text-white border border-white/15 flex items-center justify-between text-xs">
+                    <span className="font-mono text-amber-300 font-bold text-[10.5px]">
+                      650+ Precision Sprays
+                    </span>
+                    <span className="text-[9.5px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                      50ml Atelier
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: Concise Editorial Narrative & Sleek Feature Highlights */}
+              <div className="lg:col-span-7 space-y-4">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[9.5px] uppercase tracking-[0.22em] font-bold">
+                    <Sparkles size={10} className="text-amber-400" />
+                    <span>The Spray Architecture</span>
+                  </div>
+
+                  <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-serif font-light text-white tracking-tight leading-tight">
+                    Engineered for Sillage. Bottled with Soul.
+                  </h2>
+
+                  <p className="text-neutral-300 text-xs sm:text-[13px] leading-relaxed font-normal pt-0.5">
+                    Handcrafted at our Surat flagship atelier with 35% pure essential extrait oils and a precision micro-atomizer for 24-hour velvety projection with zero harsh alcohol sting.
+                  </p>
+                </div>
+
+                {/* 3 Compact Feature Highlights (Concise / Less Content) */}
+                <div className="space-y-2 pt-0.5">
+                  <div className="p-2.5 rounded-xl bg-white/[0.03] border border-white/10 flex items-center space-x-3">
+                    <div className="p-1.5 rounded-lg bg-amber-500/10 text-amber-400 shrink-0">
+                      <Wind size={15} />
+                    </div>
+                    <div className="text-xs">
+                      <strong className="text-white font-semibold">0.08mm Micro-Mist Nozzle</strong>
+                      <span className="text-neutral-400"> — Ultra-fine airy cloud dispersion without droplet stains</span>
+                    </div>
+                  </div>
+
+                  <div className="p-2.5 rounded-xl bg-white/[0.03] border border-white/10 flex items-center space-x-3">
+                    <div className="p-1.5 rounded-lg bg-amber-500/10 text-amber-400 shrink-0">
+                      <Droplets size={15} />
+                    </div>
+                    <div className="text-xs">
+                      <strong className="text-white font-semibold">35% Pure Extrait Formulation</strong>
+                      <span className="text-neutral-400"> — Authentic Grasse oils with 24H+ continuous projection</span>
+                    </div>
+                  </div>
+
+                  <div className="p-2.5 rounded-xl bg-white/[0.03] border border-white/10 flex items-center space-x-3">
+                    <div className="p-1.5 rounded-lg bg-amber-500/10 text-amber-400 shrink-0">
+                      <Clock size={15} />
+                    </div>
+                    <div className="text-xs">
+                      <strong className="text-white font-semibold">90-Day Cold Vault Maceration</strong>
+                      <span className="text-neutral-400"> — Aged in Surat for a velvety finish with zero alcohol burn</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Prestige Metric Strip (Clean 4-col) */}
+                <div className="pt-2 grid grid-cols-2 sm:grid-cols-4 gap-2 border-t border-white/10 text-center">
+                  <div className="p-2 rounded-lg bg-black/40 border border-white/5">
+                    <span className="font-mono text-amber-300 font-bold text-xs sm:text-sm block">24H+</span>
+                    <span className="text-[9px] uppercase tracking-wider text-neutral-400">Projection</span>
+                  </div>
+                  <div className="p-2 rounded-lg bg-black/40 border border-white/5">
+                    <span className="font-mono text-amber-300 font-bold text-xs sm:text-sm block">650+</span>
+                    <span className="text-[9px] uppercase tracking-wider text-neutral-400">Mist Sprays</span>
+                  </div>
+                  <div className="p-2 rounded-lg bg-black/40 border border-white/5">
+                    <span className="font-mono text-amber-300 font-bold text-xs sm:text-sm block">35%</span>
+                    <span className="text-[9px] uppercase tracking-wider text-neutral-400">Pure Extrait</span>
+                  </div>
+                  <div className="p-2 rounded-lg bg-black/40 border border-white/5">
+                    <span className="font-mono text-amber-300 font-bold text-xs sm:text-sm block">Surat</span>
+                    <span className="text-[9px] uppercase tracking-wider text-neutral-400">Atelier Bottled</span>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
           </div>
-
-          {/* Right: Crisp Bullet Highlights */}
-          <div className="md:col-span-7 space-y-4">
-            <div className="space-y-1">
-              <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-amber-600 block">
-                The Heritage
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-serif font-light text-black">
-                Crafted with Time, Not Rush
-              </h2>
-            </div>
-
-            <div className="space-y-2.5 text-xs sm:text-sm text-neutral-700">
-              <div className="flex items-start space-x-2.5">
-                <CheckCircle2 size={16} className="text-amber-500 shrink-0 mt-0.5" />
-                <span><strong>Dawn Harvest:</strong> Pure Centifolia roses & Calabrian bergamot picked at peak potency.</span>
-              </div>
-              <div className="flex items-start space-x-2.5">
-                <CheckCircle2 size={16} className="text-amber-500 shrink-0 mt-0.5" />
-                <span><strong>90-Day Maceration:</strong> Cold-vault infusion for seamless aroma blending without synthetics.</span>
-              </div>
-              <div className="flex items-start space-x-2.5">
-                <CheckCircle2 size={16} className="text-amber-500 shrink-0 mt-0.5" />
-                <span><strong>Master Leathercraft:</strong> Italian calfskin belts & wallets with hand-burnished edges.</span>
-              </div>
-            </div>
-
-            {/* Short Quote Card */}
-            <div className="p-3.5 rounded-xl bg-neutral-100 border-l-3 border-amber-500 text-xs text-neutral-800 italic">
-              “We do not follow trends; we craft flacons and leather pieces designed to last a lifetime.”
-            </div>
-          </div>
-
         </div>
       </section>
 
       {/* ========================================================
-          3. THREE PILLARS (Clean Structured Cards)
+          3. THREE PILLARS OF COAG PARFUMS (PROPER ARCHITECTURAL LUXURY DESIGN)
           ======================================================== */}
-      <section className="bg-white py-14 sm:py-16 border-y border-neutral-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <section className="relative py-16 sm:py-20 lg:py-24 border-y border-white/10 overflow-hidden">
+        {/* Subtle Ambient Gold Radiance */}
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[350px] bg-gradient-to-b from-amber-500/10 via-amber-900/5 to-transparent rounded-full blur-[140px]" />
 
-          <div className="text-center max-w-xl mx-auto space-y-1.5">
-            <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-amber-600 block">
-              Standards
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-serif font-light text-black">
-              The Three Pillars of COAG
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+
+          {/* Section Header */}
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[10px] uppercase tracking-[0.25em] font-bold">
+              <Sparkles size={11} className="text-amber-400" />
+              <span>Standards & Formulation Philosophy</span>
+            </div>
+
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-serif font-light text-white tracking-tight leading-tight">
+              The Three Pillars of COAG Parfums
             </h2>
+
+            <p className="text-xs sm:text-sm text-neutral-400 font-sans max-w-xl mx-auto leading-relaxed pt-1">
+              Every creation is engineered according to authentic French extrait standards and bottled with artisanal pride at our Surat flagship atelier.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* 3 Architectural Luxury Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {pillars.map((pillar, idx) => (
-              <div key={idx} className="p-5 rounded-2xl bg-neutral-50 border border-neutral-200 space-y-3 shadow-xs">
-                <div className="w-10 h-10 rounded-xl bg-black flex items-center justify-center">
-                  {pillar.icon}
+              <div
+                key={idx}
+                className="p-6 sm:p-7 rounded-3xl bg-neutral-900/60 hover:bg-neutral-900/90 border border-white/10 hover:border-amber-400/50 transition-all duration-300 space-y-5 shadow-2xl relative group overflow-hidden flex flex-col justify-between"
+              >
+                {/* Active Gold Top Highlight on Hover */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                <div className="space-y-4">
+                  {/* Top Row: Roman Number, Icon Box & Category Badge */}
+                  <div className="flex items-center justify-between">
+                    <span className="font-serif text-3xl font-light text-amber-400/70 group-hover:text-amber-400 transition-colors">
+                      {pillar.num}
+                    </span>
+
+                    <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center group-hover:bg-amber-500/20 group-hover:scale-105 transition-all shadow-md">
+                      {pillar.icon}
+                    </div>
+                  </div>
+
+                  {/* Pillar Title & Badge */}
+                  <div className="space-y-1.5">
+                    <span className="text-[9.5px] uppercase font-bold tracking-[0.2em] text-amber-400/90 block">
+                      {pillar.badge}
+                    </span>
+                    <h3 className="text-xl font-serif font-bold text-white tracking-tight leading-snug">
+                      {pillar.title}
+                    </h3>
+                  </div>
+
+                  {/* In-depth Topic-Specific Narrative */}
+                  <p className="text-xs sm:text-[13px] text-neutral-300 leading-relaxed font-normal">
+                    {pillar.desc}
+                  </p>
+
+                  {/* Bullet Highlights */}
+                  <ul className="space-y-2 pt-2 border-t border-white/10 text-xs text-neutral-300">
+                    {pillar.points.map((pt, pIdx) => (
+                      <li key={pIdx} className="flex items-start space-x-2">
+                        <CheckCircle2 size={14} className="text-amber-400 shrink-0 mt-0.5" />
+                        <span className="leading-snug">{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="text-base font-serif font-bold text-black">
-                  {pillar.title}
-                </h3>
-                <ul className="space-y-1.5 text-xs text-neutral-600">
-                  {pillar.points.map((pt, pIdx) => (
-                    <li key={pIdx} className="flex items-center space-x-1.5">
-                      <span className="w-1 h-1 rounded-full bg-amber-500 shrink-0" />
-                      <span>{pt}</span>
-                    </li>
-                  ))}
-                </ul>
+
+                {/* Bottom Metric Pill */}
+                <div className="pt-3 border-t border-white/10 text-center">
+                  <span className="font-mono text-[10.5px] font-bold text-amber-300/90 uppercase tracking-wider block">
+                    {pillar.metric}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -233,63 +347,67 @@ const AboutUsPage = ({ onNavigateHome, onExploreCollection }) => {
       </section>
 
       {/* ========================================================
-          4. GLOBAL SALONS (4 Clean Cards in 1 Row)
+          4. CONCIERGE CALL TO ACTION (LIGHT LUXURY ATELIER DESIGN)
           ======================================================== */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 space-y-6">
-        <div className="text-center space-y-1">
-          <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-amber-600 block">
-            Locations
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-serif font-light text-black">
-            Private Salons
-          </h2>
-        </div>
+      <section className="w-full bg-[#FAF8F5] py-14 sm:py-20 border-t border-neutral-200/90 relative text-neutral-900 mt-12 sm:mt-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-3xl bg-white text-neutral-900 p-8 sm:p-12 text-center space-y-6 shadow-[0_20px_50px_rgba(0,0,0,0.06)] border border-amber-600/20 overflow-hidden">
+            {/* Subtle Gold Accent Bar */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5">
-          {salons.map((salon, idx) => (
-            <div key={idx} className="p-4 rounded-xl bg-white border border-neutral-200 shadow-xs space-y-1">
-              <div className="flex items-center space-x-1.5 text-amber-600">
-                <MapPin size={14} />
-                <span className="text-[10.5px] uppercase tracking-wider font-bold">{salon.city}</span>
-              </div>
-              <p className="text-xs font-semibold text-black">{salon.title}</p>
-              <p className="text-[11px] text-neutral-500">{salon.address}</p>
+            {/* Atelier Eyebrow Badge */}
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-600/25 text-amber-900 text-[10.5px] uppercase tracking-[0.22em] font-bold">
+              <Sparkles size={11} className="text-amber-700" />
+              <span>COAG PARFUMS • Surat Flagship Atelier</span>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* ========================================================
-          5. CONCIERGE CALL TO ACTION
-          ======================================================== */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl bg-black text-white p-6 sm:p-10 text-center space-y-4 shadow-xl">
-          <h2 className="text-2xl sm:text-3xl font-serif font-light tracking-wide max-w-xl mx-auto">
-            Experience the Atelier Creations
-          </h2>
-          <p className="text-neutral-400 text-xs sm:text-sm max-w-md mx-auto">
-            Explore our handcrafted luxury perfumes, leather belts, and wallets with direct WhatsApp assistance.
-          </p>
+            {/* Heading */}
+            <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-serif font-light text-neutral-900 tracking-tight leading-tight">
+              Experience the Atelier Creations
+            </h2>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <button
-              onClick={() => {
-                if (onExploreCollection) onExploreCollection();
-                else window.location.hash = '#collection';
-              }}
-              className="w-full sm:w-auto px-6 py-3 rounded-full bg-white text-black hover:bg-neutral-200 transition-all text-xs uppercase tracking-[0.16em] font-bold shadow-md cursor-pointer flex items-center justify-center space-x-2 active:scale-95"
-            >
-              <span>Explore Collection</span>
-              <ArrowRight size={13} />
-            </button>
+            {/* Description */}
+            <p className="text-neutral-600 text-xs sm:text-sm max-w-lg mx-auto font-normal leading-relaxed">
+              Explore our signature 35% pure extrait fragrance sprays or connect directly with our Surat atelier concierge for private inquiries and personalized recommendations.
+            </p>
 
-            <button
-              onClick={handleWhatsAppInquiry}
-              className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white transition-all text-xs uppercase tracking-[0.16em] font-bold shadow-md cursor-pointer flex items-center justify-center space-x-2 active:scale-95"
-            >
-              <WhatsAppIcon className="w-4 h-4 fill-white" />
-              <span>WhatsApp Concierge (9664506049)</span>
-            </button>
+            {/* 3 Pillar Highlights */}
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-7 py-1 text-neutral-700 text-xs font-medium">
+              <div className="flex items-center space-x-1.5">
+                <CheckCircle2 size={14} className="text-amber-700" />
+                <span>35% Pure Extrait Sprays</span>
+              </div>
+              <div className="flex items-center space-x-1.5">
+                <CheckCircle2 size={14} className="text-amber-700" />
+                <span>24-Hour Continuous Sillage</span>
+              </div>
+              <div className="flex items-center space-x-1.5">
+                <CheckCircle2 size={14} className="text-amber-700" />
+                <span>Surat Atelier Direct Dispatch</span>
+              </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2">
+              <button
+                onClick={() => {
+                  if (onExploreCollection) onExploreCollection();
+                  else window.location.hash = '#collection';
+                }}
+                className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-neutral-950 text-white hover:bg-neutral-800 transition-all text-xs uppercase tracking-[0.18em] font-bold shadow-lg cursor-pointer flex items-center justify-center space-x-2.5 active:scale-95 group"
+              >
+                <span>Explore Collection</span>
+                <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
+              </button>
+
+              <button
+                onClick={handleWhatsAppInquiry}
+                className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white transition-all text-xs uppercase tracking-[0.18em] font-bold shadow-md cursor-pointer flex items-center justify-center space-x-2.5 active:scale-95"
+              >
+                <WhatsAppIcon className="w-4 h-4 fill-white" />
+                <span>WhatsApp Concierge</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>

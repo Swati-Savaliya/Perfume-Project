@@ -18,17 +18,17 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
 
 const products = [
   // ==========================================
-  // PERFUMES (9 Creations with Splash Images)
+  // PERFUMES (9 High-Performance Spray Creations)
   // ==========================================
   {
     id: 'emeraude-noir',
     name: 'COAG The King',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'OFFICE', 'CHAMPION', 'GYM WORKOUT', 'INFLUENCER SERIES', 'LGBTQ'],
     family: 'Fresh Woody & Resinous',
-    notes: 'Calabrian Bergamot • Tuscan Cedar • Golden Amber',
+    notes: 'Calabrian Bergamot • Tuscan Volcanic Cedar • Golden Amber & Birch',
     price: '₹999',
     numericPrice: 999,
     rating: 4.9,
@@ -42,17 +42,17 @@ const products = [
       '/images/perfume_coag_box_with_spray.jpg',
       '/images/coag_signature_bottle.jpg',
     ],
-    description: 'A nocturnal rush of cold mountain bergamot and molten amber resin splashing upon ancient volcanic cedar. Clean, crisp, and commanding for office meetings and champion performance.',
+    description: 'An elite COAG luxury extrait spray engineered with an ultra-fine micro-mist atomizing nozzle. Opens with crisp Calabrian bergamot and smoky Tuscan volcanic cedar, settling into molten golden amber with 24-hour beast-mode sillage.',
   },
   {
     id: 'ambre-imperial',
     name: 'COAG The Queen',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'DATE NIGHT', 'HAWAS ON BED', 'CLUBBING', 'INFLUENCER SERIES', 'LGBTQ'],
+    categories: ['PERFUME', 'DATE NIGHT', 'EVENING WEAR', 'SIGNATURE', 'INFLUENCER SERIES'],
     family: 'Warm Oriental Amber',
-    notes: 'Smoked Cardamom • Charred Tonka • Sacred Myrrh',
+    notes: 'Warm Smoked Cardamom • Charred Tonka Bean • Sacred Golden Myrrh',
     price: '₹799',
     numericPrice: 799,
     rating: 5.0,
@@ -66,17 +66,17 @@ const products = [
       '/images/perfume_coag_cylindrical_splash.jpg',
       '/images/coag_cylindrical_bottle.jpg',
     ],
-    description: 'A regal eruption of smoked cardamom, scorched wild tonka, and sacred myrrh steeped in molten gold. Rich oriental warmth tailored for intimate date nights and unforgettable clubbing.',
+    description: 'A seductive COAG evening extrait spray crafted with rich, sultry notes. Delivers an opulent spray mist of warm smoked cardamom, charred tonka, and sacred myrrh steeped in royal amber for an irresistible, long-lasting magnetic scent trail.',
   },
   {
     id: 'rose-eternelle',
     name: 'COAG The Lagacy',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'SCHOOL / COLLEGE', 'FUNCTION', 'DATE NIGHT', 'LGBTQ'],
+    categories: ['PERFUME', 'SCHOOL / COLLEGE', 'FUNCTION', 'DATE NIGHT'],
     family: 'Luminous Travertine & White Floral',
-    notes: 'White Gardenia • Golden Amber • Cashmere Woods',
+    notes: 'Dawn White Gardenia • Crystalline Amber • Velvety Cashmere Woods',
     price: '₹1199',
     numericPrice: 1199,
     rating: 4.8,
@@ -90,17 +90,17 @@ const products = [
       '/images/coag_lagacy_bottle.jpg',
       '/images/perfume_coag_lagacy_macro.jpg',
     ],
-    description: 'An iconic porcelain-white flacon crowned with polished gold and satin black. Dawn gardenias, crystalline amber, and velvety cashmere on a natural travertine plinth for timeless royal distinction.',
+    description: 'A luminous white floral extrait spray releasing a fine micro-dispersion mist of fresh dawn gardenias, crystalline amber, and velvety cashmere woods. Crafted for sophisticated presence and all-day compliment projection.',
   },
   {
     id: 'coag-antique',
     name: 'COAG The Antique',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'OFFICE', 'SCHOOL / COLLEGE', 'FUNCTION', 'INFLUENCER SERIES', 'LGBTQ'],
+    categories: ['PERFUME', 'OFFICE', 'SCHOOL / COLLEGE', 'FUNCTION', 'INFLUENCER SERIES'],
     family: 'Antique English Rose & Amber',
-    notes: 'Antique English Rose • Blush Peony • Royal Amber',
+    notes: 'Antique English Rose • Dewy Blush Peonies • Royal Amber & Cedar',
     price: '₹1249',
     numericPrice: 1249,
     rating: 4.9,
@@ -114,18 +114,19 @@ const products = [
       '/images/perfume_coag_antique_floral.jpg',
       '/images/perfume_coag_antique_dark_marble.jpg',
     ],
-    description: 'An iconic antique porcelain-white flacon crowned with polished gold and satin black, poised gracefully on a warm classical pedestal surrounded by blooming antique English garden roses and blush peonies. Timeless elegance and prestige.',
+    description: 'A prestige vintage rose extrait spray atomizing dewy English garden rose petals, blush peonies, and warm royal ambergris into a velvety mist. Formulated for a timeless aristocratic presence and deep lasting sillage.',
   },
   {
     id: 'noir-absolu',
-    name: 'NOIR ABSOLU',
-    subtitle: 'Extrait de Parfum • 50ml',
+    name: 'COAG Noir Absolu',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'HAWAS ON BED', 'CLUBBING', 'DATE NIGHT', 'INFLUENCER SERIES', 'LGBTQ'],
+    categories: ['PERFUME', 'EVENING WEAR', 'SIGNATURE', 'DATE NIGHT', 'INFLUENCER SERIES', 'LGBTQ'],
     family: 'Dark Smoky Balsam',
-    notes: 'Birch Tar • Black Pepper • Madagascar Vanilla',
-    price: '₹340',
+    notes: 'Smoldering Birch Tar • Crushed Black Pepper • Dark Bourbon Vanilla',
+    price: '₹1,149',
+    numericPrice: 1149,
     rating: 5.0,
     reviews: 156,
     badge: 'PERFUME',
@@ -137,18 +138,19 @@ const products = [
       '/images/perfume_noir_absolu_macro.jpg',
       '/images/perfume_noir_absolu_still.jpg',
     ],
-    description: 'A deep, mysterious veil of smoldering birch wood, crackling black pepper, and dark Bourbon vanilla absolute. Magnetic and irresistible for seductive late nights and high-octane clubbing.',
+    description: 'A deep, mysterious veil of smoldering birch wood, crackling black pepper, and dark Bourbon vanilla absolute atomized through COAG\'s precision spray nozzle. Magnetic and irresistible for seductive late nights and elevated occasions.',
   },
   {
     id: 'cuir-majestueux',
-    name: 'CUIR MAJESTUEUX',
-    subtitle: 'Extrait de Parfum • 50ml',
+    name: 'COAG Cuir Majestueux',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'CHAMPION', 'FUNCTION', 'OFFICE', 'INFLUENCER SERIES'],
     family: 'Imperial Leather Chypre',
-    notes: 'Saddle Leather • Saffron Thread • Patchouli Leaf',
-    price: '₹360',
+    notes: 'Hand-Buffed Saddle Leather • Crimson Saffron Thread • Aged Indonesian Patchouli',
+    price: '₹1,249',
+    numericPrice: 1249,
     rating: 4.9,
     reviews: 92,
     badge: 'PERFUME',
@@ -160,18 +162,19 @@ const products = [
       '/images/perfume_cuir_majestueux_macro.jpg',
       '/images/perfume_cuir_majestueux_still.jpg',
     ],
-    description: 'Hand-buffed saddle leather enriched with fiery crimson saffron and aged Indonesian patchouli. Crafted for champions and high-profile wedding functions demanding an unforgettable royal presence.',
+    description: 'Hand-buffed saddle leather enriched with fiery crimson saffron and aged Indonesian patchouli in a high-concentration extrait spray. Crafted for champions and high-profile wedding functions demanding an unforgettable royal presence.',
   },
   {
     id: 'fleur-blanche',
-    name: 'FLEUR BLANCHE',
-    subtitle: 'Eau de Parfum • 50ml',
+    name: 'COAG Fleur Blanche',
+    subtitle: 'Haute Eau de Parfum Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'SCHOOL / COLLEGE', 'DATE NIGHT', 'FUNCTION', 'LGBTQ'],
     family: 'Luminous Solar Floral',
-    notes: 'Night-Blooming Jasmine • Neroli • White Musk',
-    price: '₹260',
+    notes: 'Mediterranean Neroli • Night-Blooming Jasmine • Crystalline White Musk',
+    price: '₹899',
+    numericPrice: 899,
     rating: 4.8,
     reviews: 73,
     badge: 'PERFUME',
@@ -183,18 +186,19 @@ const products = [
       '/images/perfume_fleur_blanche_macro.jpg',
       '/images/perfume_fleur_blanche_still.jpg',
     ],
-    description: 'Sun-drenched Mediterranean neroli blossoms entwined with nocturnal Grasse jasmine petals and airy crystalline white musk. An effortless compliment-magnet for college campuses and romantic dates.',
+    description: 'Sun-drenched Mediterranean neroli blossoms entwined with nocturnal Grasse jasmine petals and airy crystalline white musk in an ultra-fine spray mist. An effortless compliment-magnet for college campuses and romantic dates.',
   },
   {
     id: 'bleu-azur',
-    name: 'BLEU AZUR',
-    subtitle: 'Eau de Parfum • 50ml',
+    name: 'COAG Bleu Azur',
+    subtitle: 'Haute Eau de Parfum Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'GYM WORKOUT', 'OFFICE', 'CHAMPION'],
     family: 'Marine Aquatic Citrus',
-    notes: 'French Sea Salt • Grapefruit Zest • Vetiver',
-    price: '₹270',
+    notes: 'French Sea Salt • Iced Grapefruit Zest • Haitian Vetiver',
+    price: '₹999',
+    numericPrice: 999,
     rating: 4.9,
     reviews: 88,
     badge: 'PERFUME',
@@ -206,18 +210,19 @@ const products = [
       '/images/hero_perfume.jpg',
       '/images/perfume_emerald_macro.jpg',
     ],
-    description: 'A frosty tidal surge of French sea salt and iced grapefruit zest grounded by crisp Haitian vetiver. High-end freshness that maintains supreme performance during intense gym workouts and long office shifts.',
+    description: 'A frosty tidal surge of French sea salt and iced grapefruit zest grounded by crisp Haitian vetiver delivered in an invigorating micro-spray. High-end freshness that maintains supreme performance during intense gym workouts and long office shifts.',
   },
   {
     id: 'lor-solaire',
-    name: "L'OR SOLAIRE",
-    subtitle: 'Bespoke Reserve • 50ml',
+    name: "COAG L'Or Solaire",
+    subtitle: 'Bespoke Reserve Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'INFLUENCER SERIES', 'CHAMPION', 'CLUBBING', 'HAWAS ON BED', 'FUNCTION', 'DATE NIGHT', 'LGBTQ'],
+    categories: ['PERFUME', 'INFLUENCER SERIES', 'CHAMPION', 'ROYAL RESERVE', 'SIGNATURE', 'FUNCTION', 'DATE NIGHT', 'LGBTQ'],
     family: 'Gilded Amber Oud',
-    notes: 'Golden Amber • Kashmiri Saffron • Royal Oud',
-    price: '₹390',
+    notes: 'Caramelized Golden Amber • Kashmiri Saffron • Smoked Cambodian Royal Oud',
+    price: '₹1,249',
+    numericPrice: 1249,
     rating: 5.0,
     reviews: 184,
     badge: 'PERFUME',
@@ -229,23 +234,23 @@ const products = [
       '/images/perfume_gold.jpg',
       '/images/perfume_gold_macro.jpg',
     ],
-    description: 'The trending viral sensation praised by top fragrance influencers worldwide. Rare saffron threads, smoked Cambodian oud, and golden caramelized amber with monumental sillage.',
+    description: 'The trending viral sensation praised by top fragrance influencers worldwide. Rare saffron threads, smoked Cambodian oud, and golden caramelized amber atomized into monumental sillage and royal distinction.',
   },
 
   // ==========================================
-  // BELTS (4 Handcrafted Luxury Creations)
+  // BELTS (6 Handcrafted Luxury COAG Creations)
   // ==========================================
   {
     id: 'belt-heritage-noir',
-    name: "L'HÉRITAGE CALFSKIN BELT",
-    subtitle: 'Italian Full-Grain Leather • 35mm',
+    name: "COAG L'Héritage Calfskin Belt",
+    subtitle: 'COAG Italian Full-Grain Leather • 35mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Full-Grain Tuscan Calfskin',
     notes: 'Brushed Ruthenium Clasp • Hand-Burnished Edge • Reversible Noir/Cognac',
-    price: '₹3,450',
-    numericPrice: 3450,
+    price: '₹799',
+    numericPrice: 799,
     rating: 4.9,
     reviews: 86,
     badge: 'BELT',
@@ -254,22 +259,22 @@ const products = [
     fallbackImage: '/images/belt_1.jpg',
     images: [
       '/images/belt_1.jpg',
-      '/images/belt_1_buckle.jpg',
-      '/images/belt_1_detail.jpg',
+      '/images/belt_3.jpg',
+      '/images/belt_1.jpg',
     ],
-    description: 'Handcrafted in Tuscany from select full-grain box calfskin leather. Featuring an ultra-durable brushed ruthenium buckle and micro-beveled, hand-lacquered edges designed for boardrooms and black-tie galas.',
+    description: 'Handcrafted for COAG in Tuscany from select full-grain Italian calfskin leather. Featuring an ultra-durable brushed ruthenium buckle and hand-burnished edges designed for boardrooms and formal galas.',
   },
   {
     id: 'belt-monogram-saddle',
-    name: 'MONOGRAM SADDLE LEATHER BELT',
-    subtitle: 'Artisanal Cognac Leather • 38mm',
+    name: 'COAG Royal Saddle Leather Belt',
+    subtitle: 'COAG Artisanal Cognac Leather • 38mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Vegetable-Tanned Saddle Leather',
-    notes: 'Solid Brass COAG Monogram Buckle • Waxed Linen Double-Stitch • Rich Patina',
-    price: '₹3,850',
-    numericPrice: 3850,
+    notes: 'Solid Brass Buckle • Waxed Linen Double-Stitch • Rich Vintage Patina',
+    price: '₹949',
+    numericPrice: 949,
     rating: 5.0,
     reviews: 112,
     badge: 'BELT',
@@ -278,22 +283,22 @@ const products = [
     fallbackImage: '/images/belt_2.jpg',
     images: [
       '/images/belt_2.jpg',
-      '/images/belt_2_buckle.jpg',
-      '/images/belt_2_detail.jpg',
+      '/images/belt_6.jpg',
+      '/images/belt_2.jpg',
     ],
-    description: 'Constructed from heavy vegetable-tanned bridle leather steeped in botanical oils. Embellished with the signature COAG solid brass buckle that acquires a magnificent individual patina over decades of wear.',
+    description: 'Constructed for COAG from heavy vegetable-tanned bridle leather steeped in botanical oils. Embellished with a solid brass buckle that acquires a magnificent individual patina over decades of wear.',
   },
   {
     id: 'belt-stealth-formal',
-    name: 'LE STEALTH NOIR DRESS BELT',
-    subtitle: 'Ultra-Fine French Boxcalf • 30mm',
+    name: 'COAG Noir Stealth Dress Belt',
+    subtitle: 'COAG French Boxcalf Leather • 30mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'French Smooth Boxcalf',
     notes: 'Matte Gunmetal Low-Profile Buckle • Feathered Edge • High-Gloss Mirror Finish',
-    price: '₹2,950',
-    numericPrice: 2950,
+    price: '₹699',
+    numericPrice: 699,
     rating: 4.8,
     reviews: 64,
     badge: 'BELT',
@@ -302,22 +307,22 @@ const products = [
     fallbackImage: '/images/belt_3.jpg',
     images: [
       '/images/belt_3.jpg',
-      '/images/belt_3_buckle.jpg',
-      '/images/belt_3_detail.jpg',
+      '/images/belt_1.jpg',
+      '/images/belt_3.jpg',
     ],
-    description: 'The definitive formal evening dress belt. Engineered with a slender 30mm profile and stealth satin-finished gunmetal buckle, designed to seamlessly complement tailored tuxedos and bespoke suiting.',
+    description: 'The definitive COAG formal evening dress belt. Engineered with a slender 30mm profile and stealth satin-finished gunmetal buckle, designed to seamlessly complement tailored tuxedos and bespoke suiting.',
   },
   {
     id: 'belt-croco-embossed',
-    name: 'EXOTIC CROCO-EMBOSSED BELT',
-    subtitle: 'Hand-Glazed Calfskin • 35mm',
+    name: 'COAG Exotic Croco-Embossed Belt',
+    subtitle: 'COAG Hand-Glazed Calfskin • 35mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Hand-Embossed Croco Calfskin',
     notes: 'Palladium Plate Buckle • Deep Midnight Lustre • Velvet Nubuck Backing',
-    price: '₹3,950',
-    numericPrice: 3950,
+    price: '₹999',
+    numericPrice: 999,
     rating: 4.9,
     reviews: 79,
     badge: 'BELT',
@@ -326,22 +331,22 @@ const products = [
     fallbackImage: '/images/belt_4.jpg',
     images: [
       '/images/belt_4.jpg',
-      '/images/belt_4_buckle.jpg',
-      '/images/belt_4_detail.jpg',
+      '/images/belt_3.jpg',
+      '/images/belt_4.jpg',
     ],
-    description: 'An audacious statement piece featuring high-definition crocodile scale embossing on premium French calfskin, backed by soft calf nubuck and crowned with a palladium-plated buckle.',
+    description: 'An audacious COAG statement piece featuring high-definition crocodile scale embossing on premium French calfskin, backed by soft calf nubuck and crowned with a palladium-plated buckle.',
   },
   {
     id: 'belt-saffiano-royale',
-    name: 'CEINTURON SAFFIANO ROYALE',
-    subtitle: 'Navy Saffiano Calfskin • 35mm',
+    name: 'COAG Saffiano Royale Leather Belt',
+    subtitle: 'COAG Navy Saffiano Calfskin • 35mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Cross-Grain Saffiano Leather',
     notes: 'Polished Palladium Buckle • Scratch-Resistant Texture • Beveled Hand-Lacquered Edges',
-    price: '₹3,650',
-    numericPrice: 3650,
+    price: '₹849',
+    numericPrice: 849,
     rating: 4.9,
     reviews: 58,
     badge: 'BELT',
@@ -350,22 +355,22 @@ const products = [
     fallbackImage: '/images/belt_5.jpg',
     images: [
       '/images/belt_5.jpg',
-      '/images/belt_1_buckle.jpg',
-      '/images/belt_4_detail.jpg',
+      '/images/belt_3.jpg',
+      '/images/belt_5.jpg',
     ],
-    description: 'A striking statement in deep navy blue cross-grain Saffiano calfskin. Engineered with an ultra-durable, scratch-resistant surface, hand-beveled edges, and crowned with a mirror-polished palladium silver buckle.',
+    description: 'A striking COAG statement in deep navy blue cross-grain Saffiano calfskin. Engineered with an ultra-durable, scratch-resistant surface, hand-beveled edges, and crowned with a mirror-polished palladium silver buckle.',
   },
   {
     id: 'belt-eperon-saddle',
-    name: "L'ÉPERON SADDLE LEATHER DRESS BELT",
-    subtitle: 'Cognac Bridle Leather • 32mm',
+    name: 'COAG Cognac Saddle Leather Belt',
+    subtitle: 'COAG English Bridle Leather • 32mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'English Bridle Saddle Leather',
     notes: 'Antique Brushed Brass Buckle • Tallow-Infused Leather • Double Waxed Stitch',
-    price: '₹3,750',
-    numericPrice: 3750,
+    price: '₹899',
+    numericPrice: 899,
     rating: 5.0,
     reviews: 74,
     badge: 'BELT',
@@ -374,26 +379,26 @@ const products = [
     fallbackImage: '/images/belt_6.jpg',
     images: [
       '/images/belt_6.jpg',
-      '/images/belt_2_buckle.jpg',
-      '/images/belt_2_detail.jpg',
+      '/images/belt_2.jpg',
+      '/images/belt_6.jpg',
     ],
-    description: 'Handcrafted from vegetable-tanned bridle leather steeped in natural botanical tallows. Features warm cognac tones, double-waxed edge stitching, and an antique brushed brass buckle that matures with character.',
+    description: 'Handcrafted for COAG from vegetable-tanned bridle leather steeped in natural botanical tallows. Features warm cognac tones, double-waxed edge stitching, and an antique brushed brass buckle that matures with character.',
   },
 
   // ==========================================
-  // WALLETS / WOLET (4 Luxury Leather Goods)
+  // WALLETS / WOLET (6 Handcrafted Luxury COAG Goods)
   // ==========================================
   {
     id: 'wallet-portefeuille-bifold',
-    name: 'PORTEFEUILLE NOIR BIFOLD',
-    subtitle: 'French Boxcalf Leather • 8 Slots',
+    name: 'COAG Portefeuille Noir Bifold',
+    subtitle: 'COAG French Boxcalf Leather • 8 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'French Box-Calf Leather',
     notes: '8 Card Pockets • Dual Currency Dividers • RFID Skim-Block Shielding',
-    price: '₹2,450',
-    numericPrice: 2450,
+    price: '₹699',
+    numericPrice: 699,
     rating: 4.9,
     reviews: 134,
     badge: 'WALLET',
@@ -402,22 +407,22 @@ const products = [
     fallbackImage: '/images/wallet_1.jpg',
     images: [
       '/images/wallet_1.jpg',
-      '/images/wallet_1_inside.jpg',
-      '/images/wallet_1_detail.jpg',
+      '/images/wallet_6.jpg',
+      '/images/wallet_1.jpg',
     ],
-    description: 'Precision handcrafted bifold wallet fashioned from supple French boxcalf. Built with integrated military-grade RFID protection, eight hand-turned card slots, and dual currency partitions.',
+    description: 'Precision handcrafted for COAG from supple French boxcalf. Built with integrated military-grade RFID protection, eight hand-turned card slots, and dual currency partitions.',
   },
   {
     id: 'wallet-slim-cardholder',
-    name: 'LE SLIM COAG CARDHOLDER',
-    subtitle: 'Ultra-Thin Saffiano • 6 Slots',
+    name: 'COAG Slim Saffiano Cardholder',
+    subtitle: 'COAG Ultra-Thin Saffiano • 6 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Textured Saffiano Leather',
-    notes: 'Central Cash Sleeve • Gold Foil Embossed Crest • 4mm Featherweight Profile',
-    price: '₹1,850',
-    numericPrice: 1850,
+    notes: 'Central Cash Sleeve • Scratch-Resistant Texture • 4mm Featherweight Profile',
+    price: '₹599',
+    numericPrice: 599,
     rating: 5.0,
     reviews: 178,
     badge: 'WALLET',
@@ -426,22 +431,22 @@ const products = [
     fallbackImage: '/images/wallet_2.jpg',
     images: [
       '/images/wallet_2.jpg',
-      '/images/wallet_2_back.jpg',
-      '/images/wallet_2_detail.jpg',
+      '/images/wallet_3.jpg',
+      '/images/wallet_2.jpg',
     ],
-    description: 'The quintessential minimalist essential. Crafted from scratch-resistant cross-grain Saffiano leather with six card bays, an interior cash fold, and 24K gold foil COAG hallmark.',
+    description: 'The quintessential COAG minimalist essential. Crafted from scratch-resistant cross-grain Saffiano leather with six card bays, an interior cash fold, and featherweight profile.',
   },
   {
     id: 'wallet-zip-continental',
-    name: 'ZIP-AROUND TRAVEL CONTINENTAL',
-    subtitle: 'Heavy Full-Grain Leather • 12 Slots',
+    name: 'COAG Zip-Around Continental Wallet',
+    subtitle: 'COAG Heavy Full-Grain Leather • 12 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Pebbled Grain Vachetta',
     notes: 'Swiss YKK Excella Brass Zipper • Zip Coin Compartment • Passport & Phone Fit',
-    price: '₹3,650',
-    numericPrice: 3650,
+    price: '₹999',
+    numericPrice: 999,
     rating: 4.8,
     reviews: 72,
     badge: 'WALLET',
@@ -450,22 +455,22 @@ const products = [
     fallbackImage: '/images/wallet_3.jpg',
     images: [
       '/images/wallet_3.jpg',
-      '/images/wallet_3_inside.jpg',
-      '/images/wallet_3_detail.jpg',
+      '/images/wallet_5.jpg',
+      '/images/wallet_3.jpg',
     ],
-    description: 'An executive travel companion in pebbled Vachetta leather. Fully encases 12 credit cards, international banknotes, passport, and smartphones securely behind smooth Swiss brass zippers.',
+    description: 'An executive COAG travel companion in pebbled Vachetta leather. Fully encases 12 credit cards, international banknotes, passport, and smartphones securely behind smooth Swiss brass zippers.',
   },
   {
     id: 'wallet-croco-moneyclip',
-    name: 'EXOTIC CROCO MONEY-CLIP WALLET',
-    subtitle: 'Textured Pocket Wallet • 6 Slots',
+    name: 'COAG Croco Money-Clip Wallet',
+    subtitle: 'COAG Textured Pocket Wallet • 6 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Embossed Exotic Calfskin',
     notes: 'Spring-Loaded Titanium Money Clip • 6 Card Bays • Beveled Edge Stitching',
-    price: '₹2,800',
-    numericPrice: 2800,
+    price: '₹749',
+    numericPrice: 749,
     rating: 4.9,
     reviews: 105,
     badge: 'WALLET',
@@ -474,22 +479,22 @@ const products = [
     fallbackImage: '/images/wallet_4.jpg',
     images: [
       '/images/wallet_4.jpg',
-      '/images/wallet_4_clip.jpg',
-      '/images/wallet_4_detail.jpg',
+      '/images/wallet_2.jpg',
+      '/images/wallet_4.jpg',
     ],
-    description: 'Formed from rich embossed crocodile grain calfskin fitted with an internal spring-tension titanium money clip. Compact, ultra-stylish, and effortlessly slips into jacket breast pockets.',
+    description: 'Formed for COAG from rich embossed crocodile grain calfskin fitted with an internal spring-tension titanium money clip. Compact, ultra-stylish, and effortlessly slips into jacket breast pockets.',
   },
   {
     id: 'wallet-zippe-compact',
-    name: 'LE ZIPPÉ COMPACT NOIR & BLEU',
-    subtitle: 'Midnight Blue Grained Calfskin • Zip-Around',
+    name: 'COAG Compact Zippé Wallet',
+    subtitle: 'COAG Midnight Blue Calfskin • Zip-Around',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Grained French Calfskin',
     notes: 'Smooth Silver Metal Zip • 6 Card Bays • Gusseted Cash & Coin Pocket',
-    price: '₹2,650',
-    numericPrice: 2650,
+    price: '₹799',
+    numericPrice: 799,
     rating: 4.9,
     reviews: 88,
     badge: 'WALLET',
@@ -498,22 +503,22 @@ const products = [
     fallbackImage: '/images/wallet_5.jpg',
     images: [
       '/images/wallet_5.jpg',
-      '/images/wallet_3_inside.jpg',
-      '/images/wallet_3_detail.jpg',
+      '/images/wallet_3.jpg',
+      '/images/wallet_5.jpg',
     ],
-    description: 'An effortlessly refined zip-around silhouette tailored in supple midnight blue grained calfskin. Secured with a whisper-smooth silver alloy zipper, offering 6 card slots, a cash fold, and coin compartment.',
+    description: 'An effortlessly refined zip-around silhouette tailored for COAG in supple midnight blue grained calfskin. Secured with a whisper-smooth silver alloy zipper, offering 6 card slots, a cash fold, and coin compartment.',
   },
   {
     id: 'wallet-trifold-elite',
-    name: 'PORTEFEUILLE VERT ÉLITE TRIFOLD',
-    subtitle: 'Forest Green Vegetable-Tanned • 9 Slots',
+    name: 'COAG Vert Élite Trifold Wallet',
+    subtitle: 'COAG Forest Green Leather • 9 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Italian Vegetable-Tanned Vachetta',
     notes: 'Dual ID Windows • 9 Card Slots • Hidden Banknote Pocket • RFID Shield',
-    price: '₹2,950',
-    numericPrice: 2950,
+    price: '₹899',
+    numericPrice: 899,
     rating: 4.8,
     reviews: 62,
     badge: 'WALLET',
@@ -522,10 +527,10 @@ const products = [
     fallbackImage: '/images/wallet_6.jpg',
     images: [
       '/images/wallet_6.jpg',
-      '/images/wallet_1_inside.jpg',
-      '/images/wallet_1_detail.jpg',
+      '/images/wallet_1.jpg',
+      '/images/wallet_6.jpg',
     ],
-    description: 'Distinctive trifold architecture shaped from rich forest green vegetable-tanned Vachetta leather. Equipped with 9 precision card bays, dual quick-access ID windows, and built-in RFID security.',
+    description: 'Distinctive trifold architecture shaped for COAG from rich forest green vegetable-tanned Vachetta leather. Equipped with 9 precision card bays, dual quick-access ID windows, and built-in RFID security.',
   },
 
   // ==========================================
@@ -562,7 +567,7 @@ const products = [
   },
   {
     id: 'gift-executive-suite',
-    name: 'THE EXECUTIVE NOIR SUITE',
+    name: 'COAG The Executive Noir Suite',
     subtitle: '100ml Extrait & French Boxcalf Bifold',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -576,7 +581,7 @@ const products = [
     reviews: 118,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'The Executive Noir Suite Unboxing Video',
+    videoTitle: 'COAG The Executive Noir Suite Unboxing Video',
     packingBoxImage: '/images/gift_package_packing_2.jpg',
     openBoxImage: '/images/gift_package_2.jpg',
     image: '/images/gift_package_packing_2.jpg',
@@ -591,7 +596,7 @@ const products = [
   },
   {
     id: 'gift-sovereign-hamper',
-    name: 'SOVEREIGN HERITAGE GIFT TRUNK',
+    name: 'COAG Sovereign Heritage Gift Trunk',
     subtitle: 'Extrait • Reversible Leather Belt • Cardholder',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -605,7 +610,7 @@ const products = [
     reviews: 67,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'Sovereign Heritage Gift Trunk Unboxing Video',
+    videoTitle: 'COAG Sovereign Heritage Gift Trunk Unboxing Video',
     packingBoxImage: '/images/gift_package_3_box.jpg',
     openBoxImage: '/images/gift_package_3.jpg',
     image: '/images/gift_package_3_box.jpg',
@@ -620,7 +625,7 @@ const products = [
   },
   {
     id: 'gift-grand-atelier-box',
-    name: 'L\'ATELIER ARTISANAL GIFT CHEST',
+    name: 'COAG L\'Atelier Artisanal Gift Chest',
     subtitle: 'Dual Extraits & Exotic Croco Pocket Wallet',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -634,7 +639,7 @@ const products = [
     reviews: 82,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'L\'Atelier Artisanal Gift Chest Unboxing Video',
+    videoTitle: 'COAG L\'Atelier Artisanal Gift Chest Unboxing Video',
     packingBoxImage: '/images/gift_package_4_box.jpg',
     openBoxImage: '/images/gift_package_4.jpg',
     image: '/images/gift_package_4_box.jpg',
@@ -649,7 +654,7 @@ const products = [
   },
   {
     id: 'gift-coffret-imperial',
-    name: 'LE COFFRET NOIR IMPÉRIAL',
+    name: 'COAG Le Coffret Noir Impérial',
     subtitle: 'Dual 50ml Extraits & 24K Gold Travel Atomizer',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -663,7 +668,7 @@ const products = [
     reviews: 49,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'Le Coffret Noir Impérial Unboxing Video',
+    videoTitle: 'COAG Le Coffret Noir Impérial Unboxing Video',
     packingBoxImage: '/images/gift_package_packing_2.jpg',
     openBoxImage: '/images/gift_package_5.jpg',
     image: '/images/gift_package_packing_2.jpg',
@@ -678,7 +683,7 @@ const products = [
   },
   {
     id: 'gift-emerald-heritage-hamper',
-    name: "L'ÉMERAUDE HERITAGE LUXURY HAMPER",
+    name: "COAG L'Émeraude Heritage Luxury Hamper",
     subtitle: 'Extrait Flacon • Cardholder • Velvet Keepsake Pouch',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -692,7 +697,7 @@ const products = [
     reviews: 53,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'L\'Émeraude Heritage Luxury Hamper Unboxing Video',
+    videoTitle: 'COAG L\'Émeraude Heritage Luxury Hamper Unboxing Video',
     packingBoxImage: '/images/gift_package_packing_1.jpg',
     openBoxImage: '/images/gift_package_6.jpg',
     image: '/images/gift_package_packing_1.jpg',
@@ -791,6 +796,8 @@ const CollectionSection = () => {
 
   const handleStartUnboxingVideo = (productId, e) => {
     if (e) e.stopPropagation();
+    const targetProd = products.find(p => p.id === productId);
+    if (targetProd && targetProd.isSoldOut) return;
     setActiveVideoId(productId);
     setVideoProgress(0);
     setIsVideoPlaying(true);
@@ -857,6 +864,7 @@ const CollectionSection = () => {
   }, [selectedProduct]);
 
   const openModal = (product) => {
+    if (product?.isSoldOut) return;
     setSelectedProduct(product);
     setModalImageIdx(0);
     setModalVideoActive(false);
@@ -866,21 +874,36 @@ const CollectionSection = () => {
   const handleWhatsAppOrder = (product, e, qty = 1) => {
     if (e) e.stopPropagation();
     const phone = `91${WHATSAPP_NUMBER}`;
-    const categoryName = product.mainCategory || 'LUXURY CREATION';
-    const singlePrice = formatPrice(product.numericPrice || product.price);
-    const totalPrice = formatPrice((product.numericPrice || 0) * qty);
-    const isLGBTQ = product.categories?.includes('LGBTQ') || activeOccasion === 'LGBTQ';
-    const message = `Hello COAG Luxury Parfumerie & Atelier, I would like to order:%0A%0A` +
-      `*Product:* ${encodeURIComponent(product.name)}%0A` +
-      `*Category:* ${encodeURIComponent(categoryName)}${isLGBTQ ? ' (LGBTQ Edition)' : ''}%0A` +
-      `*Quantity:* ${qty}%0A` +
-      `*Price per Unit:* ${encodeURIComponent(singlePrice)}%0A` +
-      `*Total Amount:* ${encodeURIComponent(totalPrice)}%0A` +
-      `*Specifications:* ${encodeURIComponent(product.subtitle)}%0A` +
-      `*Details:* ${encodeURIComponent(product.notes)}%0A%0A` +
-      `Please confirm availability, dispatch timeframe, and payment details.`;
+    const categoryName = product.mainCategory || product.badge || 'PERFUME';
+    const rawPrice = product.numericPrice || (typeof product.price === 'number' ? product.price : 999);
+    const singlePrice = formatPrice ? formatPrice(rawPrice) : (product.price || `₹${rawPrice}`);
+    const totalPrice = formatPrice ? formatPrice(rawPrice * qty) : `₹${rawPrice * qty}`;
+    const origin = typeof window !== 'undefined' && window.location.origin ? window.location.origin : '';
+    const imageUrl = product.image
+      ? (product.image.startsWith('http') ? product.image : `${origin}${product.image}`)
+      : '';
 
-    window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    const lines = [
+      `*COAG LUXURY PARFUMS & ATELIER*`,
+      `_Order & Product Inquiry_`,
+      ``,
+      `• *Product Name:* ${product.name}`,
+      `• *Category:* ${categoryName}`,
+      product.subtitle ? `• *Volume / Edition:* ${product.subtitle}` : null,
+      product.family ? `• *Olfactory Family:* ${product.family}` : null,
+      product.notes ? `• *Fragrance Notes:* ${product.notes}` : null,
+      product.rating ? `• *Rating:* ${product.rating} ★ (${product.reviews || 0} reviews)` : null,
+      `• *Unit Price:* ${singlePrice}`,
+      `• *Quantity:* ${qty}`,
+      `• *Total Estimated Price:* ${totalPrice}`,
+      `• *Stock Status:* ${product.isSoldOut ? 'Sold Out (Waitlist Request)' : 'Available in Stock'}`,
+      imageUrl ? `• *Product Image:* ${imageUrl}` : null,
+      ``,
+      `Please confirm order booking, payment options, and dispatch timeframe.`
+    ].filter(Boolean).join('\n');
+
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(lines)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   // Filter products:
@@ -934,7 +957,7 @@ const CollectionSection = () => {
           <div className="inline-flex items-center justify-center space-x-2.5 px-4 py-1.5 rounded-full bg-[#0a0a0c] border border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.14)]">
             <Sparkles size={12} className="text-amber-400" />
             <span className="text-[10px] sm:text-[10.5px] tracking-[0.28em] uppercase font-bold text-white">
-              COAG MAISON • LUXURY ATELIER
+              COAG PARFUMS • LUXURY ATELIER
             </span>
           </div>
 
@@ -943,7 +966,7 @@ const CollectionSection = () => {
           </h2>
 
           <p className="text-neutral-700 font-normal text-xs sm:text-sm leading-relaxed tracking-wide">
-            Explore our artisanal curations — haute French perfumes, Italian full-grain leather belts, and bespoke calfskin wallets crafted with timeless luxury.
+            Explore COAG's signature fragrance creations — mastercrafted extrait de parfum sprays with 35% pure concentration and curated luxury gift coffrets designed for timeless royalty.
           </p>
         </div>
 
@@ -1182,13 +1205,19 @@ const CollectionSection = () => {
             return (
               <div
                 key={product.id}
-                onClick={() => openModal(product)}
-                className="group flex flex-col bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transition-all duration-500 transform hover:-translate-y-1.5 cursor-pointer"
+                onClick={() => {
+                  if (product.isSoldOut) return;
+                  openModal(product);
+                }}
+                className={`group flex flex-col bg-white border border-neutral-200 rounded-2xl overflow-hidden transition-all duration-500 ${product.isSoldOut
+                    ? 'cursor-not-allowed opacity-90 select-none'
+                    : 'hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transform hover:-translate-y-1.5 cursor-pointer'
+                  }`}
               >
                 {/* Product Image Canvas */}
                 <div className="relative aspect-[4/5] w-full overflow-hidden bg-white">
                   {/* LIVE UNBOXING VIDEO PLAYER (When activated on Gift Package card) */}
-                  {product.mainCategory === 'GIFT PACKAGE' && activeVideoId === product.id ? (
+                  {product.mainCategory === 'GIFT PACKAGE' && !product.isSoldOut && activeVideoId === product.id ? (
                     product.videoUrl ? (
                       <div
                         onClick={(e) => e.stopPropagation()}
@@ -1376,11 +1405,6 @@ const CollectionSection = () => {
                             🎁 Gift Packing Box
                           </span>
                         )}
-                        {product.categories?.includes('LGBTQ') && (
-                          <span className="text-[8.5px] font-extrabold tracking-wider uppercase px-2 py-0.5 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white shadow-xs w-fit">
-                            🏳️‍🌈 LGBTQ
-                          </span>
-                        )}
                         {product.isSoldOut && (
                           <span className="text-[9px] font-black tracking-widest uppercase px-2.5 py-1 rounded-full bg-red-600 text-white border border-white/60 shadow-lg shadow-red-900/60 flex items-center space-x-1.5 w-fit animate-pulse">
                             <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
@@ -1400,7 +1424,7 @@ const CollectionSection = () => {
                       )}
 
                       {/* Gift Package Live Unboxing Video Trigger Button */}
-                      {product.mainCategory === 'GIFT PACKAGE' && (
+                      {product.mainCategory === 'GIFT PACKAGE' && !product.isSoldOut && (
                         <button
                           onClick={(e) => handleStartUnboxingVideo(product.id, e)}
                           className="absolute bottom-3 left-3 z-20 px-3 py-1.5 rounded-full bg-black/85 hover:bg-red-600 text-white text-[10px] font-bold tracking-wider uppercase backdrop-blur-md border border-white/25 shadow-xl flex items-center space-x-1.5 transition-all duration-300 hover:scale-105 group/vidbtn cursor-pointer"
@@ -1432,32 +1456,36 @@ const CollectionSection = () => {
                         </button>
 
                         {/* Add to Cart Button */}
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            addToCart(product, 1);
-                          }}
-                          className="w-8 h-8 rounded-full bg-white/95 backdrop-blur-md border border-black/10 flex items-center justify-center text-black hover:bg-black hover:text-white hover:scale-110 transition-all shadow-sm active:scale-90 cursor-pointer group/cartbtn"
-                          title={`Add ${product.name} to Cart`}
-                          aria-label={`Add ${product.name} to Cart`}
-                        >
-                          <ShoppingBag size={14} className="transition-transform group-hover/cartbtn:scale-110" />
-                        </button>
+                        {!product.isSoldOut && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              addToCart(product, 1);
+                            }}
+                            className="w-8 h-8 rounded-full bg-white/95 backdrop-blur-md border border-black/10 flex items-center justify-center text-black hover:bg-black hover:text-white hover:scale-110 transition-all shadow-sm active:scale-90 cursor-pointer group/cartbtn"
+                            title={`Add ${product.name} to Cart`}
+                            aria-label={`Add ${product.name} to Cart`}
+                          >
+                            <ShoppingBag size={14} className="transition-transform group-hover/cartbtn:scale-110" />
+                          </button>
+                        )}
                       </div>
 
                       {/* Hover Quick Actions Overlay */}
-                      <div className="absolute inset-x-3 bottom-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-end">
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            openModal(product);
-                          }}
-                          className="px-4 py-2 bg-black hover:bg-neutral-900 text-white text-[11px] tracking-[0.2em] uppercase font-bold rounded-xl flex items-center space-x-2 shadow-xl backdrop-blur-md transition-all active:scale-95"
-                        >
-                          <Eye size={14} />
-                          <span>View Details</span>
-                        </button>
-                      </div>
+                      {!product.isSoldOut && (
+                        <div className="absolute inset-x-3 bottom-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-end">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              openModal(product);
+                            }}
+                            className="px-4 py-2 bg-black hover:bg-neutral-900 text-white text-[11px] tracking-[0.2em] uppercase font-bold rounded-xl flex items-center space-x-2 shadow-xl backdrop-blur-md transition-all active:scale-95"
+                          >
+                            <Eye size={14} />
+                            <span>View Details</span>
+                          </button>
+                        </div>
+                      )}
                     </>
                   )}
                 </div>
@@ -1498,25 +1526,31 @@ const CollectionSection = () => {
                     </span>
 
                     <div className="flex items-center space-x-2">
-                      {/* Add to Bag Button */}
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          addToCart(product, 1);
-                        }}
-                        className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black hover:bg-neutral-800 text-white transition-all shadow-xs active:scale-90 cursor-pointer"
-                        title="Add to Shopping Bag"
-                        aria-label="Add to Shopping Bag"
-                      >
-                        <ShoppingBag size={14} />
-                      </button>
+                      {/* Add to Bag Button / Sold Out State */}
+                      {product.isSoldOut ? (
+                        <span className="inline-flex items-center justify-center h-8 px-2.5 rounded-full bg-neutral-100 border border-neutral-300 text-neutral-500 text-[10px] font-bold uppercase tracking-wider select-none cursor-not-allowed">
+                          Sold Out
+                        </span>
+                      ) : (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            addToCart(product, 1);
+                          }}
+                          className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black hover:bg-neutral-800 text-white transition-all shadow-xs active:scale-90 cursor-pointer"
+                          title="Add to Shopping Bag"
+                          aria-label="Add to Shopping Bag"
+                        >
+                          <ShoppingBag size={14} />
+                        </button>
+                      )}
 
                       {/* Order on WhatsApp */}
                       <button
                         onClick={(e) => handleWhatsAppOrder(product, e)}
                         className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white transition-all shadow-xs active:scale-90 cursor-pointer"
-                        title="Order on WhatsApp"
-                        aria-label="Order on WhatsApp"
+                        title={product.isSoldOut ? "Inquire Waitlist on WhatsApp" : "Order on WhatsApp"}
+                        aria-label={product.isSoldOut ? "Inquire Waitlist on WhatsApp" : "Order on WhatsApp"}
                       >
                         <WhatsAppIcon className="w-4 h-4 fill-white" />
                       </button>
@@ -1914,7 +1948,13 @@ const CollectionSection = () => {
                   {/* Brand Eyebrow + Title Header */}
                   <div>
                     <div className="flex items-center space-x-2 text-[10.5px] uppercase tracking-[0.25em] text-neutral-400 font-bold mb-1">
-                      <span>MAISON COAG PARIS</span>
+                      <span>
+                        {selectedProduct.mainCategory === 'PERFUME'
+                          ? 'COAG HAUTE PARFUMERIE'
+                          : selectedProduct.mainCategory === 'GIFT PACKAGE'
+                          ? 'COAG LUXURY COFFRET'
+                          : 'COAG LEATHER ATELIER'}
+                      </span>
                       <span>•</span>
                       <span className="text-amber-700 font-semibold">{selectedProduct.family}</span>
                     </div>
@@ -2002,29 +2042,64 @@ const CollectionSection = () => {
                     <div className="flex items-center justify-between text-[11px] uppercase tracking-widest font-bold text-black">
                       <span className="flex items-center space-x-1.5">
                         <Sparkles size={13} className="text-amber-500" />
-                        <span>{selectedProduct.mainCategory === 'PERFUME' ? 'Olfactory Architecture' : selectedProduct.mainCategory === 'GIFT PACKAGE' ? 'Gift Suite Inclusions' : 'Artisanal Specifications'}</span>
+                        <span>
+                          {selectedProduct.mainCategory === 'PERFUME'
+                            ? 'Olfactory Architecture (Spray Dispersion)'
+                            : selectedProduct.mainCategory === 'GIFT PACKAGE'
+                            ? 'Gift Suite Inclusions'
+                            : 'Artisanal Specifications'}
+                        </span>
                       </span>
-                      {selectedProduct.mainCategory === 'PERFUME' && (
-                        <span className="text-[10px] text-amber-700 font-bold bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">
+                      {selectedProduct.mainCategory === 'PERFUME' ? (
+                        <span className="text-[10px] text-amber-700 font-bold bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full">
                           24h+ Beast Mode Sillage
+                        </span>
+                      ) : selectedProduct.mainCategory === 'GIFT PACKAGE' ? (
+                        <span className="text-[10px] text-red-700 font-bold bg-red-50 border border-red-200 px-2.5 py-0.5 rounded-full">
+                          Bespoke Presentation Box
+                        </span>
+                      ) : (
+                        <span className="text-[10px] text-emerald-800 font-bold bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                          100% Genuine Handcrafted
                         </span>
                       )}
                     </div>
 
-                    {/* Structured Notes Chips */}
+                    {/* Structured Notes / Specs Chips */}
                     <div className="flex flex-wrap gap-1.5">
-                      {selectedProduct.notes.split('•').map((note, nIdx) => (
-                        <div
-                          key={nIdx}
-                          className="px-2.5 py-1 rounded-lg bg-white border border-neutral-200 text-xs font-medium text-neutral-800 shadow-xs flex items-center space-x-1"
-                        >
-                          <span className="text-[10px] text-amber-600 font-bold">
-                            {nIdx === 0 ? '🌿 Top:' : nIdx === 1 ? '🌸 Heart:' : '🪵 Base:'}
-                          </span>
-                          <span>{note.trim()}</span>
-                        </div>
-                      ))}
+                      {selectedProduct.notes.split('•').map((note, nIdx) => {
+                        let label = '';
+                        if (selectedProduct.mainCategory === 'PERFUME') {
+                          label = nIdx === 0 ? '🌿 Top Notes:' : nIdx === 1 ? '🌸 Heart Notes:' : '🪵 Base Notes:';
+                        } else if (selectedProduct.mainCategory === 'BELT') {
+                          label = nIdx === 0 ? '✨ Buckle / Hardware:' : nIdx === 1 ? '🧵 Craft:' : '⚜️ Finish:';
+                        } else if (selectedProduct.mainCategory === 'WALLET') {
+                          label = nIdx === 0 ? '💳 Compartments:' : nIdx === 1 ? '🛡️ Protection:' : '⚜️ Material:';
+                        } else {
+                          label = nIdx === 0 ? '🎁 Extrait Flacons:' : nIdx === 1 ? '✨ Discovery Sprays:' : '💎 Leather Goods:';
+                        }
+
+                        return (
+                          <div
+                            key={nIdx}
+                            className="px-2.5 py-1 rounded-lg bg-white border border-neutral-200 text-xs font-medium text-neutral-800 shadow-xs flex items-center space-x-1"
+                          >
+                            <span className="text-[10px] text-amber-600 font-bold">
+                              {label}
+                            </span>
+                            <span>{note.trim()}</span>
+                          </div>
+                        );
+                      })}
                     </div>
+
+                    {/* Spray Performance Callout for Perfumes */}
+                    {selectedProduct.mainCategory === 'PERFUME' && (
+                      <div className="flex items-center space-x-2 pt-1 text-[11px] text-neutral-600 font-medium">
+                        <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
+                        <span>High-dispersion micro-atomizer nozzle spray for optimal longevity & projection</span>
+                      </div>
+                    )}
 
                     {/* LGBTQ Curated Tag if applicable */}
                     {selectedProduct.categories?.includes('LGBTQ') && (

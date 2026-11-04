@@ -43,17 +43,17 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
 
 const allProducts = [
   // ==========================================
-  // PERFUMES (9 Creations)
+  // PERFUMES (9 High-Performance Spray Creations)
   // ==========================================
   {
     id: 'emeraude-noir',
     name: 'COAG The King',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'OFFICE', 'CHAMPION', 'GYM WORKOUT', 'INFLUENCER SERIES', 'LGBTQ'],
     family: 'Fresh Woody & Resinous',
-    notes: 'Calabrian Bergamot • Tuscan Cedar • Golden Amber',
+    notes: 'Calabrian Bergamot • Tuscan Volcanic Cedar • Golden Amber & Birch',
     price: '₹999',
     numericPrice: 999,
     rating: 4.9,
@@ -67,17 +67,17 @@ const allProducts = [
       '/images/perfume_coag_box_with_spray.jpg',
       '/images/coag_signature_bottle.jpg',
     ],
-    description: 'A nocturnal rush of cold mountain bergamot and molten amber resin splashing upon ancient volcanic cedar. Clean, crisp, and commanding for office meetings and champion performance.',
+    description: 'An elite COAG luxury extrait spray engineered with an ultra-fine micro-mist atomizing nozzle. Opens with crisp Calabrian bergamot and smoky Tuscan volcanic cedar, settling into molten golden amber with 24-hour beast-mode sillage.',
   },
   {
     id: 'ambre-imperial',
     name: 'COAG The Queen',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'DATE NIGHT', 'HAWAS ON BED', 'CLUBBING', 'INFLUENCER SERIES', 'LGBTQ'],
+    categories: ['PERFUME', 'DATE NIGHT', 'EVENING WEAR', 'SIGNATURE', 'INFLUENCER SERIES'],
     family: 'Warm Oriental Amber',
-    notes: 'Smoked Cardamom • Charred Tonka • Sacred Myrrh',
+    notes: 'Warm Smoked Cardamom • Charred Tonka Bean • Sacred Golden Myrrh',
     price: '₹799',
     numericPrice: 799,
     rating: 5.0,
@@ -91,17 +91,17 @@ const allProducts = [
       '/images/perfume_coag_cylindrical_splash.jpg',
       '/images/coag_cylindrical_bottle.jpg',
     ],
-    description: 'A regal eruption of smoked cardamom, scorched wild tonka, and sacred myrrh steeped in molten gold. Rich oriental warmth tailored for intimate date nights and unforgettable clubbing.',
+    description: 'A seductive COAG evening extrait spray crafted with rich, sultry notes. Delivers an opulent spray mist of warm smoked cardamom, charred tonka, and sacred myrrh steeped in royal amber for an irresistible, long-lasting magnetic scent trail.',
   },
   {
     id: 'rose-eternelle',
     name: 'COAG The Lagacy',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'SCHOOL / COLLEGE', 'FUNCTION', 'DATE NIGHT', 'LGBTQ'],
+    categories: ['PERFUME', 'SCHOOL / COLLEGE', 'FUNCTION', 'DATE NIGHT'],
     family: 'Luminous Travertine & White Floral',
-    notes: 'White Gardenia • Golden Amber • Cashmere Woods',
+    notes: 'Dawn White Gardenia • Crystalline Amber • Velvety Cashmere Woods',
     price: '₹1199',
     numericPrice: 1199,
     rating: 4.8,
@@ -115,17 +115,17 @@ const allProducts = [
       '/images/coag_lagacy_bottle.jpg',
       '/images/perfume_coag_lagacy_macro.jpg',
     ],
-    description: 'An iconic porcelain-white flacon crowned with polished gold and satin black. Dawn gardenias, crystalline amber, and velvety cashmere on a natural travertine plinth for timeless royal distinction.',
+    description: 'A luminous white floral extrait spray releasing a fine micro-dispersion mist of fresh dawn gardenias, crystalline amber, and velvety cashmere woods. Crafted for sophisticated presence and all-day compliment projection.',
   },
   {
     id: 'coag-antique',
     name: 'COAG The Antique',
-    subtitle: 'Eau de Parfum • 50ml',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'OFFICE', 'SCHOOL / COLLEGE', 'FUNCTION', 'INFLUENCER SERIES', 'LGBTQ'],
+    categories: ['PERFUME', 'OFFICE', 'SCHOOL / COLLEGE', 'FUNCTION', 'INFLUENCER SERIES'],
     family: 'Antique English Rose & Amber',
-    notes: 'Antique English Rose • Blush Peony • Royal Amber',
+    notes: 'Antique English Rose • Dewy Blush Peonies • Royal Amber & Cedar',
     price: '₹1249',
     numericPrice: 1249,
     rating: 4.9,
@@ -139,19 +139,19 @@ const allProducts = [
       '/images/perfume_coag_antique_floral.jpg',
       '/images/perfume_coag_antique_dark_marble.jpg',
     ],
-    description: 'An iconic antique porcelain-white flacon crowned with polished gold and satin black, poised gracefully on a warm classical pedestal surrounded by blooming antique English garden roses and blush peonies. Timeless elegance and prestige.',
+    description: 'A prestige vintage rose extrait spray atomizing dewy English garden rose petals, blush peonies, and warm royal ambergris into a velvety mist. Formulated for a timeless aristocratic presence and deep lasting sillage.',
   },
   {
     id: 'noir-absolu',
-    name: 'NOIR ABSOLU',
-    subtitle: 'Extrait de Parfum • 50ml',
+    name: 'COAG Noir Absolu',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'HAWAS ON BED', 'CLUBBING', 'DATE NIGHT', 'INFLUENCER SERIES', 'LGBTQ'],
+    categories: ['PERFUME', 'EVENING WEAR', 'SIGNATURE', 'DATE NIGHT', 'INFLUENCER SERIES', 'LGBTQ'],
     family: 'Dark Smoky Balsam',
-    notes: 'Birch Tar • Black Pepper • Madagascar Vanilla',
-    price: '₹340',
-    numericPrice: 340,
+    notes: 'Smoldering Birch Tar • Crushed Black Pepper • Dark Bourbon Vanilla',
+    price: '₹1,149',
+    numericPrice: 1149,
     rating: 5.0,
     reviews: 156,
     badge: 'PERFUME',
@@ -163,19 +163,19 @@ const allProducts = [
       '/images/perfume_noir_absolu_macro.jpg',
       '/images/perfume_noir_absolu_still.jpg',
     ],
-    description: 'A deep, mysterious veil of smoldering birch wood, crackling black pepper, and dark Bourbon vanilla absolute. Magnetic and irresistible for seductive late nights and high-octane clubbing.',
+    description: 'A deep, mysterious veil of smoldering birch wood, crackling black pepper, and dark Bourbon vanilla absolute atomized through COAG\'s precision spray nozzle. Magnetic and irresistible for seductive late nights and elevated occasions.',
   },
   {
     id: 'cuir-majestueux',
-    name: 'CUIR MAJESTUEUX',
-    subtitle: 'Extrait de Parfum • 50ml',
+    name: 'COAG Cuir Majestueux',
+    subtitle: '35% Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'CHAMPION', 'FUNCTION', 'OFFICE', 'INFLUENCER SERIES'],
     family: 'Imperial Leather Chypre',
-    notes: 'Saddle Leather • Saffron Thread • Patchouli Leaf',
-    price: '₹360',
-    numericPrice: 360,
+    notes: 'Hand-Buffed Saddle Leather • Crimson Saffron Thread • Aged Indonesian Patchouli',
+    price: '₹1,249',
+    numericPrice: 1249,
     rating: 4.9,
     reviews: 92,
     badge: 'PERFUME',
@@ -187,19 +187,19 @@ const allProducts = [
       '/images/perfume_cuir_majestueux_macro.jpg',
       '/images/perfume_cuir_majestueux_still.jpg',
     ],
-    description: 'Hand-buffed saddle leather enriched with fiery crimson saffron and aged Indonesian patchouli. Crafted for champions and high-profile wedding functions demanding an unforgettable royal presence.',
+    description: 'Hand-buffed saddle leather enriched with fiery crimson saffron and aged Indonesian patchouli in a high-concentration extrait spray. Crafted for champions and high-profile wedding functions demanding an unforgettable royal presence.',
   },
   {
     id: 'fleur-blanche',
-    name: 'FLEUR BLANCHE',
-    subtitle: 'Eau de Parfum • 50ml',
+    name: 'COAG Fleur Blanche',
+    subtitle: 'Haute Eau de Parfum Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'SCHOOL / COLLEGE', 'DATE NIGHT', 'FUNCTION', 'LGBTQ'],
     family: 'Luminous Solar Floral',
-    notes: 'Night-Blooming Jasmine • Neroli • White Musk',
-    price: '₹260',
-    numericPrice: 260,
+    notes: 'Mediterranean Neroli • Night-Blooming Jasmine • Crystalline White Musk',
+    price: '₹899',
+    numericPrice: 899,
     rating: 4.8,
     reviews: 73,
     badge: 'PERFUME',
@@ -211,19 +211,19 @@ const allProducts = [
       '/images/perfume_fleur_blanche_macro.jpg',
       '/images/perfume_fleur_blanche_still.jpg',
     ],
-    description: 'Sun-drenched Mediterranean neroli blossoms entwined with nocturnal Grasse jasmine petals and airy crystalline white musk. An effortless compliment-magnet for college campuses and romantic dates.',
+    description: 'Sun-drenched Mediterranean neroli blossoms entwined with nocturnal Grasse jasmine petals and airy crystalline white musk in an ultra-fine spray mist. An effortless compliment-magnet for college campuses and romantic dates.',
   },
   {
     id: 'bleu-azur',
-    name: 'BLEU AZUR',
-    subtitle: 'Eau de Parfum • 50ml',
+    name: 'COAG Bleu Azur',
+    subtitle: 'Haute Eau de Parfum Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
     categories: ['PERFUME', 'GYM WORKOUT', 'OFFICE', 'CHAMPION'],
     family: 'Marine Aquatic Citrus',
-    notes: 'French Sea Salt • Grapefruit Zest • Vetiver',
-    price: '₹270',
-    numericPrice: 270,
+    notes: 'French Sea Salt • Iced Grapefruit Zest • Haitian Vetiver',
+    price: '₹999',
+    numericPrice: 999,
     rating: 4.9,
     reviews: 88,
     badge: 'PERFUME',
@@ -235,19 +235,19 @@ const allProducts = [
       '/images/hero_perfume.jpg',
       '/images/perfume_emerald_macro.jpg',
     ],
-    description: 'A frosty tidal surge of French sea salt and iced grapefruit zest grounded by crisp Haitian vetiver. High-end freshness that maintains supreme performance during intense gym workouts and long office shifts.',
+    description: 'A frosty tidal surge of French sea salt and iced grapefruit zest grounded by crisp Haitian vetiver delivered in an invigorating micro-spray. High-end freshness that maintains supreme performance during intense gym workouts and long office shifts.',
   },
   {
     id: 'lor-solaire',
-    name: "L'OR SOLAIRE",
-    subtitle: 'Bespoke Reserve • 50ml',
+    name: "COAG L'Or Solaire",
+    subtitle: 'Bespoke Reserve Extrait Spray • 50ml',
     mainCategory: 'PERFUME',
     category: 'PERFUME',
-    categories: ['PERFUME', 'INFLUENCER SERIES', 'CHAMPION', 'CLUBBING', 'HAWAS ON BED', 'FUNCTION', 'DATE NIGHT', 'LGBTQ'],
+    categories: ['PERFUME', 'INFLUENCER SERIES', 'CHAMPION', 'ROYAL RESERVE', 'SIGNATURE', 'FUNCTION', 'DATE NIGHT', 'LGBTQ'],
     family: 'Gilded Amber Oud',
-    notes: 'Golden Amber • Kashmiri Saffron • Royal Oud',
-    price: '₹390',
-    numericPrice: 390,
+    notes: 'Caramelized Golden Amber • Kashmiri Saffron • Smoked Cambodian Royal Oud',
+    price: '₹1,249',
+    numericPrice: 1249,
     rating: 5.0,
     reviews: 184,
     badge: 'PERFUME',
@@ -259,23 +259,23 @@ const allProducts = [
       '/images/perfume_gold.jpg',
       '/images/perfume_gold_macro.jpg',
     ],
-    description: 'The trending viral sensation praised by top fragrance influencers worldwide. Rare saffron threads, smoked Cambodian oud, and golden caramelized amber with monumental sillage.',
+    description: 'The trending viral sensation praised by top fragrance influencers worldwide. Rare saffron threads, smoked Cambodian oud, and golden caramelized amber atomized into monumental sillage and royal distinction.',
   },
 
   // ==========================================
-  // BELTS (4 Handcrafted Luxury Leather Belts)
+  // BELTS (6 Handcrafted Luxury COAG Creations)
   // ==========================================
   {
     id: 'belt-heritage-noir',
-    name: "L'HÉRITAGE CALFSKIN BELT",
-    subtitle: 'Italian Full-Grain Leather • 35mm',
+    name: "COAG L'Héritage Calfskin Belt",
+    subtitle: 'COAG Italian Full-Grain Leather • 35mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Full-Grain Tuscan Calfskin',
     notes: 'Brushed Ruthenium Clasp • Hand-Burnished Edge • Reversible Noir/Cognac',
-    price: '₹3,450',
-    numericPrice: 3450,
+    price: '₹799',
+    numericPrice: 799,
     rating: 4.9,
     reviews: 86,
     badge: 'BELT',
@@ -284,22 +284,22 @@ const allProducts = [
     fallbackImage: '/images/belt_1.jpg',
     images: [
       '/images/belt_1.jpg',
-      '/images/belt_1_buckle.jpg',
-      '/images/belt_1_detail.jpg',
+      '/images/belt_3.jpg',
+      '/images/belt_1.jpg',
     ],
-    description: 'Handcrafted in Tuscany from select full-grain box calfskin leather. Featuring an ultra-durable brushed ruthenium buckle and micro-beveled, hand-lacquered edges designed for boardrooms and black-tie galas.',
+    description: 'Handcrafted for COAG in Tuscany from select full-grain Italian calfskin leather. Featuring an ultra-durable brushed ruthenium buckle and hand-burnished edges designed for boardrooms and formal galas.',
   },
   {
     id: 'belt-monogram-saddle',
-    name: 'MONOGRAM SADDLE LEATHER BELT',
-    subtitle: 'Artisanal Cognac Leather • 38mm',
+    name: 'COAG Royal Saddle Leather Belt',
+    subtitle: 'COAG Artisanal Cognac Leather • 38mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Vegetable-Tanned Saddle Leather',
-    notes: 'Solid Brass COAG Monogram Buckle • Waxed Linen Double-Stitch • Rich Patina',
-    price: '₹3,850',
-    numericPrice: 3850,
+    notes: 'Solid Brass Buckle • Waxed Linen Double-Stitch • Rich Vintage Patina',
+    price: '₹949',
+    numericPrice: 949,
     rating: 5.0,
     reviews: 112,
     badge: 'BELT',
@@ -308,22 +308,22 @@ const allProducts = [
     fallbackImage: '/images/belt_2.jpg',
     images: [
       '/images/belt_2.jpg',
-      '/images/belt_2_buckle.jpg',
-      '/images/belt_2_detail.jpg',
+      '/images/belt_6.jpg',
+      '/images/belt_2.jpg',
     ],
-    description: 'Constructed from heavy vegetable-tanned bridle leather steeped in botanical oils. Embellished with the signature COAG solid brass buckle that acquires a magnificent individual patina over decades of wear.',
+    description: 'Constructed for COAG from heavy vegetable-tanned bridle leather steeped in botanical oils. Embellished with a solid brass buckle that acquires a magnificent individual patina over decades of wear.',
   },
   {
     id: 'belt-stealth-formal',
-    name: 'LE STEALTH NOIR DRESS BELT',
-    subtitle: 'Ultra-Fine French Boxcalf • 30mm',
+    name: 'COAG Noir Stealth Dress Belt',
+    subtitle: 'COAG French Boxcalf Leather • 30mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'French Smooth Boxcalf',
     notes: 'Matte Gunmetal Low-Profile Buckle • Feathered Edge • High-Gloss Mirror Finish',
-    price: '₹2,950',
-    numericPrice: 2950,
+    price: '₹699',
+    numericPrice: 699,
     rating: 4.8,
     reviews: 64,
     badge: 'BELT',
@@ -332,22 +332,22 @@ const allProducts = [
     fallbackImage: '/images/belt_3.jpg',
     images: [
       '/images/belt_3.jpg',
-      '/images/belt_3_buckle.jpg',
-      '/images/belt_3_detail.jpg',
+      '/images/belt_1.jpg',
+      '/images/belt_3.jpg',
     ],
-    description: 'The definitive formal evening dress belt. Engineered with a slender 30mm profile and stealth satin-finished gunmetal buckle, designed to seamlessly complement tailored tuxedos and bespoke suiting.',
+    description: 'The definitive COAG formal evening dress belt. Engineered with a slender 30mm profile and stealth satin-finished gunmetal buckle, designed to seamlessly complement tailored tuxedos and bespoke suiting.',
   },
   {
     id: 'belt-croco-embossed',
-    name: 'EXOTIC CROCO-EMBOSSED BELT',
-    subtitle: 'Hand-Glazed Calfskin • 35mm',
+    name: 'COAG Exotic Croco-Embossed Belt',
+    subtitle: 'COAG Hand-Glazed Calfskin • 35mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Hand-Embossed Croco Calfskin',
     notes: 'Palladium Plate Buckle • Deep Midnight Lustre • Velvet Nubuck Backing',
-    price: '₹3,950',
-    numericPrice: 3950,
+    price: '₹999',
+    numericPrice: 999,
     rating: 4.9,
     reviews: 79,
     badge: 'BELT',
@@ -356,22 +356,22 @@ const allProducts = [
     fallbackImage: '/images/belt_4.jpg',
     images: [
       '/images/belt_4.jpg',
-      '/images/belt_4_buckle.jpg',
-      '/images/belt_4_detail.jpg',
+      '/images/belt_3.jpg',
+      '/images/belt_4.jpg',
     ],
-    description: 'An audacious statement piece featuring high-definition crocodile scale embossing on premium French calfskin, backed by soft calf nubuck and crowned with a palladium-plated buckle.',
+    description: 'An audacious COAG statement piece featuring high-definition crocodile scale embossing on premium French calfskin, backed by soft calf nubuck and crowned with a palladium-plated buckle.',
   },
   {
     id: 'belt-saffiano-royale',
-    name: 'CEINTURON SAFFIANO ROYALE',
-    subtitle: 'Navy Saffiano Calfskin • 35mm',
+    name: 'COAG Saffiano Royale Leather Belt',
+    subtitle: 'COAG Navy Saffiano Calfskin • 35mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'Cross-Grain Saffiano Leather',
     notes: 'Polished Palladium Buckle • Scratch-Resistant Texture • Beveled Hand-Lacquered Edges',
-    price: '₹3,650',
-    numericPrice: 3650,
+    price: '₹849',
+    numericPrice: 849,
     rating: 4.9,
     reviews: 58,
     badge: 'BELT',
@@ -380,22 +380,22 @@ const allProducts = [
     fallbackImage: '/images/belt_5.jpg',
     images: [
       '/images/belt_5.jpg',
-      '/images/belt_1_buckle.jpg',
-      '/images/belt_4_detail.jpg',
+      '/images/belt_3.jpg',
+      '/images/belt_5.jpg',
     ],
-    description: 'A striking statement in deep navy blue cross-grain Saffiano calfskin. Engineered with an ultra-durable, scratch-resistant surface, hand-beveled edges, and crowned with a mirror-polished palladium silver buckle.',
+    description: 'A striking COAG statement in deep navy blue cross-grain Saffiano calfskin. Engineered with an ultra-durable, scratch-resistant surface, hand-beveled edges, and crowned with a mirror-polished palladium silver buckle.',
   },
   {
     id: 'belt-eperon-saddle',
-    name: "L'ÉPERON SADDLE LEATHER DRESS BELT",
-    subtitle: 'Cognac Bridle Leather • 32mm',
+    name: 'COAG Cognac Saddle Leather Belt',
+    subtitle: 'COAG English Bridle Leather • 32mm',
     mainCategory: 'BELT',
     category: 'BELT',
     categories: ['BELT'],
     family: 'English Bridle Saddle Leather',
     notes: 'Antique Brushed Brass Buckle • Tallow-Infused Leather • Double Waxed Stitch',
-    price: '₹3,750',
-    numericPrice: 3750,
+    price: '₹899',
+    numericPrice: 899,
     rating: 5.0,
     reviews: 74,
     badge: 'BELT',
@@ -404,26 +404,26 @@ const allProducts = [
     fallbackImage: '/images/belt_6.jpg',
     images: [
       '/images/belt_6.jpg',
-      '/images/belt_2_buckle.jpg',
-      '/images/belt_2_detail.jpg',
+      '/images/belt_2.jpg',
+      '/images/belt_6.jpg',
     ],
-    description: 'Handcrafted from vegetable-tanned bridle leather steeped in natural botanical tallows. Features warm cognac tones, double-waxed edge stitching, and an antique brushed brass buckle that matures with character.',
+    description: 'Handcrafted for COAG from vegetable-tanned bridle leather steeped in natural botanical tallows. Features warm cognac tones, double-waxed edge stitching, and an antique brushed brass buckle that matures with character.',
   },
 
   // ==========================================
-  // WALLETS / WOLET (4 Handcrafted Leather Wallets)
+  // WALLETS / WOLET (6 Handcrafted Luxury COAG Goods)
   // ==========================================
   {
     id: 'wallet-portefeuille-bifold',
-    name: 'PORTEFEUILLE NOIR BIFOLD',
-    subtitle: 'French Boxcalf Leather • 8 Slots',
+    name: 'COAG Portefeuille Noir Bifold',
+    subtitle: 'COAG French Boxcalf Leather • 8 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'French Box-Calf Leather',
     notes: '8 Card Pockets • Dual Currency Dividers • RFID Skim-Block Shielding',
-    price: '₹2,450',
-    numericPrice: 2450,
+    price: '₹699',
+    numericPrice: 699,
     rating: 4.9,
     reviews: 134,
     badge: 'WALLET',
@@ -432,22 +432,22 @@ const allProducts = [
     fallbackImage: '/images/wallet_1.jpg',
     images: [
       '/images/wallet_1.jpg',
-      '/images/wallet_1_inside.jpg',
-      '/images/wallet_1_detail.jpg',
+      '/images/wallet_6.jpg',
+      '/images/wallet_1.jpg',
     ],
-    description: 'Precision handcrafted bifold wallet fashioned from supple French boxcalf. Built with integrated military-grade RFID protection, eight hand-turned card slots, and dual currency partitions.',
+    description: 'Precision handcrafted for COAG from supple French boxcalf. Built with integrated military-grade RFID protection, eight hand-turned card slots, and dual currency partitions.',
   },
   {
     id: 'wallet-slim-cardholder',
-    name: 'LE SLIM COAG CARDHOLDER',
-    subtitle: 'Ultra-Thin Saffiano • 6 Slots',
+    name: 'COAG Slim Saffiano Cardholder',
+    subtitle: 'COAG Ultra-Thin Saffiano • 6 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Textured Saffiano Leather',
-    notes: 'Central Cash Sleeve • Gold Foil Embossed Crest • 4mm Featherweight Profile',
-    price: '₹1,850',
-    numericPrice: 1850,
+    notes: 'Central Cash Sleeve • Scratch-Resistant Texture • 4mm Featherweight Profile',
+    price: '₹599',
+    numericPrice: 599,
     rating: 5.0,
     reviews: 178,
     badge: 'WALLET',
@@ -456,22 +456,22 @@ const allProducts = [
     fallbackImage: '/images/wallet_2.jpg',
     images: [
       '/images/wallet_2.jpg',
-      '/images/wallet_2_back.jpg',
-      '/images/wallet_2_detail.jpg',
+      '/images/wallet_3.jpg',
+      '/images/wallet_2.jpg',
     ],
-    description: 'The quintessential minimalist essential. Crafted from scratch-resistant cross-grain Saffiano leather with six card bays, an interior cash fold, and 24K gold foil COAG hallmark.',
+    description: 'The quintessential COAG minimalist essential. Crafted from scratch-resistant cross-grain Saffiano leather with six card bays, an interior cash fold, and featherweight profile.',
   },
   {
     id: 'wallet-zip-continental',
-    name: 'ZIP-AROUND TRAVEL CONTINENTAL',
-    subtitle: 'Heavy Full-Grain Leather • 12 Slots',
+    name: 'COAG Zip-Around Continental Wallet',
+    subtitle: 'COAG Heavy Full-Grain Leather • 12 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Pebbled Grain Vachetta',
     notes: 'Swiss YKK Excella Brass Zipper • Zip Coin Compartment • Passport & Phone Fit',
-    price: '₹3,650',
-    numericPrice: 3650,
+    price: '₹999',
+    numericPrice: 999,
     rating: 4.8,
     reviews: 72,
     badge: 'WALLET',
@@ -480,22 +480,22 @@ const allProducts = [
     fallbackImage: '/images/wallet_3.jpg',
     images: [
       '/images/wallet_3.jpg',
-      '/images/wallet_3_inside.jpg',
-      '/images/wallet_3_detail.jpg',
+      '/images/wallet_5.jpg',
+      '/images/wallet_3.jpg',
     ],
-    description: 'An executive travel companion in pebbled Vachetta leather. Fully encases 12 credit cards, international banknotes, passport, and smartphones securely behind smooth Swiss brass zippers.',
+    description: 'An executive COAG travel companion in pebbled Vachetta leather. Fully encases 12 credit cards, international banknotes, passport, and smartphones securely behind smooth Swiss brass zippers.',
   },
   {
     id: 'wallet-croco-moneyclip',
-    name: 'EXOTIC CROCO MONEY-CLIP WALLET',
-    subtitle: 'Textured Pocket Wallet • 6 Slots',
+    name: 'COAG Croco Money-Clip Wallet',
+    subtitle: 'COAG Textured Pocket Wallet • 6 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Embossed Exotic Calfskin',
     notes: 'Spring-Loaded Titanium Money Clip • 6 Card Bays • Beveled Edge Stitching',
-    price: '₹2,800',
-    numericPrice: 2800,
+    price: '₹749',
+    numericPrice: 749,
     rating: 4.9,
     reviews: 105,
     badge: 'WALLET',
@@ -504,22 +504,22 @@ const allProducts = [
     fallbackImage: '/images/wallet_4.jpg',
     images: [
       '/images/wallet_4.jpg',
-      '/images/wallet_4_clip.jpg',
-      '/images/wallet_4_detail.jpg',
+      '/images/wallet_2.jpg',
+      '/images/wallet_4.jpg',
     ],
-    description: 'Formed from rich embossed crocodile grain calfskin fitted with an internal spring-tension titanium money clip. Compact, ultra-stylish, and effortlessly slips into jacket breast pockets.',
+    description: 'Formed for COAG from rich embossed crocodile grain calfskin fitted with an internal spring-tension titanium money clip. Compact, ultra-stylish, and effortlessly slips into jacket breast pockets.',
   },
   {
     id: 'wallet-zippe-compact',
-    name: 'LE ZIPPÉ COMPACT NOIR & BLEU',
-    subtitle: 'Midnight Blue Grained Calfskin • Zip-Around',
+    name: 'COAG Compact Zippé Wallet',
+    subtitle: 'COAG Midnight Blue Calfskin • Zip-Around',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Grained French Calfskin',
     notes: 'Smooth Silver Metal Zip • 6 Card Bays • Gusseted Cash & Coin Pocket',
-    price: '₹2,650',
-    numericPrice: 2650,
+    price: '₹799',
+    numericPrice: 799,
     rating: 4.9,
     reviews: 88,
     badge: 'WALLET',
@@ -528,22 +528,22 @@ const allProducts = [
     fallbackImage: '/images/wallet_5.jpg',
     images: [
       '/images/wallet_5.jpg',
-      '/images/wallet_3_inside.jpg',
-      '/images/wallet_3_detail.jpg',
+      '/images/wallet_3.jpg',
+      '/images/wallet_5.jpg',
     ],
-    description: 'An effortlessly refined zip-around silhouette tailored in supple midnight blue grained calfskin. Secured with a whisper-smooth silver alloy zipper, offering 6 card slots, a cash fold, and coin compartment.',
+    description: 'An effortlessly refined zip-around silhouette tailored for COAG in supple midnight blue grained calfskin. Secured with a whisper-smooth silver alloy zipper, offering 6 card slots, a cash fold, and coin compartment.',
   },
   {
     id: 'wallet-trifold-elite',
-    name: 'PORTEFEUILLE VERT ÉLITE TRIFOLD',
-    subtitle: 'Forest Green Vegetable-Tanned • 9 Slots',
+    name: 'COAG Vert Élite Trifold Wallet',
+    subtitle: 'COAG Forest Green Leather • 9 Slots',
     mainCategory: 'WALLET',
     category: 'WALLET',
     categories: ['WALLET'],
     family: 'Italian Vegetable-Tanned Vachetta',
     notes: 'Dual ID Windows • 9 Card Slots • Hidden Banknote Pocket • RFID Shield',
-    price: '₹2,950',
-    numericPrice: 2950,
+    price: '₹899',
+    numericPrice: 899,
     rating: 4.8,
     reviews: 62,
     badge: 'WALLET',
@@ -552,10 +552,10 @@ const allProducts = [
     fallbackImage: '/images/wallet_6.jpg',
     images: [
       '/images/wallet_6.jpg',
-      '/images/wallet_1_inside.jpg',
-      '/images/wallet_1_detail.jpg',
+      '/images/wallet_1.jpg',
+      '/images/wallet_6.jpg',
     ],
-    description: 'Distinctive trifold architecture shaped from rich forest green vegetable-tanned Vachetta leather. Equipped with 9 precision card bays, dual quick-access ID windows, and built-in RFID security.',
+    description: 'Distinctive trifold architecture shaped for COAG from rich forest green vegetable-tanned Vachetta leather. Equipped with 9 precision card bays, dual quick-access ID windows, and built-in RFID security.',
   },
 
   // ==========================================
@@ -592,7 +592,7 @@ const allProducts = [
   },
   {
     id: 'gift-executive-suite',
-    name: 'THE EXECUTIVE NOIR SUITE',
+    name: 'COAG The Executive Noir Suite',
     subtitle: '100ml Extrait & French Boxcalf Bifold',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -606,7 +606,7 @@ const allProducts = [
     reviews: 118,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'The Executive Noir Suite Unboxing Video',
+    videoTitle: 'COAG The Executive Noir Suite Unboxing Video',
     packingBoxImage: '/images/gift_package_packing_2.jpg',
     openBoxImage: '/images/gift_package_2.jpg',
     image: '/images/gift_package_packing_2.jpg',
@@ -621,7 +621,7 @@ const allProducts = [
   },
   {
     id: 'gift-sovereign-hamper',
-    name: 'SOVEREIGN HERITAGE GIFT TRUNK',
+    name: 'COAG Sovereign Heritage Gift Trunk',
     subtitle: 'Extrait • Reversible Leather Belt • Cardholder',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -635,7 +635,7 @@ const allProducts = [
     reviews: 67,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'Sovereign Heritage Gift Trunk Unboxing Video',
+    videoTitle: 'COAG Sovereign Heritage Gift Trunk Unboxing Video',
     packingBoxImage: '/images/gift_package_3_box.jpg',
     openBoxImage: '/images/gift_package_3.jpg',
     image: '/images/gift_package_3_box.jpg',
@@ -650,7 +650,7 @@ const allProducts = [
   },
   {
     id: 'gift-grand-atelier-box',
-    name: 'L\'ATELIER ARTISANAL GIFT CHEST',
+    name: 'COAG L\'Atelier Artisanal Gift Chest',
     subtitle: 'Dual Extraits & Exotic Croco Pocket Wallet',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -664,7 +664,7 @@ const allProducts = [
     reviews: 82,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'L\'Atelier Artisanal Gift Chest Unboxing Video',
+    videoTitle: 'COAG L\'Atelier Artisanal Gift Chest Unboxing Video',
     packingBoxImage: '/images/gift_package_4_box.jpg',
     openBoxImage: '/images/gift_package_4.jpg',
     image: '/images/gift_package_4_box.jpg',
@@ -679,7 +679,7 @@ const allProducts = [
   },
   {
     id: 'gift-coffret-imperial',
-    name: 'LE COFFRET NOIR IMPÉRIAL',
+    name: 'COAG Le Coffret Noir Impérial',
     subtitle: 'Dual 50ml Extraits & 24K Gold Travel Atomizer',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -693,7 +693,7 @@ const allProducts = [
     reviews: 49,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'Le Coffret Noir Impérial Unboxing Video',
+    videoTitle: 'COAG Le Coffret Noir Impérial Unboxing Video',
     packingBoxImage: '/images/gift_package_packing_2.jpg',
     openBoxImage: '/images/gift_package_5.jpg',
     image: '/images/gift_package_packing_2.jpg',
@@ -708,7 +708,7 @@ const allProducts = [
   },
   {
     id: 'gift-emerald-heritage-hamper',
-    name: "L'ÉMERAUDE HERITAGE LUXURY HAMPER",
+    name: "COAG L'Émeraude Heritage Luxury Hamper",
     subtitle: 'Extrait Flacon • Cardholder • Velvet Keepsake Pouch',
     mainCategory: 'GIFT PACKAGE',
     category: 'GIFT PACKAGE',
@@ -722,7 +722,7 @@ const allProducts = [
     reviews: 53,
     badge: 'GIFT PACKAGE',
     hasVideo: true,
-    videoTitle: 'L\'Émeraude Heritage Luxury Hamper Unboxing Video',
+    videoTitle: 'COAG L\'Émeraude Heritage Luxury Hamper Unboxing Video',
     packingBoxImage: '/images/gift_package_packing_1.jpg',
     openBoxImage: '/images/gift_package_6.jpg',
     image: '/images/gift_package_packing_1.jpg',
@@ -738,11 +738,11 @@ const allProducts = [
 ];
 
 const categoryTabs = [
-  { id: 'ALL', label: 'ALL CREATIONS', subtitle: 'Complete Atelier', count: 27 },
-  { id: 'PERFUME', label: 'PERFUME', subtitle: 'Haute Fragrances', count: 9 },
-  { id: 'BELT', label: 'BELT', subtitle: 'Tuscan Leather', count: 6 },
-  { id: 'WALLET', label: 'WALLET', subtitle: 'Calfskin Wallets', count: 6 },
-  { id: 'GIFT PACKAGE', label: 'GIFT PACKAGE', subtitle: 'Curated Luxury Sets', count: 6 },
+  { id: 'ALL', label: 'ALL CREATIONS', subtitle: 'Complete Collection', count: 27 },
+  { id: 'PERFUME', label: 'PERFUMES', subtitle: '35% Extrait Sprays', count: 9 },
+  { id: 'BELT', label: 'LEATHER BELTS', subtitle: 'Artisanal Craft', count: 6 },
+  { id: 'WALLET', label: 'WALLETS', subtitle: 'Luxury Leather', count: 6 },
+  { id: 'GIFT PACKAGE', label: 'GIFT SETS', subtitle: 'Prestige Coffrets', count: 6 },
 ];
 
 const occasionFilters = [
@@ -821,6 +821,8 @@ const CollectionPage = ({ onNavigateHome }) => {
 
   const handleStartUnboxingVideo = (productId, e) => {
     if (e) e.stopPropagation();
+    const targetProd = products.find(p => p.id === productId);
+    if (targetProd && targetProd.isSoldOut) return;
     setActiveVideoId(productId);
     setVideoProgress(0);
     setIsVideoPlaying(true);
@@ -860,6 +862,7 @@ const CollectionPage = ({ onNavigateHome }) => {
     }
     setActiveCategory(catId);
     setActiveOccasion('ALL OCCASIONS');
+    setCurrentPage(1);
   };
 
   // Scroll to top on page load
@@ -890,6 +893,7 @@ const CollectionPage = ({ onNavigateHome }) => {
   }, [selectedProduct]);
 
   const openModal = (product) => {
+    if (product?.isSoldOut) return;
     setSelectedProduct(product);
     setModalImageIdx(0);
     setModalVideoActive(false);
@@ -899,21 +903,36 @@ const CollectionPage = ({ onNavigateHome }) => {
   const handleWhatsAppOrder = (product, e, qty = 1) => {
     if (e) e.stopPropagation();
     const phone = `91${WHATSAPP_NUMBER}`;
-    const categoryName = product.mainCategory || 'LUXURY CREATION';
-    const singlePrice = formatPrice(product.numericPrice || product.price);
-    const totalPrice = formatPrice((product.numericPrice || 0) * qty);
-    const isLGBTQ = product.categories?.includes('LGBTQ') || activeOccasion === 'LGBTQ';
-    const message = `Hello COAG Luxury Parfumerie & Atelier, I would like to order:%0A%0A` +
-      `*Product:* ${encodeURIComponent(product.name)}%0A` +
-      `*Category:* ${encodeURIComponent(categoryName)}${isLGBTQ ? ' (LGBTQ Edition)' : ''}%0A` +
-      `*Quantity:* ${qty}%0A` +
-      `*Price per Unit:* ${encodeURIComponent(singlePrice)}%0A` +
-      `*Total Amount:* ${encodeURIComponent(totalPrice)}%0A` +
-      `*Specifications:* ${encodeURIComponent(product.subtitle)}%0A` +
-      `*Details:* ${encodeURIComponent(product.notes)}%0A%0A` +
-      `Please confirm availability, dispatch timeframe, and payment details.`;
+    const categoryName = product.mainCategory || product.badge || 'PERFUME';
+    const rawPrice = product.numericPrice || (typeof product.price === 'number' ? product.price : 999);
+    const singlePrice = formatPrice ? formatPrice(rawPrice) : (product.price || `₹${rawPrice}`);
+    const totalPrice = formatPrice ? formatPrice(rawPrice * qty) : `₹${rawPrice * qty}`;
+    const origin = typeof window !== 'undefined' && window.location.origin ? window.location.origin : '';
+    const imageUrl = product.image
+      ? (product.image.startsWith('http') ? product.image : `${origin}${product.image}`)
+      : '';
 
-    window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    const lines = [
+      `*COAG LUXURY PARFUMS & ATELIER*`,
+      `_Order & Product Inquiry_`,
+      ``,
+      `• *Product Name:* ${product.name}`,
+      `• *Category:* ${categoryName}`,
+      product.subtitle ? `• *Volume / Edition:* ${product.subtitle}` : null,
+      product.family ? `• *Olfactory Family:* ${product.family}` : null,
+      product.notes ? `• *Fragrance Notes:* ${product.notes}` : null,
+      product.rating ? `• *Rating:* ${product.rating} ★ (${product.reviews || 0} reviews)` : null,
+      `• *Unit Price:* ${singlePrice}`,
+      `• *Quantity:* ${qty}`,
+      `• *Total Estimated Price:* ${totalPrice}`,
+      `• *Stock Status:* ${product.isSoldOut ? 'Sold Out (Waitlist Request)' : 'Available in Stock'}`,
+      imageUrl ? `• *Product Image:* ${imageUrl}` : null,
+      ``,
+      `Please confirm order booking, payment options, and dispatch timeframe.`
+    ].filter(Boolean).join('\n');
+
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(lines)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   // Filter & Sort Logic:
@@ -962,18 +981,18 @@ const CollectionPage = ({ onNavigateHome }) => {
   };
 
   return (
-    <div className="w-full bg-[#fafafa] text-black min-h-screen selection:bg-black selection:text-white pb-20">
+    <div className="w-full bg-[#fafafa] text-black min-h-screen selection:bg-black selection:text-white pb-20 overflow-x-hidden">
 
       {/* ========================================================
           PAGE HEADER / HERO BANNER
           ======================================================== */}
-      <div className="relative bg-[#08080a] text-white pt-10 sm:pt-14 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-12 overflow-hidden border-b border-white/10">
+      <div className="relative bg-[#08080a] text-white pt-8 sm:pt-14 pb-14 sm:pb-20 px-4 sm:px-6 lg:px-12 overflow-hidden border-b border-white/10">
         {/* Subtle Ambient Radial Glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[300px] bg-gradient-to-b from-amber-500/15 via-amber-900/5 to-transparent rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[850px] h-[300px] bg-gradient-to-b from-amber-500/15 via-amber-900/5 to-transparent rounded-full blur-[140px] pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto space-y-6">
+        <div className="relative max-w-7xl mx-auto space-y-4 sm:space-y-6">
           {/* Breadcrumb Navigation */}
-          <div className="flex items-center space-x-2 text-xs tracking-widest uppercase font-semibold text-neutral-400">
+          <div className="flex items-center space-x-2 text-[11px] sm:text-xs tracking-widest uppercase font-semibold text-neutral-400">
             <button
               onClick={() => {
                 if (onNavigateHome) onNavigateHome();
@@ -989,38 +1008,38 @@ const CollectionPage = ({ onNavigateHome }) => {
           </div>
 
           {/* Headline & Narrative */}
-          <div className="max-w-3xl space-y-3 pt-2">
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-amber-300 text-[10.5px] uppercase tracking-[0.25em] font-semibold">
-              <Sparkles size={12} className="text-amber-400" />
-              <span>Maison COAG • Haute Parfumerie & Atelier</span>
+          <div className="max-w-3xl space-y-2.5 sm:space-y-3 pt-1 sm:pt-2">
+            <div className="inline-flex items-center space-x-2 px-3 py-0.5 sm:py-1 rounded-full bg-white/5 border border-white/10 text-amber-300 text-[9.5px] sm:text-[10.5px] uppercase tracking-[0.25em] font-semibold">
+              <Sparkles size={11} className="text-amber-400" />
+              <span>COAG PARFUMS • HAUTE PARFUMERIE</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-light tracking-wide text-white leading-tight">
+            <h1 className="text-2xl sm:text-5xl lg:text-6xl font-serif font-light tracking-wide text-white leading-tight">
               The Grand Collection
             </h1>
 
-            <p className="text-neutral-300 text-sm sm:text-base font-normal leading-relaxed">
-              Explore the complete luxury repository: artisanal French perfumes with 24-hour sillage, Italian full-grain leather belts, and handcrafted calfskin wallets designed for timeless elegance.
+            <p className="text-neutral-300 text-xs sm:text-base font-normal leading-relaxed">
+              Explore COAG's complete luxury fragrance repository: signature 35% pure extrait de parfum sprays engineered for 24-hour sillage, accompanied by artisanal leather accessories and bespoke gift coffrets crafted for modern royalty.
             </p>
           </div>
 
-          {/* Luxury Features Bar (Set in 1 Row) */}
-          <div className="grid grid-cols-4 gap-2 sm:gap-4 pt-4 border-t border-white/10 text-[10.5px] sm:text-xs overflow-x-auto [scrollbar-width:none]">
-            <div className="flex items-center space-x-2 text-neutral-300 whitespace-nowrap">
-              <Truck size={15} className="text-amber-400 flex-shrink-0" />
-              <span className="font-medium">Free Delivery Across India</span>
+          {/* Luxury Features Bar (Responsive Grid: 2-Column on Mobile, 4-Column on Desktop - No Horizontal Scroll) */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 items-center gap-2.5 sm:gap-4 pt-4 border-t border-white/10 text-[10px] sm:text-xs">
+            <div className="flex items-center space-x-1.5 sm:space-x-2 text-neutral-300">
+              <Truck size={13} className="text-amber-400 flex-shrink-0" />
+              <span className="font-medium truncate sm:whitespace-normal">Free Express Delivery</span>
             </div>
-            <div className="flex items-center space-x-2 text-neutral-300 whitespace-nowrap">
-              <Award size={15} className="text-amber-400 flex-shrink-0" />
-              <span className="font-medium">100% Genuine Handcrafted</span>
+            <div className="flex items-center space-x-1.5 sm:space-x-2 text-neutral-300">
+              <Award size={13} className="text-amber-400 flex-shrink-0" />
+              <span className="font-medium truncate sm:whitespace-normal">35% Pure Extrait</span>
             </div>
-            <div className="flex items-center space-x-2 text-neutral-300 whitespace-nowrap">
-              <RotateCcw size={15} className="text-amber-400 flex-shrink-0" />
-              <span className="font-medium">Easy Concierge Returns</span>
+            <div className="flex items-center space-x-1.5 sm:space-x-2 text-neutral-300">
+              <RotateCcw size={13} className="text-amber-400 flex-shrink-0" />
+              <span className="font-medium truncate sm:whitespace-normal">Surat Atelier Dispatch</span>
             </div>
-            <div className="flex items-center space-x-2 text-neutral-300 whitespace-nowrap">
-              <WhatsAppIcon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-              <span className="font-medium">WhatsApp Order Helpline</span>
+            <div className="flex items-center space-x-1.5 sm:space-x-2 text-neutral-300">
+              <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+              <span className="font-medium truncate sm:whitespace-normal">WhatsApp Concierge</span>
             </div>
           </div>
         </div>
@@ -1031,8 +1050,8 @@ const CollectionPage = ({ onNavigateHome }) => {
           ======================================================== */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8">
 
-        {/* PRIMARY CATEGORY CARDS / TABS (1 Responsive Row) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5 sm:gap-4 mb-8 pt-2">
+        {/* PRIMARY CATEGORY CARDS / TABS (Responsive: 2x2 + 1 featured on mobile, 5 cols on Desktop) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 mb-6 sm:mb-8 pt-2">
           {categoryTabs.map((cat) => {
             const isActive = activeCategory === cat.id;
             const isGiftPackage = cat.id === 'GIFT PACKAGE';
@@ -1042,12 +1061,14 @@ const CollectionPage = ({ onNavigateHome }) => {
               <button
                 key={cat.id}
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`relative p-4 sm:p-5 rounded-2xl text-left transition-all duration-500 shadow-md cursor-pointer border overflow-visible select-none ${isGiftPackage && isRibbonOpen
-                  ? 'bg-white text-black border-2 border-red-500 ring-2 ring-red-400 scale-[1.02] shadow-xl shadow-red-500/20'
+                className={`relative p-3.5 sm:p-5 rounded-2xl text-left transition-all duration-500 shadow-md cursor-pointer border overflow-visible select-none ${
+                  isGiftPackage ? 'col-span-2 sm:col-span-1' : 'col-span-1'
+                } ${isGiftPackage && isRibbonOpen
+                  ? 'bg-white text-black border-2 border-red-500 ring-2 ring-red-400 scale-[1.01] sm:scale-[1.02] shadow-xl shadow-red-500/20'
                   : isGiftPackage && !isRibbonOpen
                     ? 'bg-white text-black border-neutral-200 hover:border-red-300 hover:shadow-lg'
                     : isActive
-                      ? 'bg-black text-white border-black ring-2 ring-amber-400 scale-[1.02]'
+                      ? 'bg-black text-white border-black ring-2 ring-amber-400 scale-[1.01] sm:scale-[1.02]'
                       : 'bg-white text-black border-neutral-200 hover:border-black/30 hover:shadow-lg'
                   }`}
               >
@@ -1224,48 +1245,70 @@ const CollectionPage = ({ onNavigateHome }) => {
         </div>
 
         {/* CONTROLS BAR: OCCASIONS & SORT */}
-        <div className="bg-white rounded-2xl p-4 sm:p-5 border border-neutral-200/90 shadow-sm mb-8 space-y-3.5">
-          {/* Occasion Filter Chips: ONLY for PERFUMES & ALL */}
+        <div className="bg-white rounded-2xl p-3.5 sm:p-5 border border-neutral-200/90 shadow-sm mb-6 sm:mb-8 space-y-3.5 sm:space-y-4">
+          {/* Occasion Filter Chips: ONLY for PERFUMES & ALL (Fully Responsive & Wrapped - No Horizontal Scroll on Mobile) */}
           {(activeCategory === 'ALL' || activeCategory === 'PERFUME') && (
-            <div className="flex items-center flex-wrap gap-2">
-              <span className="text-[10px] sm:text-[10.5px] uppercase tracking-wider font-bold text-neutral-400 mr-1 flex items-center space-x-1 flex-shrink-0">
-                <span>OCCASION:</span>
-              </span>
-              {occasionFilters.map((occ) => {
-                const isSelected = activeOccasion === occ;
-                return (
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold text-neutral-500 flex items-center space-x-1.5">
+                  <Sparkles size={11} className="text-amber-500" />
+                  <span>Filter by Occasion:</span>
+                </span>
+                {activeOccasion !== 'ALL OCCASIONS' && (
                   <button
-                    key={occ}
-                    onClick={() => setActiveOccasion(occ)}
-                    className={`px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[10.5px] uppercase tracking-wider font-semibold whitespace-nowrap transition-all cursor-pointer ${isSelected
-                      ? 'bg-amber-400 text-black font-bold shadow-xs scale-105'
-                      : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200 hover:text-black border border-neutral-200/70'
-                      }`}
+                    onClick={() => {
+                      setActiveOccasion('ALL OCCASIONS');
+                      setCurrentPage(1);
+                    }}
+                    className="text-[10px] uppercase font-bold text-amber-600 hover:text-black cursor-pointer underline transition-colors"
                   >
-                    {occ === 'LGBTQ' ? '🏳️‍🌈 LGBTQ' : occ}
+                    Clear Filter
                   </button>
-                );
-              })}
+                )}
+              </div>
+
+              {/* All 11 Filter Chips: Wrapped cleanly on mobile portrait view without horizontal scroll */}
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                {occasionFilters.map((occ) => {
+                  const isSelected = activeOccasion === occ;
+                  return (
+                    <button
+                      key={occ}
+                      onClick={() => {
+                        setActiveOccasion(occ);
+                        setCurrentPage(1);
+                      }}
+                      className={`px-2.5 sm:px-3.5 py-1.5 rounded-full text-[9.5px] sm:text-[10.5px] uppercase tracking-wider font-semibold transition-all duration-200 cursor-pointer ${
+                        isSelected
+                          ? 'bg-amber-400 text-black font-bold shadow-xs scale-[1.02] ring-1 ring-amber-500'
+                          : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200 hover:text-black border border-neutral-200/80 active:scale-95'
+                      }`}
+                    >
+                      {occ === 'LGBTQ' ? '🏳️‍🌈 LGBTQ' : occ}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           )}
 
           {/* Separator & Summary Bar: Count on Left, Sort on Right */}
-          <div className={`flex items-center justify-between text-xs flex-wrap gap-2 ${(activeCategory === 'ALL' || activeCategory === 'PERFUME' || activeCategory === 'GIFT PACKAGE') ? 'pt-3 border-t border-neutral-100' : ''
+          <div className={`flex items-center justify-between text-xs gap-2 ${(activeCategory === 'ALL' || activeCategory === 'PERFUME' || activeCategory === 'GIFT PACKAGE') ? 'pt-2.5 border-t border-neutral-100' : ''
             }`}>
-            <span className="text-neutral-500 font-medium whitespace-nowrap">
+            <span className="text-neutral-500 font-medium text-[11px] sm:text-xs whitespace-nowrap">
               Showing <strong className="text-black font-bold font-serif text-sm">{filteredProducts.length}</strong> creations
             </span>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1.5 sm:space-x-2">
               <span className="text-[10px] uppercase tracking-wider font-bold text-neutral-400 hidden sm:inline">
                 Sort:
               </span>
-              <div className="flex items-center space-x-1.5 bg-neutral-50 border border-neutral-200/90 rounded-lg px-2.5 py-1.5">
-                <SlidersHorizontal size={13} className="text-neutral-500" />
+              <div className="flex items-center space-x-1 sm:space-x-1.5 bg-neutral-50 border border-neutral-200/90 rounded-lg px-2 sm:px-2.5 py-1 sm:py-1.5">
+                <SlidersHorizontal size={12} className="text-neutral-500" />
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="bg-transparent text-xs font-semibold text-black focus:outline-none cursor-pointer"
+                  className="bg-transparent text-[11px] sm:text-xs font-semibold text-black focus:outline-none cursor-pointer"
                 >
                   <option value="featured">Featured</option>
                   <option value="price-low">Price: Low to High</option>
@@ -1299,7 +1342,7 @@ const CollectionPage = ({ onNavigateHome }) => {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
               {paginatedProducts.map((product) => {
                 const isLiked = isInWishlist(product.id);
                 const badgeLabel =
@@ -1310,13 +1353,19 @@ const CollectionPage = ({ onNavigateHome }) => {
                 return (
                   <div
                     key={product.id}
-                    onClick={() => openModal(product)}
-                    className="group flex flex-col bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transition-all duration-500 transform hover:-translate-y-1.5 cursor-pointer"
+                    onClick={() => {
+                      if (product.isSoldOut) return;
+                      openModal(product);
+                    }}
+                    className={`group flex flex-col bg-white border border-neutral-200 rounded-2xl overflow-hidden transition-all duration-500 max-w-md mx-auto sm:max-w-none w-full ${product.isSoldOut
+                        ? 'cursor-not-allowed opacity-90 select-none'
+                        : 'hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transform hover:-translate-y-1.5 cursor-pointer'
+                      }`}
                   >
                     {/* Product Image Canvas */}
                     <div className="relative aspect-[4/5] w-full overflow-hidden bg-white">
                       {/* LIVE UNBOXING VIDEO PLAYER (When activated on Gift Package card) */}
-                      {product.mainCategory === 'GIFT PACKAGE' && activeVideoId === product.id ? (
+                      {product.mainCategory === 'GIFT PACKAGE' && !product.isSoldOut && activeVideoId === product.id ? (
                         product.videoUrl ? (
                           <div
                             onClick={(e) => e.stopPropagation()}
@@ -1349,113 +1398,113 @@ const CollectionPage = ({ onNavigateHome }) => {
                               className="absolute inset-0 w-full h-full object-cover object-center"
                             />
 
-                          {/* Golden Celebration Sparkles upon Box Opening */}
-                          {videoProgress > 45 && (
-                            <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center">
-                              <span className="absolute top-1/4 left-1/4 text-amber-300 text-xl animate-ping">✨</span>
-                              <span className="absolute top-1/3 right-1/4 text-amber-400 text-base animate-bounce">🌟</span>
-                              <span className="absolute bottom-1/3 left-1/3 text-amber-200 text-lg animate-pulse">✨</span>
-                              <span className="absolute bottom-1/4 right-1/3 text-red-400 text-xl animate-ping">🎀</span>
-                            </div>
-                          )}
-
-                          {/* 3D Lifting Box Lid with Shadow & Glow */}
-                          <div
-                            className="absolute inset-0 w-full h-full pointer-events-none transition-transform duration-700 ease-out origin-top"
-                            style={{
-                              transform: `translateY(-${Math.min(110, videoProgress * 1.2)}%)`,
-                              opacity: videoProgress > 85 ? Math.max(0, 1 - (videoProgress - 85) / 15) : 1,
-                            }}
-                          >
-                            <img
-                              src={product.packingBoxImage || product.image}
-                              alt={`${product.name} Gift Packing Box`}
-                              className="w-full h-full object-cover object-center shadow-2xl"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-amber-500/25 via-transparent to-transparent pointer-events-none" />
-                          </div>
-
-                          {/* Animated Silk Ribbon Untying */}
-                          <div
-                            className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center transition-all duration-700"
-                            style={{
-                              opacity: videoProgress > 65 ? 0 : 1,
-                              transform: `scale(${1 + videoProgress * 0.006})`,
-                            }}
-                          >
-                            <div
-                              className="absolute inset-x-0 h-4 bg-gradient-to-r from-red-700 via-red-600 to-red-700 shadow-md border-y border-amber-300/60 transition-transform duration-500"
-                              style={{
-                                transform: `scaleX(${Math.max(0, 1 - (videoProgress / 55))})`,
-                              }}
-                            />
-                            {videoProgress < 50 && (
-                              <div
-                                className="w-8 h-8 rounded-full bg-gradient-to-br from-red-600 to-red-900 border-2 border-amber-300 shadow-xl flex items-center justify-center text-xs text-white font-bold transition-all duration-300"
-                                style={{
-                                  transform: `scale(${Math.max(0, 1 - (videoProgress / 45))}) rotate(${videoProgress * 3}deg)`,
-                                }}
-                              >
-                                🎀
+                            {/* Golden Celebration Sparkles upon Box Opening */}
+                            {videoProgress > 45 && (
+                              <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center">
+                                <span className="absolute top-1/4 left-1/4 text-amber-300 text-xl animate-ping">✨</span>
+                                <span className="absolute top-1/3 right-1/4 text-amber-400 text-base animate-bounce">🌟</span>
+                                <span className="absolute bottom-1/3 left-1/3 text-amber-200 text-lg animate-pulse">✨</span>
+                                <span className="absolute bottom-1/4 right-1/3 text-red-400 text-xl animate-ping">🎀</span>
                               </div>
                             )}
-                          </div>
 
-                          {/* Video Player Header Bar */}
-                          <div className="relative z-30 p-2.5 flex items-center justify-between bg-gradient-to-b from-black/85 via-black/40 to-transparent">
-                            <div className="flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-red-600/95 text-white text-[9.5px] font-bold tracking-wider uppercase backdrop-blur-md shadow-md animate-pulse">
-                              <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-                              <span>LIVE UNBOXING</span>
-                            </div>
-                            <button
-                              onClick={handleCloseVideo}
-                              className="w-6 h-6 rounded-full bg-black/60 hover:bg-black/90 text-white/90 hover:text-white flex items-center justify-center text-xs backdrop-blur-md transition-all cursor-pointer"
-                              title="Close Video"
+                            {/* 3D Lifting Box Lid with Shadow & Glow */}
+                            <div
+                              className="absolute inset-0 w-full h-full pointer-events-none transition-transform duration-700 ease-out origin-top"
+                              style={{
+                                transform: `translateY(-${Math.min(110, videoProgress * 1.2)}%)`,
+                                opacity: videoProgress > 85 ? Math.max(0, 1 - (videoProgress - 85) / 15) : 1,
+                              }}
                             >
-                              <X size={13} />
-                            </button>
-                          </div>
-
-                          {/* Video Player Controls Footer */}
-                          <div className="relative z-30 p-2.5 bg-gradient-to-t from-black/95 via-black/80 to-transparent space-y-1.5">
-                            <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
-                              <div
-                                className="h-full bg-gradient-to-r from-red-500 via-amber-400 to-amber-300 transition-all duration-100"
-                                style={{ width: `${videoProgress}%` }}
+                              <img
+                                src={product.packingBoxImage || product.image}
+                                alt={`${product.name} Gift Packing Box`}
+                                className="w-full h-full object-cover object-center shadow-2xl"
                               />
+                              <div className="absolute inset-0 bg-gradient-to-t from-amber-500/25 via-transparent to-transparent pointer-events-none" />
                             </div>
 
-                            <div className="flex items-center justify-between text-white text-[10px] font-semibold">
-                              <div className="flex items-center space-x-2">
-                                <button
-                                  onClick={handleTogglePlayVideo}
-                                  className="w-6 h-6 rounded-full bg-white/20 hover:bg-white/35 flex items-center justify-center transition-all cursor-pointer text-white"
-                                  title={isVideoPlaying ? "Pause" : "Play"}
+                            {/* Animated Silk Ribbon Untying */}
+                            <div
+                              className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center transition-all duration-700"
+                              style={{
+                                opacity: videoProgress > 65 ? 0 : 1,
+                                transform: `scale(${1 + videoProgress * 0.006})`,
+                              }}
+                            >
+                              <div
+                                className="absolute inset-x-0 h-4 bg-gradient-to-r from-red-700 via-red-600 to-red-700 shadow-md border-y border-amber-300/60 transition-transform duration-500"
+                                style={{
+                                  transform: `scaleX(${Math.max(0, 1 - (videoProgress / 55))})`,
+                                }}
+                              />
+                              {videoProgress < 50 && (
+                                <div
+                                  className="w-8 h-8 rounded-full bg-gradient-to-br from-red-600 to-red-900 border-2 border-amber-300 shadow-xl flex items-center justify-center text-xs text-white font-bold transition-all duration-300"
+                                  style={{
+                                    transform: `scale(${Math.max(0, 1 - (videoProgress / 45))}) rotate(${videoProgress * 3}deg)`,
+                                  }}
                                 >
-                                  {videoProgress >= 100 ? (
-                                    <RotateCcw size={11} className="text-amber-300" />
-                                  ) : isVideoPlaying ? (
-                                    <Pause size={11} />
-                                  ) : (
-                                    <Play size={11} className="fill-white translate-x-[0.5px]" />
-                                  )}
-                                </button>
-                                <button
-                                  onClick={handleReplayVideo}
-                                  className="text-neutral-300 hover:text-white transition-colors flex items-center space-x-1 cursor-pointer"
-                                  title="Replay Unboxing"
-                                >
-                                  <RotateCcw size={10} />
-                                  <span className="text-[9.5px]">Replay</span>
-                                </button>
+                                  🎀
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Video Player Header Bar */}
+                            <div className="relative z-30 p-2.5 flex items-center justify-between bg-gradient-to-b from-black/85 via-black/40 to-transparent">
+                              <div className="flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-red-600/95 text-white text-[9.5px] font-bold tracking-wider uppercase backdrop-blur-md shadow-md animate-pulse">
+                                <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
+                                <span>LIVE UNBOXING</span>
+                              </div>
+                              <button
+                                onClick={handleCloseVideo}
+                                className="w-6 h-6 rounded-full bg-black/60 hover:bg-black/90 text-white/90 hover:text-white flex items-center justify-center text-xs backdrop-blur-md transition-all cursor-pointer"
+                                title="Close Video"
+                              >
+                                <X size={13} />
+                              </button>
+                            </div>
+
+                            {/* Video Player Controls Footer */}
+                            <div className="relative z-30 p-2.5 bg-gradient-to-t from-black/95 via-black/80 to-transparent space-y-1.5">
+                              <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
+                                <div
+                                  className="h-full bg-gradient-to-r from-red-500 via-amber-400 to-amber-300 transition-all duration-100"
+                                  style={{ width: `${videoProgress}%` }}
+                                />
                               </div>
 
-                              <span className="font-mono text-[9.5px] text-amber-200">
-                                {videoProgress >= 100 ? '0:03 / 0:03' : `0:0${Math.floor((videoProgress / 100) * 3)} / 0:03`}
-                              </span>
+                              <div className="flex items-center justify-between text-white text-[10px] font-semibold">
+                                <div className="flex items-center space-x-2">
+                                  <button
+                                    onClick={handleTogglePlayVideo}
+                                    className="w-6 h-6 rounded-full bg-white/20 hover:bg-white/35 flex items-center justify-center transition-all cursor-pointer text-white"
+                                    title={isVideoPlaying ? "Pause" : "Play"}
+                                  >
+                                    {videoProgress >= 100 ? (
+                                      <RotateCcw size={11} className="text-amber-300" />
+                                    ) : isVideoPlaying ? (
+                                      <Pause size={11} />
+                                    ) : (
+                                      <Play size={11} className="fill-white translate-x-[0.5px]" />
+                                    )}
+                                  </button>
+                                  <button
+                                    onClick={handleReplayVideo}
+                                    className="text-neutral-300 hover:text-white transition-colors flex items-center space-x-1 cursor-pointer"
+                                    title="Replay Unboxing"
+                                  >
+                                    <RotateCcw size={10} />
+                                    <span className="text-[9.5px]">Replay</span>
+                                  </button>
+                                </div>
+
+                                <span className="font-mono text-[9.5px] text-amber-200">
+                                  {videoProgress >= 100 ? '0:03 / 0:03' : `0:0${Math.floor((videoProgress / 100) * 3)} / 0:03`}
+                                </span>
+                              </div>
                             </div>
                           </div>
-                        </div>
                         )
                       ) : (
                         /* Default Product View: Shows Gift Packing Box for Gift Packages */
@@ -1499,11 +1548,6 @@ const CollectionPage = ({ onNavigateHome }) => {
                                 🎁 Gift Packing Box
                               </span>
                             )}
-                            {product.categories?.includes('LGBTQ') && (
-                              <span className="text-[8.5px] font-extrabold tracking-wider uppercase px-2 py-0.5 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white shadow-xs w-fit">
-                                🏳️‍🌈 LGBTQ
-                              </span>
-                            )}
                             {product.isSoldOut && (
                               <span className="text-[9px] font-black tracking-widest uppercase px-2.5 py-1 rounded-full bg-red-600 text-white border border-white/60 shadow-lg shadow-red-900/60 flex items-center space-x-1.5 w-fit animate-pulse">
                                 <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
@@ -1523,7 +1567,7 @@ const CollectionPage = ({ onNavigateHome }) => {
                           )}
 
                           {/* Gift Package Live Unboxing Video Trigger Button */}
-                          {product.mainCategory === 'GIFT PACKAGE' && (
+                          {product.mainCategory === 'GIFT PACKAGE' && !product.isSoldOut && (
                             <button
                               onClick={(e) => handleStartUnboxingVideo(product.id, e)}
                               className="absolute bottom-3 left-3 z-20 px-3 py-1.5 rounded-full bg-black/85 hover:bg-red-600 text-white text-[10px] font-bold tracking-wider uppercase backdrop-blur-md border border-white/25 shadow-xl flex items-center space-x-1.5 transition-all duration-300 hover:scale-105 group/vidbtn cursor-pointer"
@@ -1555,38 +1599,42 @@ const CollectionPage = ({ onNavigateHome }) => {
                             </button>
 
                             {/* Add to Cart Button */}
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                addToCart(product, 1);
-                              }}
-                              className="w-8 h-8 rounded-full bg-white/95 backdrop-blur-md border border-black/10 flex items-center justify-center text-black hover:bg-black hover:text-white hover:scale-110 transition-all shadow-sm active:scale-90 cursor-pointer group/cartbtn"
-                              title={`Add ${product.name} to Cart`}
-                              aria-label={`Add ${product.name} to Cart`}
-                            >
-                              <ShoppingBag size={14} className="transition-transform group-hover/cartbtn:scale-110" />
-                            </button>
+                            {!product.isSoldOut && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  addToCart(product, 1);
+                                }}
+                                className="w-8 h-8 rounded-full bg-white/95 backdrop-blur-md border border-black/10 flex items-center justify-center text-black hover:bg-black hover:text-white hover:scale-110 transition-all shadow-sm active:scale-90 cursor-pointer group/cartbtn"
+                                title={`Add ${product.name} to Cart`}
+                                aria-label={`Add ${product.name} to Cart`}
+                              >
+                                <ShoppingBag size={14} className="transition-transform group-hover/cartbtn:scale-110" />
+                              </button>
+                            )}
                           </div>
 
                           {/* Hover Quick Actions Overlay */}
-                          <div className="absolute inset-x-3 bottom-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-end">
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                openModal(product);
-                              }}
-                              className="px-4 py-2 bg-black hover:bg-neutral-900 text-white text-[11px] tracking-[0.2em] uppercase font-bold rounded-xl flex items-center space-x-2 shadow-xl backdrop-blur-md transition-all active:scale-95"
-                            >
-                              <Eye size={14} />
-                              <span>View Details</span>
-                            </button>
-                          </div>
+                          {!product.isSoldOut && (
+                            <div className="absolute inset-x-3 bottom-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-end">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  openModal(product);
+                                }}
+                                className="px-4 py-2 bg-black hover:bg-neutral-900 text-white text-[11px] tracking-[0.2em] uppercase font-bold rounded-xl flex items-center space-x-2 shadow-xl backdrop-blur-md transition-all active:scale-95"
+                              >
+                                <Eye size={14} />
+                                <span>View Details</span>
+                              </button>
+                            </div>
+                          )}
                         </>
                       )}
                     </div>
 
                     {/* Card Details Block */}
-                    <div className="p-5 flex flex-col flex-1 justify-between bg-white text-black">
+                    <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between bg-white text-black">
                       <div className="space-y-1.5">
                         {/* Family & Rating */}
                         <div className="flex items-center justify-between text-[11px] tracking-wider uppercase font-bold text-black">
@@ -1621,25 +1669,31 @@ const CollectionPage = ({ onNavigateHome }) => {
                         </span>
 
                         <div className="flex items-center space-x-2">
-                          {/* Add to Bag Button */}
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              addToCart(product, 1);
-                            }}
-                            className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black hover:bg-neutral-800 text-white transition-all shadow-xs active:scale-90 cursor-pointer"
-                            title="Add to Shopping Bag"
-                            aria-label="Add to Shopping Bag"
-                          >
-                            <ShoppingBag size={14} />
-                          </button>
+                          {/* Add to Bag Button / Sold Out State */}
+                          {product.isSoldOut ? (
+                            <span className="inline-flex items-center justify-center h-8 px-2.5 rounded-full bg-neutral-100 border border-neutral-300 text-neutral-500 text-[10px] font-bold uppercase tracking-wider select-none cursor-not-allowed">
+                              Sold Out
+                            </span>
+                          ) : (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                addToCart(product, 1);
+                              }}
+                              className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black hover:bg-neutral-800 text-white transition-all shadow-xs active:scale-90 cursor-pointer"
+                              title="Add to Shopping Bag"
+                              aria-label="Add to Shopping Bag"
+                            >
+                              <ShoppingBag size={14} />
+                            </button>
+                          )}
 
                           {/* Order on WhatsApp */}
                           <button
                             onClick={(e) => handleWhatsAppOrder(product, e)}
                             className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white transition-all shadow-xs active:scale-90 cursor-pointer"
-                            title="Order on WhatsApp"
-                            aria-label="Order on WhatsApp"
+                            title={product.isSoldOut ? "Inquire Waitlist on WhatsApp" : "Order on WhatsApp"}
+                            aria-label={product.isSoldOut ? "Inquire Waitlist on WhatsApp" : "Order on WhatsApp"}
                           >
                             <WhatsAppIcon className="w-4 h-4 fill-white" />
                           </button>
@@ -1651,24 +1705,24 @@ const CollectionPage = ({ onNavigateHome }) => {
               })}
             </div>
 
-            {/* Pagination Controls (8 cards per page) */}
+            {/* Pagination Controls (Responsive on Mobile) */}
             {totalPages > 1 && (
-              <div className="mt-12 pt-8 border-t border-neutral-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="text-xs tracking-wider uppercase font-semibold text-neutral-500">
+              <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-neutral-200 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+                <div className="text-[11px] sm:text-xs tracking-wider uppercase font-semibold text-neutral-500 text-center sm:text-left">
                   Showing <strong className="text-black font-bold">{startIndex + 1}</strong> – <strong className="text-black font-bold">{Math.min(startIndex + ITEMS_PER_PAGE, filteredProducts.length)}</strong> of <strong className="text-black font-bold">{filteredProducts.length}</strong> Creations
                 </div>
 
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center space-x-1.5 sm:space-x-2 flex-wrap gap-y-2">
                   <button
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className={`flex items-center space-x-1.5 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${currentPage === 1
+                    className={`flex items-center space-x-1 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${currentPage === 1
                       ? 'opacity-40 cursor-not-allowed bg-neutral-100 text-neutral-400'
                       : 'bg-neutral-100 hover:bg-black hover:text-white text-black border border-neutral-200 active:scale-95'
                       }`}
                     aria-label="Previous Page"
                   >
-                    <ChevronLeft size={16} />
+                    <ChevronLeft size={15} />
                     <span>Prev</span>
                   </button>
 
@@ -1678,7 +1732,7 @@ const CollectionPage = ({ onNavigateHome }) => {
                       <button
                         key={page}
                         onClick={() => handlePageChange(page)}
-                        className={`w-10 h-10 rounded-full text-xs font-bold tracking-wider transition-all duration-200 cursor-pointer ${isActive
+                        className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full text-xs font-bold tracking-wider transition-all duration-200 cursor-pointer ${isActive
                           ? 'bg-black text-white shadow-lg shadow-black/20 scale-105 ring-2 ring-black'
                           : 'bg-neutral-100 hover:bg-neutral-200 text-neutral-800 border border-neutral-200 active:scale-95'
                           }`}
@@ -1691,14 +1745,14 @@ const CollectionPage = ({ onNavigateHome }) => {
                   <button
                     onClick={() => handlePageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className={`flex items-center space-x-1.5 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${currentPage === totalPages
+                    className={`flex items-center space-x-1 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${currentPage === totalPages
                       ? 'opacity-40 cursor-not-allowed bg-neutral-100 text-neutral-400'
                       : 'bg-neutral-100 hover:bg-black hover:text-white text-black border border-neutral-200 active:scale-95'
                       }`}
                     aria-label="Next Page"
                   >
                     <span>Next</span>
-                    <ChevronRight size={16} />
+                    <ChevronRight size={15} />
                   </button>
                 </div>
               </div>
@@ -1713,30 +1767,30 @@ const CollectionPage = ({ onNavigateHome }) => {
           ======================================================== */}
       {selectedProduct && (
         <div
-          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-3 sm:p-5 lg:p-6 overflow-y-auto animate-fade-in"
+          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-2 sm:p-5 lg:p-6 overflow-y-auto animate-fade-in"
           onClick={() => setSelectedProduct(null)}
           role="dialog"
           aria-modal="true"
         >
           <div
-            className="relative w-full max-w-5xl bg-white rounded-[32px] shadow-[0_30px_90px_rgba(0,0,0,0.6)] overflow-hidden border border-neutral-200/80 my-auto text-black"
+            className="relative w-full max-w-5xl bg-white rounded-2xl sm:rounded-[32px] shadow-[0_30px_90px_rgba(0,0,0,0.6)] overflow-hidden border border-neutral-200/80 my-auto text-black"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Floating Sleek Frosted Close Button */}
             <button
               onClick={() => setSelectedProduct(null)}
-              className="absolute top-4 right-4 sm:top-5 sm:right-5 z-40 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-black hover:text-white text-neutral-800 flex items-center justify-center transition-all duration-300 active:scale-90 shadow-lg border border-black/10 backdrop-blur-md cursor-pointer group"
+              className="absolute top-3 right-3 sm:top-5 sm:right-5 z-40 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-black hover:text-white text-neutral-800 flex items-center justify-center transition-all duration-300 active:scale-90 shadow-lg border border-black/10 backdrop-blur-md cursor-pointer group"
               aria-label="Close Product Showcase"
             >
-              <X size={18} strokeWidth={2.5} className="group-hover:rotate-90 transition-transform duration-300" />
+              <X size={17} strokeWidth={2.5} className="group-hover:rotate-90 transition-transform duration-300" />
             </button>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 max-h-[90vh] overflow-y-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 max-h-[92vh] sm:max-h-[90vh] overflow-y-auto">
 
               {/* ==========================================
                   LEFT COLUMN: IMMERSIVE VISUAL SHOWCASE
                   ========================================== */}
-              <div className="lg:col-span-6 bg-gradient-to-b from-[#141418] via-[#0d0d10] to-[#070709] relative overflow-hidden flex flex-col justify-between p-5 sm:p-7 min-h-[380px] sm:min-h-[460px] lg:min-h-[580px] text-white">
+              <div className="lg:col-span-6 bg-gradient-to-b from-[#141418] via-[#0d0d10] to-[#070709] relative overflow-hidden flex flex-col justify-between p-4 sm:p-7 min-h-0 sm:min-h-[460px] lg:min-h-[580px] text-white">
 
                 {/* Subtle Ambient Radial Gold Glow */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] bg-gradient-to-r from-amber-500/10 via-amber-700/5 to-transparent rounded-full blur-[80px] pointer-events-none" />
@@ -1800,105 +1854,105 @@ const CollectionPage = ({ onNavigateHome }) => {
                           className="absolute inset-0 w-full h-full object-cover object-center"
                         />
 
-                    {/* Sparkles on Unboxing */}
-                    {videoProgress > 45 && (
-                      <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center">
-                        <span className="absolute top-1/4 left-1/4 text-amber-300 text-2xl animate-ping">✨</span>
-                        <span className="absolute top-1/3 right-1/4 text-amber-400 text-xl animate-bounce">🌟</span>
-                        <span className="absolute bottom-1/3 left-1/3 text-amber-200 text-xl animate-pulse">✨</span>
-                        <span className="absolute bottom-1/4 right-1/3 text-red-400 text-2xl animate-ping">🎀</span>
-                      </div>
-                    )}
+                        {/* Sparkles on Unboxing */}
+                        {videoProgress > 45 && (
+                          <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center">
+                            <span className="absolute top-1/4 left-1/4 text-amber-300 text-2xl animate-ping">✨</span>
+                            <span className="absolute top-1/3 right-1/4 text-amber-400 text-xl animate-bounce">🌟</span>
+                            <span className="absolute bottom-1/3 left-1/3 text-amber-200 text-xl animate-pulse">✨</span>
+                            <span className="absolute bottom-1/4 right-1/3 text-red-400 text-2xl animate-ping">🎀</span>
+                          </div>
+                        )}
 
-                    {/* 3D Lifting Box Lid */}
-                    <div
-                      className="absolute inset-0 w-full h-full pointer-events-none transition-transform duration-700 ease-out origin-top"
-                      style={{
-                        transform: `translateY(-${Math.min(110, videoProgress * 1.2)}%)`,
-                        opacity: videoProgress > 85 ? Math.max(0, 1 - (videoProgress - 85) / 15) : 1,
-                      }}
-                    >
-                      <img
-                        src={selectedProduct.packingBoxImage || selectedProduct.image}
-                        alt={`${selectedProduct.name} Gift Packing Box`}
-                        className="w-full h-full object-cover object-center shadow-2xl"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-amber-500/25 via-transparent to-transparent pointer-events-none" />
-                    </div>
-
-                    {/* Silk Ribbon Untying */}
-                    <div
-                      className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center transition-all duration-700"
-                      style={{ opacity: videoProgress > 65 ? 0 : 1 }}
-                    >
-                      <div
-                        className="absolute inset-x-0 h-5 bg-gradient-to-r from-red-700 via-red-600 to-red-700 shadow-md border-y border-amber-300/60 transition-transform duration-500"
-                        style={{ transform: `scaleX(${Math.max(0, 1 - (videoProgress / 55))})` }}
-                      />
-                      {videoProgress < 50 && (
+                        {/* 3D Lifting Box Lid */}
                         <div
-                          className="w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-900 border-2 border-amber-300 shadow-xl flex items-center justify-center text-sm text-white font-bold transition-all duration-300"
-                          style={{ transform: `scale(${Math.max(0, 1 - (videoProgress / 45))}) rotate(${videoProgress * 3}deg)` }}
+                          className="absolute inset-0 w-full h-full pointer-events-none transition-transform duration-700 ease-out origin-top"
+                          style={{
+                            transform: `translateY(-${Math.min(110, videoProgress * 1.2)}%)`,
+                            opacity: videoProgress > 85 ? Math.max(0, 1 - (videoProgress - 85) / 15) : 1,
+                          }}
                         >
-                          🎀
+                          <img
+                            src={selectedProduct.packingBoxImage || selectedProduct.image}
+                            alt={`${selectedProduct.name} Gift Packing Box`}
+                            className="w-full h-full object-cover object-center shadow-2xl"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-amber-500/25 via-transparent to-transparent pointer-events-none" />
                         </div>
-                      )}
-                    </div>
 
-                    {/* Header */}
-                    <div className="relative z-30 p-3 flex items-center justify-between bg-gradient-to-b from-black/85 via-black/40 to-transparent">
-                      <div className="flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-600 text-white text-[10px] font-bold tracking-wider uppercase backdrop-blur-md shadow-md animate-pulse">
-                        <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-                        <span>LIVE UNBOXING VIDEO</span>
-                      </div>
-                      <button
-                        onClick={() => setModalVideoActive(false)}
-                        className="px-2.5 py-1 rounded-full bg-black/60 hover:bg-black/90 text-white/90 hover:text-white text-[10px] uppercase font-bold tracking-wider backdrop-blur-md transition-all cursor-pointer"
-                      >
-                        View Photos
-                      </button>
-                    </div>
-
-                    {/* Controls */}
-                    <div className="relative z-30 p-3 bg-gradient-to-t from-black/95 via-black/80 to-transparent space-y-2">
-                      <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
+                        {/* Silk Ribbon Untying */}
                         <div
-                          className="h-full bg-gradient-to-r from-red-500 via-amber-400 to-amber-300 transition-all duration-100"
-                          style={{ width: `${videoProgress}%` }}
-                        />
-                      </div>
+                          className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center transition-all duration-700"
+                          style={{ opacity: videoProgress > 65 ? 0 : 1 }}
+                        >
+                          <div
+                            className="absolute inset-x-0 h-5 bg-gradient-to-r from-red-700 via-red-600 to-red-700 shadow-md border-y border-amber-300/60 transition-transform duration-500"
+                            style={{ transform: `scaleX(${Math.max(0, 1 - (videoProgress / 55))})` }}
+                          />
+                          {videoProgress < 50 && (
+                            <div
+                              className="w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-900 border-2 border-amber-300 shadow-xl flex items-center justify-center text-sm text-white font-bold transition-all duration-300"
+                              style={{ transform: `scale(${Math.max(0, 1 - (videoProgress / 45))}) rotate(${videoProgress * 3}deg)` }}
+                            >
+                              🎀
+                            </div>
+                          )}
+                        </div>
 
-                      <div className="flex items-center justify-between text-white text-xs font-semibold">
-                        <div className="flex items-center space-x-3">
+                        {/* Header */}
+                        <div className="relative z-30 p-3 flex items-center justify-between bg-gradient-to-b from-black/85 via-black/40 to-transparent">
+                          <div className="flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-600 text-white text-[10px] font-bold tracking-wider uppercase backdrop-blur-md shadow-md animate-pulse">
+                            <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
+                            <span>LIVE UNBOXING VIDEO</span>
+                          </div>
                           <button
-                            onClick={handleTogglePlayVideo}
-                            className="w-7 h-7 rounded-full bg-white/20 hover:bg-white/35 flex items-center justify-center transition-all cursor-pointer text-white"
+                            onClick={() => setModalVideoActive(false)}
+                            className="px-2.5 py-1 rounded-full bg-black/60 hover:bg-black/90 text-white/90 hover:text-white text-[10px] uppercase font-bold tracking-wider backdrop-blur-md transition-all cursor-pointer"
                           >
-                            {videoProgress >= 100 ? (
-                              <RotateCcw size={13} className="text-amber-300" />
-                            ) : isVideoPlaying ? (
-                              <Pause size={13} />
-                            ) : (
-                              <Play size={13} className="fill-white translate-x-[0.5px]" />
-                            )}
-                          </button>
-                          <button
-                            onClick={handleReplayVideo}
-                            className="text-neutral-300 hover:text-white transition-colors flex items-center space-x-1 cursor-pointer text-[11px]"
-                          >
-                            <RotateCcw size={11} />
-                            <span>Replay</span>
+                            View Photos
                           </button>
                         </div>
 
-                        <span className="font-mono text-[10.5px] text-amber-200">
-                          {videoProgress >= 100 ? '0:03 / 0:03' : `0:0${Math.floor((videoProgress / 100) * 3)} / 0:03`}
-                        </span>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
+                        {/* Controls */}
+                        <div className="relative z-30 p-3 bg-gradient-to-t from-black/95 via-black/80 to-transparent space-y-2">
+                          <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-gradient-to-r from-red-500 via-amber-400 to-amber-300 transition-all duration-100"
+                              style={{ width: `${videoProgress}%` }}
+                            />
+                          </div>
+
+                          <div className="flex items-center justify-between text-white text-xs font-semibold">
+                            <div className="flex items-center space-x-3">
+                              <button
+                                onClick={handleTogglePlayVideo}
+                                className="w-7 h-7 rounded-full bg-white/20 hover:bg-white/35 flex items-center justify-center transition-all cursor-pointer text-white"
+                              >
+                                {videoProgress >= 100 ? (
+                                  <RotateCcw size={13} className="text-amber-300" />
+                                ) : isVideoPlaying ? (
+                                  <Pause size={13} />
+                                ) : (
+                                  <Play size={13} className="fill-white translate-x-[0.5px]" />
+                                )}
+                              </button>
+                              <button
+                                onClick={handleReplayVideo}
+                                className="text-neutral-300 hover:text-white transition-colors flex items-center space-x-1 cursor-pointer text-[11px]"
+                              >
+                                <RotateCcw size={11} />
+                                <span>Replay</span>
+                              </button>
+                            </div>
+
+                            <span className="font-mono text-[10.5px] text-amber-200">
+                              {videoProgress >= 100 ? '0:03 / 0:03' : `0:0${Math.floor((videoProgress / 100) * 3)} / 0:03`}
+                            </span>
+                          </div>
+                        </div>
+                      </>
+                    )}
+                  </div>
                 ) : (
                   <div className="relative w-full my-auto z-10 group/stage">
                     {/* Architectural Luxury Vitrine Frame with Pedestal and Gold Accents */}
@@ -2032,7 +2086,13 @@ const CollectionPage = ({ onNavigateHome }) => {
                   {/* Brand Eyebrow + Title Header */}
                   <div>
                     <div className="flex items-center space-x-2 text-[10.5px] uppercase tracking-[0.25em] text-neutral-400 font-bold mb-1">
-                      <span>MAISON COAG PARIS</span>
+                      <span>
+                        {selectedProduct.mainCategory === 'PERFUME'
+                          ? 'COAG HAUTE PARFUMERIE'
+                          : selectedProduct.mainCategory === 'GIFT PACKAGE'
+                          ? 'COAG LUXURY COFFRET'
+                          : 'COAG LEATHER ATELIER'}
+                      </span>
                       <span>•</span>
                       <span className="text-amber-700 font-semibold">{selectedProduct.family}</span>
                     </div>
@@ -2120,29 +2180,64 @@ const CollectionPage = ({ onNavigateHome }) => {
                     <div className="flex items-center justify-between text-[11px] uppercase tracking-widest font-bold text-black">
                       <span className="flex items-center space-x-1.5">
                         <Sparkles size={13} className="text-amber-500" />
-                        <span>{selectedProduct.mainCategory === 'PERFUME' ? 'Olfactory Architecture' : selectedProduct.mainCategory === 'GIFT PACKAGE' ? 'Gift Suite Inclusions' : 'Artisanal Specifications'}</span>
+                        <span>
+                          {selectedProduct.mainCategory === 'PERFUME'
+                            ? 'Olfactory Architecture (Spray Dispersion)'
+                            : selectedProduct.mainCategory === 'GIFT PACKAGE'
+                            ? 'Gift Suite Inclusions'
+                            : 'Artisanal Specifications'}
+                        </span>
                       </span>
-                      {selectedProduct.mainCategory === 'PERFUME' && (
-                        <span className="text-[10px] text-amber-700 font-bold bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">
+                      {selectedProduct.mainCategory === 'PERFUME' ? (
+                        <span className="text-[10px] text-amber-700 font-bold bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full">
                           24h+ Beast Mode Sillage
+                        </span>
+                      ) : selectedProduct.mainCategory === 'GIFT PACKAGE' ? (
+                        <span className="text-[10px] text-red-700 font-bold bg-red-50 border border-red-200 px-2.5 py-0.5 rounded-full">
+                          Bespoke Presentation Box
+                        </span>
+                      ) : (
+                        <span className="text-[10px] text-emerald-800 font-bold bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                          100% Genuine Handcrafted
                         </span>
                       )}
                     </div>
 
-                    {/* Structured Notes Chips */}
+                    {/* Structured Notes / Specs Chips */}
                     <div className="flex flex-wrap gap-1.5">
-                      {selectedProduct.notes.split('•').map((note, nIdx) => (
-                        <div
-                          key={nIdx}
-                          className="px-2.5 py-1 rounded-lg bg-white border border-neutral-200 text-xs font-medium text-neutral-800 shadow-xs flex items-center space-x-1"
-                        >
-                          <span className="text-[10px] text-amber-600 font-bold">
-                            {nIdx === 0 ? '🌿 Top:' : nIdx === 1 ? '🌸 Heart:' : '🪵 Base:'}
-                          </span>
-                          <span>{note.trim()}</span>
-                        </div>
-                      ))}
+                      {selectedProduct.notes.split('•').map((note, nIdx) => {
+                        let label = '';
+                        if (selectedProduct.mainCategory === 'PERFUME') {
+                          label = nIdx === 0 ? '🌿 Top Notes:' : nIdx === 1 ? '🌸 Heart Notes:' : '🪵 Base Notes:';
+                        } else if (selectedProduct.mainCategory === 'BELT') {
+                          label = nIdx === 0 ? '✨ Buckle / Hardware:' : nIdx === 1 ? '🧵 Craft:' : '⚜️ Finish:';
+                        } else if (selectedProduct.mainCategory === 'WALLET') {
+                          label = nIdx === 0 ? '💳 Compartments:' : nIdx === 1 ? '🛡️ Protection:' : '⚜️ Material:';
+                        } else {
+                          label = nIdx === 0 ? '🎁 Extrait Flacons:' : nIdx === 1 ? '✨ Discovery Sprays:' : '💎 Leather Goods:';
+                        }
+
+                        return (
+                          <div
+                            key={nIdx}
+                            className="px-2.5 py-1 rounded-lg bg-white border border-neutral-200 text-xs font-medium text-neutral-800 shadow-xs flex items-center space-x-1"
+                          >
+                            <span className="text-[10px] text-amber-600 font-bold">
+                              {label}
+                            </span>
+                            <span>{note.trim()}</span>
+                          </div>
+                        );
+                      })}
                     </div>
+
+                    {/* Spray Performance Callout for Perfumes */}
+                    {selectedProduct.mainCategory === 'PERFUME' && (
+                      <div className="flex items-center space-x-2 pt-1 text-[11px] text-neutral-600 font-medium">
+                        <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
+                        <span>High-dispersion micro-atomizer nozzle spray for optimal longevity & projection</span>
+                      </div>
+                    )}
 
                     {/* LGBTQ Curated Tag if applicable */}
                     {selectedProduct.categories?.includes('LGBTQ') && (

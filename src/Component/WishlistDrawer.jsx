@@ -37,7 +37,7 @@ const WishlistDrawer = ({ onExploreCollection }) => {
 
       {/* Floating Notification-Style Panel (Below Header) */}
       <div className="fixed top-[80px] sm:top-[90px] right-3 sm:right-10 w-[calc(100vw-24px)] sm:w-[420px] max-h-[82vh] bg-white text-black rounded-3xl shadow-[0_25px_70px_rgba(0,0,0,0.4)] border border-black/10 flex flex-col z-[160] overflow-hidden animate-luxury-fade">
-        
+
         {/* Header */}
         <div className="p-4 sm:p-5 border-b border-neutral-100 flex items-center justify-between bg-white">
           <div className="flex items-center space-x-2.5">
@@ -112,7 +112,7 @@ const WishlistDrawer = ({ onExploreCollection }) => {
                     {product.name}
                   </h4>
                   <p className="text-[11px] text-neutral-500 truncate">
-                    {product.subtitle || 'Maison COAG'}
+                    {product.subtitle || 'COAG Parfums'}
                   </p>
                   <p className="text-xs font-serif font-bold text-black pt-0.5">
                     {formatPrice(product.numericPrice || product.price)}

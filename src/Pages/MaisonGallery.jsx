@@ -16,39 +16,44 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
     </svg>
 );
 
+const WHATSAPP_NUMBER = '9664506049';
+
 const chapters = [
     {
         num: "01",
-        time: "MORNING AWAKENING",
-        name: "Emeraude Noir",
-        tagline: "Cold mountain bergamot upon ancient volcanic cedar.",
-        notes: "Bergamot • Volcanic Cedar • Amber",
-        price: "₹8,499",
-        numericPrice: 8499,
-        image: "/images/hero_perfume.jpg",
-        accent: "text-emerald-400"
+        time: "MORNING AWAKENING • FRESH AQUATIC SPRAY",
+        name: "COAG Bleu Azur",
+        edition: "Haute Eau de Parfum Spray • 50ml",
+        tagline: "Frosty French sea salt and iced grapefruit zest grounded by crisp Haitian vetiver.",
+        notes: "French Sea Salt • Grapefruit Zest • Haitian Vetiver",
+        price: "₹999",
+        numericPrice: 999,
+        image: "/images/perfume_emerald_splash.jpg",
+        accent: "text-sky-400"
     },
     {
         num: "02",
-        time: "TWILIGHT EMBRACE",
-        name: "Eternal Rose",
-        tagline: "Dawn fresh roses draped in soft cashmere woods.",
-        notes: "French Rose • Pink Pepper • Cashmere",
-        price: "₹7,899",
-        numericPrice: 7899,
-        image: "/images/perfume_rose.jpg",
-        accent: "text-rose-300"
+        time: "ROYAL PRESENCE • IMPERIAL LEATHER SPRAY",
+        name: "COAG Cuir Majestueux",
+        edition: "35% Pure Extrait Spray • 50ml",
+        tagline: "Hand-buffed saddle leather enriched with fiery crimson saffron and aged patchouli.",
+        notes: "Saddle Leather • Crimson Saffron • Indonesian Patchouli",
+        price: "₹1,249",
+        numericPrice: 1249,
+        image: "/images/perfume_cuir_majestueux_floral.jpg",
+        accent: "text-amber-400"
     },
     {
         num: "03",
-        time: "MIDNIGHT MYSTERY",
-        name: "Amber Imperial",
-        tagline: "Sacred warm myrrh and smoked woody amber.",
-        notes: "Smoked Cardamom • Wild Tonka • Myrrh",
-        price: "₹9,299",
-        numericPrice: 9299,
-        image: "/images/perfume_amber.jpg",
-        accent: "text-amber-300"
+        time: "MIDNIGHT SEDUCTION • DARK SMOKY BALSAM",
+        name: "COAG Noir Absolu",
+        edition: "35% Pure Extrait Spray • 50ml",
+        tagline: "Smoldering birch wood, black pepper, and dark Bourbon vanilla absolute.",
+        notes: "Smoldering Birch • Black Pepper • Bourbon Vanilla",
+        price: "₹1,149",
+        numericPrice: 1149,
+        image: "/images/perfume_noir_absolu_floral.jpg",
+        accent: "text-rose-400"
     }
 ];
 
@@ -64,15 +69,15 @@ const MaisonGallery = () => {
                 <div className="text-center max-w-2xl mx-auto space-y-3 mb-10 sm:mb-16">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-neutral-800 bg-[#121214] text-white text-[11px] font-sans uppercase tracking-[0.28em] font-semibold shadow-md">
                         <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                        <span className="text-white">Three Signature Fragrances</span>
+                        <span className="text-white">COAG SIGNATURE EXTRAIT SPRAYS</span>
                     </div>
 
                     <h2 className="text-2xl sm:text-4xl lg:text-5xl font-cinzel tracking-wider text-black font-semibold leading-tight">
-                        Three Moments of <span className="font-playfair italic font-normal text-black underline decoration-amber-500/60 underline-offset-8">Fragrance</span>
+                        Three Moments of <span className="font-playfair italic font-normal text-black underline decoration-amber-500/60 underline-offset-8">COAG Fragrance</span>
                     </h2>
 
                     <p className="text-neutral-700 text-xs sm:text-base font-sans font-normal leading-relaxed">
-                        From the crisp awakening of dawn to the hypnotic embrace of midnight.
+                        From the crisp morning awakening to the hypnotic embrace of midnight.
                     </p>
                 </div>
 
@@ -80,8 +85,8 @@ const MaisonGallery = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
                     {chapters.map((item) => {
                         const formattedPrice = formatPrice(item.numericPrice || item.price);
-                        const whatsappUrl = `https://wa.me/919999999999?text=${encodeURIComponent(
-                            `Hello, I would like to acquire ${item.name} (${formattedPrice}, 50ml Extrait de Parfum).`
+                        const whatsappUrl = `https://wa.me/91${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                            `Hello COAG Parfums, I would like to acquire ${item.name} (${formattedPrice}, 35% Pure Extrait Spray • 50ml).`
                         )}`;
 
                         return (
@@ -108,7 +113,7 @@ const MaisonGallery = () => {
                                         CHAPTER {item.num}
                                     </div>
                                     <span className="font-sans text-[11px] uppercase tracking-[0.2em] text-amber-300 font-semibold mt-2">
-                                        50ml Pure Perfume
+                                        {item.edition}
                                     </span>
                                 </div>
 
@@ -155,11 +160,13 @@ const MaisonGallery = () => {
 
                 {/* Minimalist Trust Line */}
                 <div className="mt-16 flex flex-wrap items-center justify-center gap-6 text-xs font-sans tracking-[0.2em] text-black font-semibold uppercase text-center">
-                    <span>Macerated in Grasse</span>
+                    <span>Crafted for COAG Paris</span>
                     <span className="text-amber-600">◆</span>
-                    <span>30% — 35% Pure Extrait Concentration</span>
+                    <span>35% Pure Extrait Spray Concentration</span>
                     <span className="text-amber-600">◆</span>
-                    <span>Complimentary Express Delivery</span>
+                    <span>24H+ Beast Mode Sillage</span>
+                    <span className="text-amber-600">◆</span>
+                    <span>Complimentary Express Delivery Across India</span>
                 </div>
             </div>
         </section>

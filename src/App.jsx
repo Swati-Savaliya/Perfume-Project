@@ -10,22 +10,34 @@ import CollectionSection from './Pages/CollectionSection';
 import CollectionPage from './Pages/CollectionPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import ContactPage from './Pages/ContactPage';
-import CraftsmanshipSection from './Pages/CraftsmanshipSection';
+import ScentWardrobeSection from './Pages/ScentWardrobeSection';
 import MaisonGallery from './Pages/MaisonGallery';
 import OlfactoryTerritories from './Pages/OlfactoryTerritories';
 import ReviewSection from './Pages/ReviewSection';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(() => {
-    if (typeof window !== 'undefined') {
-      if (window.location.hash === '#collection') return 'collection';
-      if (window.location.hash === '#about' || window.location.hash === '#aboutus') return 'about';
-      if (window.location.hash === '#contact') return 'contact';
-    }
-    return 'home';
-  });
+  // Always start on 'home' page when loaded or refreshed
+  const [currentPage, setCurrentPage] = useState('home');
 
   useEffect(() => {
+    // Prevent browser from restoring scroll position on refresh
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+
+    // On page load or refresh, clear any hash and reset to top of home page
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+    window.scrollTo(0, 0);
+
+    const handleBeforeUnload = () => {
+      // Clear hash before page unloads/refreshes so it reloads clean on home
+      if (window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname);
+      }
+    };
+
     const handleHash = () => {
       if (window.location.hash === '#collection') {
         setCurrentPage('collection');
@@ -41,8 +53,13 @@ function App() {
       }
     };
 
+    window.addEventListener('beforeunload', handleBeforeUnload);
     window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+      window.removeEventListener('hashchange', handleHash);
+    };
   }, []);
 
   const handleNavigate = (page, targetHash) => {
@@ -71,9 +88,9 @@ function App() {
 
   return (
     <ShopProvider>
-      <div className="min-h-screen bg-[#09090b] text-neutral-100 flex flex-col font-sans selection:bg-white/20 selection:text-white">
+      <div className="min-h-screen w-full bg-[#09090b] text-neutral-100 flex flex-col font-sans selection:bg-white/20 selection:text-white overflow-x-hidden">
         <Header currentPage={currentPage} onNavigate={handleNavigate} />
-        <main className="flex-1">
+        <main className="flex-1 w-full overflow-x-hidden">
           {currentPage === 'collection' ? (
             <CollectionPage onNavigateHome={() => handleNavigate('home')} />
           ) : currentPage === 'about' ? (
@@ -90,7 +107,7 @@ function App() {
             <>
               <HeroPage onExploreCollection={() => handleNavigate('collection')} />
               <CollectionSection onOpenFullPage={() => handleNavigate('collection')} />
-              <CraftsmanshipSection />
+              <ScentWardrobeSection onExploreCollection={() => handleNavigate('collection')} />
               <MaisonGallery />
               <OlfactoryTerritories />
               <ReviewSection />

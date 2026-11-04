@@ -87,7 +87,7 @@ const ContactPage = ({ onNavigateHome }) => {
     if (!formData.name || !formData.phone) return;
 
     const lines = [
-      `*✨ New Concierge Inquiry - Maison COAG*`,
+      `*✨ New Concierge Inquiry - COAG Luxury Parfums*`,
       ``,
       `*Client Details:*`,
       `• *Name:* ${formData.name}`,
@@ -134,7 +134,7 @@ const ContactPage = ({ onNavigateHome }) => {
           <div className="space-y-3">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-amber-300 text-[10px] uppercase tracking-[0.22em] font-bold">
               <Sparkles size={11} className="text-amber-400" />
-              <span>MAISON COAG • PRIVATE CLIENT SERVICES</span>
+              <span>COAG PARFUMS • PRIVATE CLIENT SERVICES</span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-serif font-light tracking-wide text-white leading-tight">
@@ -335,7 +335,7 @@ const ContactPage = ({ onNavigateHome }) => {
               <div className="relative h-44 overflow-hidden">
                 <img
                   src="/images/Header_img.jpeg"
-                  alt="Maison COAG Private Atelier"
+                  alt="COAG Private Atelier"
                   className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 text-white">

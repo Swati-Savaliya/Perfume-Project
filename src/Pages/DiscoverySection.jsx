@@ -320,7 +320,7 @@ const DiscoverySection = () => {
                             <div className="mt-5 p-5 rounded-2xl bg-[#17171a] border border-amber-900/20 shadow-inner">
                                 <div className="text-center pb-3 border-b border-white/10">
                                     <div className="text-[10px] uppercase font-mono tracking-widest text-amber-400/80">
-                                        MAISON COAG • GRASSE
+                                        COAG PARFUMS • GRASSE
                                     </div>
                                     <div className="text-xs font-serif text-white/90 italic">
                                         Bespoke 4-Piece Atomizer Collection
