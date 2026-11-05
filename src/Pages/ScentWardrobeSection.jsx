@@ -98,7 +98,7 @@ const ScentWardrobeSection = ({ onExploreCollection }) => {
   const p = spraysList[activeSprayIdx];
 
   const handleOrderWhatsApp = (item) => {
-    const phone = '919664506049';
+    const phone = '919664962860';
     const formattedPrice = formatPrice(item.numericPrice || item.price);
     const origin = typeof window !== 'undefined' ? window.location.origin : '';
     const imageUrl = item.image
@@ -297,7 +297,7 @@ const ScentWardrobeSection = ({ onExploreCollection }) => {
                   <button
                     onClick={() => handleOrderWhatsApp(p)}
                     className="px-4 py-2.5 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-[11px] uppercase tracking-[0.14em] transition-all duration-300 flex items-center justify-center space-x-1.5 shadow-sm shadow-[#25D366]/20 active:scale-95 cursor-pointer"
-                    title="Order on WhatsApp (9664506049)"
+                    title="Order on WhatsApp (9664962860)"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5 fill-white" />
                     <span className="hidden sm:inline">WhatsApp</span>

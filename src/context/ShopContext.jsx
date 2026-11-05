@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ShopContext = createContext();
 
-const WHATSAPP_NUMBER = '9664506049';
+const WHATSAPP_NUMBER = '9664962860';
 
 export const CURRENCIES = [
   { code: 'EUR', name: 'Euro', label: 'EUR', fullName: 'Euro (EUR)', countryCode: 'EU', flag: '🇪🇺', symbol: '€', rate: 0.011 },

@@ -16,7 +16,7 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
     </svg>
 );
 
-const WHATSAPP_NUMBER = '9664506049';
+const WHATSAPP_NUMBER = '9664962860';
 
 const chapters = [
     {

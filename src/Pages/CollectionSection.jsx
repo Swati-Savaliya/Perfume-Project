@@ -734,7 +734,7 @@ const occasions = [
   'LGBTQ',
 ];
 
-const WHATSAPP_NUMBER = '9664506049';
+const WHATSAPP_NUMBER = '9664962860';
 const ITEMS_PER_PAGE = 8;
 
 const CollectionSection = () => {
@@ -1210,8 +1210,8 @@ const CollectionSection = () => {
                   openModal(product);
                 }}
                 className={`group flex flex-col bg-white border border-neutral-200 rounded-2xl overflow-hidden transition-all duration-500 ${product.isSoldOut
-                    ? 'cursor-not-allowed opacity-90 select-none'
-                    : 'hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transform hover:-translate-y-1.5 cursor-pointer'
+                  ? 'cursor-not-allowed opacity-90 select-none'
+                  : 'hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transform hover:-translate-y-1.5 cursor-pointer'
                   }`}
               >
                 {/* Product Image Canvas */}
@@ -1952,8 +1952,8 @@ const CollectionSection = () => {
                         {selectedProduct.mainCategory === 'PERFUME'
                           ? 'COAG HAUTE PARFUMERIE'
                           : selectedProduct.mainCategory === 'GIFT PACKAGE'
-                          ? 'COAG LUXURY COFFRET'
-                          : 'COAG LEATHER ATELIER'}
+                            ? 'COAG LUXURY COFFRET'
+                            : 'COAG LEATHER ATELIER'}
                       </span>
                       <span>•</span>
                       <span className="text-amber-700 font-semibold">{selectedProduct.family}</span>
@@ -2046,8 +2046,8 @@ const CollectionSection = () => {
                           {selectedProduct.mainCategory === 'PERFUME'
                             ? 'Olfactory Architecture (Spray Dispersion)'
                             : selectedProduct.mainCategory === 'GIFT PACKAGE'
-                            ? 'Gift Suite Inclusions'
-                            : 'Artisanal Specifications'}
+                              ? 'Gift Suite Inclusions'
+                              : 'Artisanal Specifications'}
                         </span>
                       </span>
                       {selectedProduct.mainCategory === 'PERFUME' ? (

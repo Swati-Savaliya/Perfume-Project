@@ -184,11 +184,10 @@ const BespokeAtelier = () => {
                                         <button
                                             key={f.id}
                                             onClick={() => setSelectedFlacon(f)}
-                                            className={`p-3 rounded-2xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between ${
-                                                isSelected
+                                            className={`p-3 rounded-2xl border text-left transition-all duration-300 cursor-pointer flex flex-col justify-between ${isSelected
                                                     ? 'bg-amber-500/15 border-amber-500 text-white shadow-lg shadow-amber-500/10'
                                                     : 'bg-white/[0.02] hover:bg-white/[0.06] border-white/10 text-neutral-400 hover:text-white'
-                                            }`}
+                                                }`}
                                         >
                                             <div className="text-xs font-serif font-semibold truncate text-white">
                                                 {f.name.split(' ')[0]}
@@ -243,11 +242,10 @@ const BespokeAtelier = () => {
                                     <button
                                         key={style.id}
                                         onClick={() => setSelectedStyle(style)}
-                                        className={`py-2 px-3 rounded-xl border text-xs text-center transition-all cursor-pointer ${
-                                            selectedStyle.id === style.id
+                                        className={`py-2 px-3 rounded-xl border text-xs text-center transition-all cursor-pointer ${selectedStyle.id === style.id
                                                 ? 'bg-white text-black font-semibold border-white shadow-sm'
                                                 : 'bg-white/[0.03] text-neutral-400 border-white/10 hover:text-white hover:bg-white/[0.08]'
-                                        }`}
+                                            }`}
                                     >
                                         {style.name}
                                     </button>
@@ -261,11 +259,10 @@ const BespokeAtelier = () => {
                                     <button
                                         key={f.id}
                                         onClick={() => setSelectedFoil(f)}
-                                        className={`text-[11px] font-mono px-3 py-1 rounded-full border transition-all cursor-pointer ${
-                                            selectedFoil.id === f.id
+                                        className={`text-[11px] font-mono px-3 py-1 rounded-full border transition-all cursor-pointer ${selectedFoil.id === f.id
                                                 ? 'bg-amber-500 text-black border-amber-500 font-semibold'
                                                 : 'bg-transparent text-neutral-400 border-white/15 hover:border-white/30'
-                                        }`}
+                                            }`}
                                     >
                                         {f.name}
                                     </button>
@@ -293,7 +290,7 @@ const BespokeAtelier = () => {
                         {/* Order Button via WhatsApp */}
                         <div className="space-y-2 pt-2">
                             <a
-                                href={`https://wa.me/919999999999?text=${whatsappMessage}`}
+                                href={`https://wa.me/919664962860?text=${whatsappMessage}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full py-4 px-6 rounded-2xl bg-amber-500 hover:bg-amber-400 text-neutral-950 font-mono text-xs uppercase tracking-wider font-semibold flex items-center justify-center gap-2 transition-all duration-300 shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40 active:scale-95 cursor-pointer"

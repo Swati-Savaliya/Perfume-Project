@@ -759,7 +759,7 @@ const occasionFilters = [
   'LGBTQ',
 ];
 
-const WHATSAPP_NUMBER = '9664506049';
+const WHATSAPP_NUMBER = '9664962860';
 const ITEMS_PER_PAGE = 8;
 
 const CollectionPage = ({ onNavigateHome }) => {
@@ -1061,15 +1061,14 @@ const CollectionPage = ({ onNavigateHome }) => {
               <button
                 key={cat.id}
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`relative p-3.5 sm:p-5 rounded-2xl text-left transition-all duration-500 shadow-md cursor-pointer border overflow-visible select-none ${
-                  isGiftPackage ? 'col-span-2 sm:col-span-1' : 'col-span-1'
-                } ${isGiftPackage && isRibbonOpen
-                  ? 'bg-white text-black border-2 border-red-500 ring-2 ring-red-400 scale-[1.01] sm:scale-[1.02] shadow-xl shadow-red-500/20'
-                  : isGiftPackage && !isRibbonOpen
-                    ? 'bg-white text-black border-neutral-200 hover:border-red-300 hover:shadow-lg'
-                    : isActive
-                      ? 'bg-black text-white border-black ring-2 ring-amber-400 scale-[1.01] sm:scale-[1.02]'
-                      : 'bg-white text-black border-neutral-200 hover:border-black/30 hover:shadow-lg'
+                className={`relative p-3.5 sm:p-5 rounded-2xl text-left transition-all duration-500 shadow-md cursor-pointer border overflow-visible select-none ${isGiftPackage ? 'col-span-2 sm:col-span-1' : 'col-span-1'
+                  } ${isGiftPackage && isRibbonOpen
+                    ? 'bg-white text-black border-2 border-red-500 ring-2 ring-red-400 scale-[1.01] sm:scale-[1.02] shadow-xl shadow-red-500/20'
+                    : isGiftPackage && !isRibbonOpen
+                      ? 'bg-white text-black border-neutral-200 hover:border-red-300 hover:shadow-lg'
+                      : isActive
+                        ? 'bg-black text-white border-black ring-2 ring-amber-400 scale-[1.01] sm:scale-[1.02]'
+                        : 'bg-white text-black border-neutral-200 hover:border-black/30 hover:shadow-lg'
                   }`}
               >
                 {/* Red Fabric Ribbon Ornament for GIFT PACKAGE Card/Tab */}
@@ -1278,11 +1277,10 @@ const CollectionPage = ({ onNavigateHome }) => {
                         setActiveOccasion(occ);
                         setCurrentPage(1);
                       }}
-                      className={`px-2.5 sm:px-3.5 py-1.5 rounded-full text-[9.5px] sm:text-[10.5px] uppercase tracking-wider font-semibold transition-all duration-200 cursor-pointer ${
-                        isSelected
+                      className={`px-2.5 sm:px-3.5 py-1.5 rounded-full text-[9.5px] sm:text-[10.5px] uppercase tracking-wider font-semibold transition-all duration-200 cursor-pointer ${isSelected
                           ? 'bg-amber-400 text-black font-bold shadow-xs scale-[1.02] ring-1 ring-amber-500'
                           : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200 hover:text-black border border-neutral-200/80 active:scale-95'
-                      }`}
+                        }`}
                     >
                       {occ === 'LGBTQ' ? '🏳️‍🌈 LGBTQ' : occ}
                     </button>
@@ -1358,8 +1356,8 @@ const CollectionPage = ({ onNavigateHome }) => {
                       openModal(product);
                     }}
                     className={`group flex flex-col bg-white border border-neutral-200 rounded-2xl overflow-hidden transition-all duration-500 max-w-md mx-auto sm:max-w-none w-full ${product.isSoldOut
-                        ? 'cursor-not-allowed opacity-90 select-none'
-                        : 'hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transform hover:-translate-y-1.5 cursor-pointer'
+                      ? 'cursor-not-allowed opacity-90 select-none'
+                      : 'hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)] transform hover:-translate-y-1.5 cursor-pointer'
                       }`}
                   >
                     {/* Product Image Canvas */}
@@ -2090,8 +2088,8 @@ const CollectionPage = ({ onNavigateHome }) => {
                         {selectedProduct.mainCategory === 'PERFUME'
                           ? 'COAG HAUTE PARFUMERIE'
                           : selectedProduct.mainCategory === 'GIFT PACKAGE'
-                          ? 'COAG LUXURY COFFRET'
-                          : 'COAG LEATHER ATELIER'}
+                            ? 'COAG LUXURY COFFRET'
+                            : 'COAG LEATHER ATELIER'}
                       </span>
                       <span>•</span>
                       <span className="text-amber-700 font-semibold">{selectedProduct.family}</span>
@@ -2184,8 +2182,8 @@ const CollectionPage = ({ onNavigateHome }) => {
                           {selectedProduct.mainCategory === 'PERFUME'
                             ? 'Olfactory Architecture (Spray Dispersion)'
                             : selectedProduct.mainCategory === 'GIFT PACKAGE'
-                            ? 'Gift Suite Inclusions'
-                            : 'Artisanal Specifications'}
+                              ? 'Gift Suite Inclusions'
+                              : 'Artisanal Specifications'}
                         </span>
                       </span>
                       {selectedProduct.mainCategory === 'PERFUME' ? (

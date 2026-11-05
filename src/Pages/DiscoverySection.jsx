@@ -203,13 +203,12 @@ const DiscoverySection = () => {
                                     <div
                                         key={perfume.id}
                                         onClick={() => !isFull && toggleVial(perfume)}
-                                        className={`group relative p-4 rounded-3xl border transition-all duration-300 flex flex-col justify-between ${
-                                            isAdded
+                                        className={`group relative p-4 rounded-3xl border transition-all duration-300 flex flex-col justify-between ${isAdded
                                                 ? 'bg-amber-500/10 border-amber-500/60 shadow-md shadow-amber-900/5'
                                                 : isFull
-                                                ? 'bg-white/40 border-neutral-200/50 opacity-60 cursor-not-allowed'
-                                                : 'bg-white hover:bg-[#faf7f2] border-neutral-200/80 hover:border-amber-400/60 hover:shadow-md cursor-pointer'
-                                        }`}
+                                                    ? 'bg-white/40 border-neutral-200/50 opacity-60 cursor-not-allowed'
+                                                    : 'bg-white hover:bg-[#faf7f2] border-neutral-200/80 hover:border-amber-400/60 hover:shadow-md cursor-pointer'
+                                            }`}
                                     >
                                         <div className="flex gap-4 items-center">
                                             {/* Thumbnail */}
@@ -261,13 +260,12 @@ const DiscoverySection = () => {
                                             </span>
                                             <button
                                                 type="button"
-                                                className={`text-[11px] font-mono uppercase tracking-wider font-semibold px-2.5 py-1 rounded-lg transition-colors ${
-                                                    isAdded
+                                                className={`text-[11px] font-mono uppercase tracking-wider font-semibold px-2.5 py-1 rounded-lg transition-colors ${isAdded
                                                         ? 'text-red-700 bg-red-50 hover:bg-red-100'
                                                         : isFull
-                                                        ? 'text-neutral-400'
-                                                        : 'text-amber-900 bg-amber-100 hover:bg-amber-200'
-                                                }`}
+                                                            ? 'text-neutral-400'
+                                                            : 'text-amber-900 bg-amber-100 hover:bg-amber-200'
+                                                    }`}
                                             >
                                                 {isAdded ? 'Remove' : '+ Add'}
                                             </button>
@@ -304,11 +302,10 @@ const DiscoverySection = () => {
                                         <button
                                             key={color.id}
                                             onClick={() => setActiveBoxColor(color.id)}
-                                            className={`text-[11px] font-mono px-2.5 py-1 rounded-full border transition-all cursor-pointer ${
-                                                activeBoxColor === color.id
+                                            className={`text-[11px] font-mono px-2.5 py-1 rounded-full border transition-all cursor-pointer ${activeBoxColor === color.id
                                                     ? 'bg-neutral-900 text-white border-neutral-900 font-semibold shadow-xs'
                                                     : 'bg-neutral-100 text-neutral-700 border-neutral-200 hover:bg-neutral-200'
-                                            }`}
+                                                }`}
                                         >
                                             {color.name.split(' ')[0]}
                                         </button>
@@ -417,14 +414,13 @@ const DiscoverySection = () => {
                             {/* Action Buttons */}
                             <div className="mt-6 space-y-2.5">
                                 <a
-                                    href={`https://wa.me/919999999999?text=${whatsappMessage}`}
+                                    href={`https://wa.me/919664962860?text=${whatsappMessage}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className={`w-full py-3.5 px-6 rounded-2xl font-mono text-xs uppercase tracking-wider font-semibold flex items-center justify-center gap-2 transition-all duration-300 shadow-md ${
-                                        isComplete
+                                    className={`w-full py-3.5 px-6 rounded-2xl font-mono text-xs uppercase tracking-wider font-semibold flex items-center justify-center gap-2 transition-all duration-300 shadow-md ${isComplete
                                             ? 'bg-amber-500 hover:bg-amber-600 text-neutral-950 shadow-amber-500/25 cursor-pointer hover:shadow-lg active:scale-95'
                                             : 'bg-neutral-900 hover:bg-neutral-800 text-white shadow-neutral-900/20 cursor-pointer'
-                                    }`}
+                                        }`}
                                 >
                                     <WhatsAppIcon className="w-4 h-4" />
                                     <span>

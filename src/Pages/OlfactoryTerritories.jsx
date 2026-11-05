@@ -16,7 +16,7 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
     </svg>
 );
 
-const WHATSAPP_NUMBER = '9664506049';
+const WHATSAPP_NUMBER = '9664962860';
 
 const territories = [
     {
@@ -108,11 +108,10 @@ const OlfactoryTerritories = () => {
                                 key={t.id}
                                 onClick={() => setActiveIndex(idx)}
                                 onMouseEnter={() => setActiveIndex(idx)}
-                                className={`relative rounded-t-full rounded-b-[2rem] overflow-hidden cursor-pointer transition-all duration-700 ease-out border ${
-                                    isActive
+                                className={`relative rounded-t-full rounded-b-[2rem] overflow-hidden cursor-pointer transition-all duration-700 ease-out border ${isActive
                                         ? 'lg:flex-[3.5] border-amber-400/80 shadow-2xl shadow-amber-950/40 h-[380px] lg:h-full'
                                         : 'lg:flex-[1] border-white/10 hover:border-white/30 h-[72px] lg:h-full opacity-70 hover:opacity-100'
-                                }`}
+                                    }`}
                             >
                                 {/* Inner Arch Filigree Line */}
                                 <div className="absolute inset-2 rounded-t-full rounded-b-[1.6rem] border border-white/15 pointer-events-none z-10" />
@@ -126,11 +125,10 @@ const OlfactoryTerritories = () => {
 
                                 {/* Dark Luxury Overlay */}
                                 <div
-                                    className={`absolute inset-0 transition-opacity duration-700 ${
-                                        isActive
+                                    className={`absolute inset-0 transition-opacity duration-700 ${isActive
                                             ? 'bg-gradient-to-t from-neutral-950/95 via-neutral-950/30 to-black/40'
                                             : 'bg-black/75 hover:bg-black/55'
-                                    }`}
+                                        }`}
                                 />
 
                                 {/* INACTIVE PANEL VIEW: Minimal Vertical/Horizontal Tab */}
